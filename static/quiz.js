@@ -49,7 +49,7 @@ function showQuestion() {
     currentQuestion.choices.forEach((choice) => {
         const button = document.createElement("button");
         button.textContent = choice;
-        button.classList.add("button", "is-dark");
+        button.classList.add("button", "is-primary", "is-large");
         button.addEventListener("click", () => {
             userAnswers.push({ question: currentQuestion.question, answer: choice });
             currentIndex++;
@@ -98,6 +98,7 @@ function submitAnswers() {
       .then(response => response.json())
       .then(data => {
         resultScreen.classList.remove("is-hidden");
+        resultScreen.classList.add("p-6");
         quizScreen.classList.add("is-hidden");
         console.log(data.verdict)
         switch (data.verdict) {

@@ -52,7 +52,7 @@ function showQuestion() {
     currentQuestion.choices.forEach((choice) => {
         const button = document.createElement("button");
         button.textContent = choice;
-        button.classList.add("button", "is-dark");
+        button.classList.add("button", "is-primary", "is-large");
         button.addEventListener("click", () => {
           userAnswers.push({ question: currentQuestion.question, answer: choice });
           if (currentIndex == 4) {
@@ -124,31 +124,66 @@ function submitAnswers() {
               let keys = ["pet", "age", "sex", "size", "color"]
               for (let i = 0; i < Object.keys(data.selected_indices).length; i++) {
                 const levelDiv = document.createElement('div');
-                levelDiv.className = 'card has-background-light';
+                levelDiv.className = 'card has-background-dark';
                 console.log(indices[i])
                 console.log(db[indices[i]])
+                let pet = db[indices[i]]
 
-                for (let j = 0; j < Object.keys(db[indices[i]]).length; j++) {
-                  let items = db[ indices[ i ] ]
-                  console.log(items)
-                  const levelItemDiv = document.createElement('div');
-                  levelItemDiv.className = 'level-item has-text-centered';
+                const cardImage = document.createElement("div");
+                cardImage.classList.add("card-image");
 
-                  const innerDiv = document.createElement('div');
+                const figure = document.createElement("figure");
+                figure.classList.add("image", "is-4by3");
 
-                  const headingP = document.createElement('p');
-                  headingP.className = 'heading';
-                  headingP.textContent = keys[j]
+                const img = document.createElement("img");
+                img.src = `/pics/${indices[i]}` || "https://bulma.io/assets/images/placeholders/1280x960.png";
+                img.alt = `Image of ${pet.name || "Unknown"}`;
 
-                  const subtitleP = document.createElement('p');
-                  subtitleP.className = 'subtitle';
-                  subtitleP.textContent = items[keys[j]];
+                // Append image to figure, then to cardImage
+                figure.appendChild(img);
+                cardImage.appendChild(figure);
 
-                  innerDiv.appendChild(headingP);
-                  innerDiv.appendChild(subtitleP);
-                  levelItemDiv.appendChild(innerDiv);
-                  levelDiv.appendChild(levelItemDiv);
-                }
+                const cardContent = document.createElement("div");
+                cardContent.classList.add("card-content");
+
+                // Create media section
+                const media = document.createElement("div");
+                media.classList.add("media");
+
+                const mediaContent = document.createElement("div");
+                mediaContent.classList.add("media-content");
+
+                const title = document.createElement("p");
+                title.classList.add("title", "is-4");
+                title.textContent = `Candidate #${i + 1}`;
+
+                const subtitle = document.createElement("p");
+                subtitle.classList.add("subtitle", "is-6");
+                subtitle.textContent = `${pet.pet || "Unknown"} | ${pet.color || ""} | ${pet.age || "Unknown"} | ${pet.sex || ""} | ${pet.size || ""}`;
+
+                // Append title and subtitle to media content
+                mediaContent.appendChild(title);
+                mediaContent.appendChild(subtitle);
+                media.appendChild(mediaContent);
+
+                // Create button section
+                const content = document.createElement("div");
+                content.classList.add("content");
+
+                const button = document.createElement("a");
+                button.classList.add("button", "is-large", "is-primary");
+                button.href = `/pet?id=${indices[i]}`;
+                button.textContent = `Check ${pet.sex == "male" ? "him": "her"}`;
+
+                // Append button to content
+                content.appendChild(button);
+
+                // Assemble card components
+                cardContent.appendChild(media);
+                cardContent.appendChild(content);
+
+                levelDiv.appendChild(cardImage)
+                levelDiv.appendChild(cardContent)
 
                 candidates.appendChild(levelDiv);
               }

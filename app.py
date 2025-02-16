@@ -1,10 +1,11 @@
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify, render_template, send_from_directory, abort
 from flask_cors import CORS, cross_origin
 import pickle
 import sklearn
 import pandas as pd
 import numpy as np
 import joblib
+import os
 
 app = Flask(__name__)
 cors = CORS(app)
@@ -188,6 +189,20 @@ def predict_pet():
 
     except Exception as e:
         return jsonify({"error": e}), 500
+
+IMAGE_FOLDER = os.path.join(app.static_folder, "pics")
+
+@app.route("/pics/<int:image_id>")
+def serve_image(image_id):
+    """Serves a PNG image from the 'pics' directory based on the given ID."""
+    filename = f"{image_id}.png"
+    image_path = os.path.join(IMAGE_FOLDER, filename)
+
+    # Check if the image exists
+    if not os.path.exists(image_path):
+        abort(404)  # Return 404 if the file does not exist
+
+    return send_from_directory(IMAGE_FOLDER, filename, mimetype="image/png")
 
 
 if __name__ == '__main__':

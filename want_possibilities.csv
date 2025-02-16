@@ -1,0 +1,703 @@
+want_pet,want_sex,want_age,want_size,want_color
+cat,female,1 months,large,Black
+cat,female,1 months,large,Black and white
+cat,female,1 months,large,Tri-color
+cat,female,1 months,large,White
+cat,female,1 months,large,White and gray
+cat,female,1 months,large,White and orange
+cat,female,1 months,medium,Black
+cat,female,1 months,medium,Black and white
+cat,female,1 months,medium,Tri-color
+cat,female,1 months,medium,White
+cat,female,1 months,medium,White and gray
+cat,female,1 months,medium,White and orange
+cat,female,1 months,small,Black
+cat,female,1 months,small,Black and white
+cat,female,1 months,small,Tri-color
+cat,female,1 months,small,White
+cat,female,1 months,small,White and gray
+cat,female,1 months,small,White and orange
+cat,female,1 years,large,Black
+cat,female,1 years,large,Black and white
+cat,female,1 years,large,Tri-color
+cat,female,1 years,large,White
+cat,female,1 years,large,White and gray
+cat,female,1 years,large,White and orange
+cat,female,1 years,medium,Black
+cat,female,1 years,medium,Black and white
+cat,female,1 years,medium,Tri-color
+cat,female,1 years,medium,White
+cat,female,1 years,medium,White and gray
+cat,female,1 years,medium,White and orange
+cat,female,1 years,small,Black
+cat,female,1 years,small,Black and white
+cat,female,1 years,small,Tri-color
+cat,female,1 years,small,White
+cat,female,1 years,small,White and gray
+cat,female,1 years,small,White and orange
+cat,female,2 months,large,Black
+cat,female,2 months,large,Black and white
+cat,female,2 months,large,Tri-color
+cat,female,2 months,large,White
+cat,female,2 months,large,White and gray
+cat,female,2 months,large,White and orange
+cat,female,2 months,medium,Black
+cat,female,2 months,medium,Black and white
+cat,female,2 months,medium,Tri-color
+cat,female,2 months,medium,White
+cat,female,2 months,medium,White and gray
+cat,female,2 months,medium,White and orange
+cat,female,2 months,small,Black
+cat,female,2 months,small,Black and white
+cat,female,2 months,small,Tri-color
+cat,female,2 months,small,White
+cat,female,2 months,small,White and gray
+cat,female,2 months,small,White and orange
+cat,female,2 years,large,Black
+cat,female,2 years,large,Black and white
+cat,female,2 years,large,Tri-color
+cat,female,2 years,large,White
+cat,female,2 years,large,White and gray
+cat,female,2 years,large,White and orange
+cat,female,2 years,medium,Black
+cat,female,2 years,medium,Black and white
+cat,female,2 years,medium,Tri-color
+cat,female,2 years,medium,White
+cat,female,2 years,medium,White and gray
+cat,female,2 years,medium,White and orange
+cat,female,2 years,small,Black
+cat,female,2 years,small,Black and white
+cat,female,2 years,small,Tri-color
+cat,female,2 years,small,White
+cat,female,2 years,small,White and gray
+cat,female,2 years,small,White and orange
+cat,female,3 months,large,Black
+cat,female,3 months,large,Black and white
+cat,female,3 months,large,Tri-color
+cat,female,3 months,large,White
+cat,female,3 months,large,White and gray
+cat,female,3 months,large,White and orange
+cat,female,3 months,medium,Black
+cat,female,3 months,medium,Black and white
+cat,female,3 months,medium,Tri-color
+cat,female,3 months,medium,White
+cat,female,3 months,medium,White and gray
+cat,female,3 months,medium,White and orange
+cat,female,3 months,small,Black
+cat,female,3 months,small,Black and white
+cat,female,3 months,small,Tri-color
+cat,female,3 months,small,White
+cat,female,3 months,small,White and gray
+cat,female,3 months,small,White and orange
+cat,female,3 years,large,Black
+cat,female,3 years,large,Black and white
+cat,female,3 years,large,Tri-color
+cat,female,3 years,large,White
+cat,female,3 years,large,White and gray
+cat,female,3 years,large,White and orange
+cat,female,3 years,medium,Black
+cat,female,3 years,medium,Black and white
+cat,female,3 years,medium,Tri-color
+cat,female,3 years,medium,White
+cat,female,3 years,medium,White and gray
+cat,female,3 years,medium,White and orange
+cat,female,3 years,small,Black
+cat,female,3 years,small,Black and white
+cat,female,3 years,small,Tri-color
+cat,female,3 years,small,White
+cat,female,3 years,small,White and gray
+cat,female,3 years,small,White and orange
+cat,female,4 years,large,Black
+cat,female,4 years,large,Black and white
+cat,female,4 years,large,Tri-color
+cat,female,4 years,large,White
+cat,female,4 years,large,White and gray
+cat,female,4 years,large,White and orange
+cat,female,4 years,medium,Black
+cat,female,4 years,medium,Black and white
+cat,female,4 years,medium,Tri-color
+cat,female,4 years,medium,White
+cat,female,4 years,medium,White and gray
+cat,female,4 years,medium,White and orange
+cat,female,4 years,small,Black
+cat,female,4 years,small,Black and white
+cat,female,4 years,small,Tri-color
+cat,female,4 years,small,White
+cat,female,4 years,small,White and gray
+cat,female,4 years,small,White and orange
+cat,female,5 months,large,Black
+cat,female,5 months,large,Black and white
+cat,female,5 months,large,Tri-color
+cat,female,5 months,large,White
+cat,female,5 months,large,White and gray
+cat,female,5 months,large,White and orange
+cat,female,5 months,medium,Black
+cat,female,5 months,medium,Black and white
+cat,female,5 months,medium,Tri-color
+cat,female,5 months,medium,White
+cat,female,5 months,medium,White and gray
+cat,female,5 months,medium,White and orange
+cat,female,5 months,small,Black
+cat,female,5 months,small,Black and white
+cat,female,5 months,small,Tri-color
+cat,female,5 months,small,White
+cat,female,5 months,small,White and gray
+cat,female,5 months,small,White and orange
+cat,female,5 years,large,Black
+cat,female,5 years,large,Black and white
+cat,female,5 years,large,Tri-color
+cat,female,5 years,large,White
+cat,female,5 years,large,White and gray
+cat,female,5 years,large,White and orange
+cat,female,5 years,medium,Black
+cat,female,5 years,medium,Black and white
+cat,female,5 years,medium,Tri-color
+cat,female,5 years,medium,White
+cat,female,5 years,medium,White and gray
+cat,female,5 years,medium,White and orange
+cat,female,5 years,small,Black
+cat,female,5 years,small,Black and white
+cat,female,5 years,small,Tri-color
+cat,female,5 years,small,White
+cat,female,5 years,small,White and gray
+cat,female,5 years,small,White and orange
+cat,male,1 months,large,Black
+cat,male,1 months,large,Black and white
+cat,male,1 months,large,Tri-color
+cat,male,1 months,large,White
+cat,male,1 months,large,White and gray
+cat,male,1 months,large,White and orange
+cat,male,1 months,medium,Black
+cat,male,1 months,medium,Black and white
+cat,male,1 months,medium,Tri-color
+cat,male,1 months,medium,White
+cat,male,1 months,medium,White and gray
+cat,male,1 months,medium,White and orange
+cat,male,1 months,small,Black
+cat,male,1 months,small,Black and white
+cat,male,1 months,small,Tri-color
+cat,male,1 months,small,White
+cat,male,1 months,small,White and gray
+cat,male,1 months,small,White and orange
+cat,male,1 years,large,Black
+cat,male,1 years,large,Black and white
+cat,male,1 years,large,Tri-color
+cat,male,1 years,large,White
+cat,male,1 years,large,White and gray
+cat,male,1 years,large,White and orange
+cat,male,1 years,medium,Black
+cat,male,1 years,medium,Black and white
+cat,male,1 years,medium,Tri-color
+cat,male,1 years,medium,White
+cat,male,1 years,medium,White and gray
+cat,male,1 years,medium,White and orange
+cat,male,1 years,small,Black
+cat,male,1 years,small,Black and white
+cat,male,1 years,small,Tri-color
+cat,male,1 years,small,White
+cat,male,1 years,small,White and gray
+cat,male,1 years,small,White and orange
+cat,male,2 months,large,Black
+cat,male,2 months,large,Black and white
+cat,male,2 months,large,Tri-color
+cat,male,2 months,large,White
+cat,male,2 months,large,White and gray
+cat,male,2 months,large,White and orange
+cat,male,2 months,medium,Black
+cat,male,2 months,medium,Black and white
+cat,male,2 months,medium,Tri-color
+cat,male,2 months,medium,White
+cat,male,2 months,medium,White and gray
+cat,male,2 months,medium,White and orange
+cat,male,2 months,small,Black
+cat,male,2 months,small,Black and white
+cat,male,2 months,small,Tri-color
+cat,male,2 months,small,White
+cat,male,2 months,small,White and gray
+cat,male,2 months,small,White and orange
+cat,male,2 years,large,Black
+cat,male,2 years,large,Black and white
+cat,male,2 years,large,Tri-color
+cat,male,2 years,large,White
+cat,male,2 years,large,White and gray
+cat,male,2 years,large,White and orange
+cat,male,2 years,medium,Black
+cat,male,2 years,medium,Black and white
+cat,male,2 years,medium,Tri-color
+cat,male,2 years,medium,White
+cat,male,2 years,medium,White and gray
+cat,male,2 years,medium,White and orange
+cat,male,2 years,small,Black
+cat,male,2 years,small,Black and white
+cat,male,2 years,small,Tri-color
+cat,male,2 years,small,White
+cat,male,2 years,small,White and gray
+cat,male,2 years,small,White and orange
+cat,male,3 months,large,Black
+cat,male,3 months,large,Black and white
+cat,male,3 months,large,Tri-color
+cat,male,3 months,large,White
+cat,male,3 months,large,White and gray
+cat,male,3 months,large,White and orange
+cat,male,3 months,medium,Black
+cat,male,3 months,medium,Black and white
+cat,male,3 months,medium,Tri-color
+cat,male,3 months,medium,White
+cat,male,3 months,medium,White and gray
+cat,male,3 months,medium,White and orange
+cat,male,3 months,small,Black
+cat,male,3 months,small,Black and white
+cat,male,3 months,small,Tri-color
+cat,male,3 months,small,White
+cat,male,3 months,small,White and gray
+cat,male,3 months,small,White and orange
+cat,male,3 years,large,Black
+cat,male,3 years,large,Black and white
+cat,male,3 years,large,Tri-color
+cat,male,3 years,large,White
+cat,male,3 years,large,White and gray
+cat,male,3 years,large,White and orange
+cat,male,3 years,medium,Black
+cat,male,3 years,medium,Black and white
+cat,male,3 years,medium,Tri-color
+cat,male,3 years,medium,White
+cat,male,3 years,medium,White and gray
+cat,male,3 years,medium,White and orange
+cat,male,3 years,small,Black
+cat,male,3 years,small,Black and white
+cat,male,3 years,small,Tri-color
+cat,male,3 years,small,White
+cat,male,3 years,small,White and gray
+cat,male,3 years,small,White and orange
+cat,male,4 years,large,Black
+cat,male,4 years,large,Black and white
+cat,male,4 years,large,Tri-color
+cat,male,4 years,large,White
+cat,male,4 years,large,White and gray
+cat,male,4 years,large,White and orange
+cat,male,4 years,medium,Black
+cat,male,4 years,medium,Black and white
+cat,male,4 years,medium,Tri-color
+cat,male,4 years,medium,White
+cat,male,4 years,medium,White and gray
+cat,male,4 years,medium,White and orange
+cat,male,4 years,small,Black
+cat,male,4 years,small,Black and white
+cat,male,4 years,small,Tri-color
+cat,male,4 years,small,White
+cat,male,4 years,small,White and gray
+cat,male,4 years,small,White and orange
+cat,male,5 months,large,Black
+cat,male,5 months,large,Black and white
+cat,male,5 months,large,Tri-color
+cat,male,5 months,large,White
+cat,male,5 months,large,White and gray
+cat,male,5 months,large,White and orange
+cat,male,5 months,medium,Black
+cat,male,5 months,medium,Black and white
+cat,male,5 months,medium,Tri-color
+cat,male,5 months,medium,White
+cat,male,5 months,medium,White and gray
+cat,male,5 months,medium,White and orange
+cat,male,5 months,small,Black
+cat,male,5 months,small,Black and white
+cat,male,5 months,small,Tri-color
+cat,male,5 months,small,White
+cat,male,5 months,small,White and gray
+cat,male,5 months,small,White and orange
+cat,male,5 years,large,Black
+cat,male,5 years,large,Black and white
+cat,male,5 years,large,Tri-color
+cat,male,5 years,large,White
+cat,male,5 years,large,White and gray
+cat,male,5 years,large,White and orange
+cat,male,5 years,medium,Black
+cat,male,5 years,medium,Black and white
+cat,male,5 years,medium,Tri-color
+cat,male,5 years,medium,White
+cat,male,5 years,medium,White and gray
+cat,male,5 years,medium,White and orange
+cat,male,5 years,small,Black
+cat,male,5 years,small,Black and white
+cat,male,5 years,small,Tri-color
+cat,male,5 years,small,White
+cat,male,5 years,small,White and gray
+cat,male,5 years,small,White and orange
+dog,female,1 months,large,Black
+dog,female,1 months,large,Brown
+dog,female,1 months,large,Brown and gray
+dog,female,1 months,large,Brown and white
+dog,female,1 months,large,Tri-color
+dog,female,1 months,large,White
+dog,female,1 months,large,White and orange
+dog,female,1 months,medium,Black
+dog,female,1 months,medium,Brown
+dog,female,1 months,medium,Brown and gray
+dog,female,1 months,medium,Brown and white
+dog,female,1 months,medium,Tri-color
+dog,female,1 months,medium,White
+dog,female,1 months,medium,White and orange
+dog,female,1 months,small,Black
+dog,female,1 months,small,Brown
+dog,female,1 months,small,Brown and gray
+dog,female,1 months,small,Brown and white
+dog,female,1 months,small,Tri-color
+dog,female,1 months,small,White
+dog,female,1 months,small,White and orange
+dog,female,1 years,large,Black
+dog,female,1 years,large,Brown
+dog,female,1 years,large,Brown and gray
+dog,female,1 years,large,Brown and white
+dog,female,1 years,large,Tri-color
+dog,female,1 years,large,White
+dog,female,1 years,large,White and orange
+dog,female,1 years,medium,Black
+dog,female,1 years,medium,Brown
+dog,female,1 years,medium,Brown and gray
+dog,female,1 years,medium,Brown and white
+dog,female,1 years,medium,Tri-color
+dog,female,1 years,medium,White
+dog,female,1 years,medium,White and orange
+dog,female,1 years,small,Black
+dog,female,1 years,small,Brown
+dog,female,1 years,small,Brown and gray
+dog,female,1 years,small,Brown and white
+dog,female,1 years,small,Tri-color
+dog,female,1 years,small,White
+dog,female,1 years,small,White and orange
+dog,female,2 months,large,Black
+dog,female,2 months,large,Brown
+dog,female,2 months,large,Brown and gray
+dog,female,2 months,large,Brown and white
+dog,female,2 months,large,Tri-color
+dog,female,2 months,large,White
+dog,female,2 months,large,White and orange
+dog,female,2 months,medium,Black
+dog,female,2 months,medium,Brown
+dog,female,2 months,medium,Brown and gray
+dog,female,2 months,medium,Brown and white
+dog,female,2 months,medium,Tri-color
+dog,female,2 months,medium,White
+dog,female,2 months,medium,White and orange
+dog,female,2 months,small,Black
+dog,female,2 months,small,Brown
+dog,female,2 months,small,Brown and gray
+dog,female,2 months,small,Brown and white
+dog,female,2 months,small,Tri-color
+dog,female,2 months,small,White
+dog,female,2 months,small,White and orange
+dog,female,2 years,large,Black
+dog,female,2 years,large,Brown
+dog,female,2 years,large,Brown and gray
+dog,female,2 years,large,Brown and white
+dog,female,2 years,large,Tri-color
+dog,female,2 years,large,White
+dog,female,2 years,large,White and orange
+dog,female,2 years,medium,Black
+dog,female,2 years,medium,Brown
+dog,female,2 years,medium,Brown and gray
+dog,female,2 years,medium,Brown and white
+dog,female,2 years,medium,Tri-color
+dog,female,2 years,medium,White
+dog,female,2 years,medium,White and orange
+dog,female,2 years,small,Black
+dog,female,2 years,small,Brown
+dog,female,2 years,small,Brown and gray
+dog,female,2 years,small,Brown and white
+dog,female,2 years,small,Tri-color
+dog,female,2 years,small,White
+dog,female,2 years,small,White and orange
+dog,female,3 months,large,Black
+dog,female,3 months,large,Brown
+dog,female,3 months,large,Brown and gray
+dog,female,3 months,large,Brown and white
+dog,female,3 months,large,Tri-color
+dog,female,3 months,large,White
+dog,female,3 months,large,White and orange
+dog,female,3 months,medium,Black
+dog,female,3 months,medium,Brown
+dog,female,3 months,medium,Brown and gray
+dog,female,3 months,medium,Brown and white
+dog,female,3 months,medium,Tri-color
+dog,female,3 months,medium,White
+dog,female,3 months,medium,White and orange
+dog,female,3 months,small,Black
+dog,female,3 months,small,Brown
+dog,female,3 months,small,Brown and gray
+dog,female,3 months,small,Brown and white
+dog,female,3 months,small,Tri-color
+dog,female,3 months,small,White
+dog,female,3 months,small,White and orange
+dog,female,3 years,large,Black
+dog,female,3 years,large,Brown
+dog,female,3 years,large,Brown and gray
+dog,female,3 years,large,Brown and white
+dog,female,3 years,large,Tri-color
+dog,female,3 years,large,White
+dog,female,3 years,large,White and orange
+dog,female,3 years,medium,Black
+dog,female,3 years,medium,Brown
+dog,female,3 years,medium,Brown and gray
+dog,female,3 years,medium,Brown and white
+dog,female,3 years,medium,Tri-color
+dog,female,3 years,medium,White
+dog,female,3 years,medium,White and orange
+dog,female,3 years,small,Black
+dog,female,3 years,small,Brown
+dog,female,3 years,small,Brown and gray
+dog,female,3 years,small,Brown and white
+dog,female,3 years,small,Tri-color
+dog,female,3 years,small,White
+dog,female,3 years,small,White and orange
+dog,female,4 years,large,Black
+dog,female,4 years,large,Brown
+dog,female,4 years,large,Brown and gray
+dog,female,4 years,large,Brown and white
+dog,female,4 years,large,Tri-color
+dog,female,4 years,large,White
+dog,female,4 years,large,White and orange
+dog,female,4 years,medium,Black
+dog,female,4 years,medium,Brown
+dog,female,4 years,medium,Brown and gray
+dog,female,4 years,medium,Brown and white
+dog,female,4 years,medium,Tri-color
+dog,female,4 years,medium,White
+dog,female,4 years,medium,White and orange
+dog,female,4 years,small,Black
+dog,female,4 years,small,Brown
+dog,female,4 years,small,Brown and gray
+dog,female,4 years,small,Brown and white
+dog,female,4 years,small,Tri-color
+dog,female,4 years,small,White
+dog,female,4 years,small,White and orange
+dog,female,5 months,large,Black
+dog,female,5 months,large,Brown
+dog,female,5 months,large,Brown and gray
+dog,female,5 months,large,Brown and white
+dog,female,5 months,large,Tri-color
+dog,female,5 months,large,White
+dog,female,5 months,large,White and orange
+dog,female,5 months,medium,Black
+dog,female,5 months,medium,Brown
+dog,female,5 months,medium,Brown and gray
+dog,female,5 months,medium,Brown and white
+dog,female,5 months,medium,Tri-color
+dog,female,5 months,medium,White
+dog,female,5 months,medium,White and orange
+dog,female,5 months,small,Black
+dog,female,5 months,small,Brown
+dog,female,5 months,small,Brown and gray
+dog,female,5 months,small,Brown and white
+dog,female,5 months,small,Tri-color
+dog,female,5 months,small,White
+dog,female,5 months,small,White and orange
+dog,female,5 years,large,Black
+dog,female,5 years,large,Brown
+dog,female,5 years,large,Brown and gray
+dog,female,5 years,large,Brown and white
+dog,female,5 years,large,Tri-color
+dog,female,5 years,large,White
+dog,female,5 years,large,White and orange
+dog,female,5 years,medium,Black
+dog,female,5 years,medium,Brown
+dog,female,5 years,medium,Brown and gray
+dog,female,5 years,medium,Brown and white
+dog,female,5 years,medium,Tri-color
+dog,female,5 years,medium,White
+dog,female,5 years,medium,White and orange
+dog,female,5 years,small,Black
+dog,female,5 years,small,Brown
+dog,female,5 years,small,Brown and gray
+dog,female,5 years,small,Brown and white
+dog,female,5 years,small,Tri-color
+dog,female,5 years,small,White
+dog,female,5 years,small,White and orange
+dog,male,1 months,large,Black
+dog,male,1 months,large,Brown
+dog,male,1 months,large,Brown and gray
+dog,male,1 months,large,Brown and white
+dog,male,1 months,large,Tri-color
+dog,male,1 months,large,White
+dog,male,1 months,large,White and orange
+dog,male,1 months,medium,Black
+dog,male,1 months,medium,Brown
+dog,male,1 months,medium,Brown and gray
+dog,male,1 months,medium,Brown and white
+dog,male,1 months,medium,Tri-color
+dog,male,1 months,medium,White
+dog,male,1 months,medium,White and orange
+dog,male,1 months,small,Black
+dog,male,1 months,small,Brown
+dog,male,1 months,small,Brown and gray
+dog,male,1 months,small,Brown and white
+dog,male,1 months,small,Tri-color
+dog,male,1 months,small,White
+dog,male,1 months,small,White and orange
+dog,male,1 years,large,Black
+dog,male,1 years,large,Brown
+dog,male,1 years,large,Brown and gray
+dog,male,1 years,large,Brown and white
+dog,male,1 years,large,Tri-color
+dog,male,1 years,large,White
+dog,male,1 years,large,White and orange
+dog,male,1 years,medium,Black
+dog,male,1 years,medium,Brown
+dog,male,1 years,medium,Brown and gray
+dog,male,1 years,medium,Brown and white
+dog,male,1 years,medium,Tri-color
+dog,male,1 years,medium,White
+dog,male,1 years,medium,White and orange
+dog,male,1 years,small,Black
+dog,male,1 years,small,Brown
+dog,male,1 years,small,Brown and gray
+dog,male,1 years,small,Brown and white
+dog,male,1 years,small,Tri-color
+dog,male,1 years,small,White
+dog,male,1 years,small,White and orange
+dog,male,2 months,large,Black
+dog,male,2 months,large,Brown
+dog,male,2 months,large,Brown and gray
+dog,male,2 months,large,Brown and white
+dog,male,2 months,large,Tri-color
+dog,male,2 months,large,White
+dog,male,2 months,large,White and orange
+dog,male,2 months,medium,Black
+dog,male,2 months,medium,Brown
+dog,male,2 months,medium,Brown and gray
+dog,male,2 months,medium,Brown and white
+dog,male,2 months,medium,Tri-color
+dog,male,2 months,medium,White
+dog,male,2 months,medium,White and orange
+dog,male,2 months,small,Black
+dog,male,2 months,small,Brown
+dog,male,2 months,small,Brown and gray
+dog,male,2 months,small,Brown and white
+dog,male,2 months,small,Tri-color
+dog,male,2 months,small,White
+dog,male,2 months,small,White and orange
+dog,male,2 years,large,Black
+dog,male,2 years,large,Brown
+dog,male,2 years,large,Brown and gray
+dog,male,2 years,large,Brown and white
+dog,male,2 years,large,Tri-color
+dog,male,2 years,large,White
+dog,male,2 years,large,White and orange
+dog,male,2 years,medium,Black
+dog,male,2 years,medium,Brown
+dog,male,2 years,medium,Brown and gray
+dog,male,2 years,medium,Brown and white
+dog,male,2 years,medium,Tri-color
+dog,male,2 years,medium,White
+dog,male,2 years,medium,White and orange
+dog,male,2 years,small,Black
+dog,male,2 years,small,Brown
+dog,male,2 years,small,Brown and gray
+dog,male,2 years,small,Brown and white
+dog,male,2 years,small,Tri-color
+dog,male,2 years,small,White
+dog,male,2 years,small,White and orange
+dog,male,3 months,large,Black
+dog,male,3 months,large,Brown
+dog,male,3 months,large,Brown and gray
+dog,male,3 months,large,Brown and white
+dog,male,3 months,large,Tri-color
+dog,male,3 months,large,White
+dog,male,3 months,large,White and orange
+dog,male,3 months,medium,Black
+dog,male,3 months,medium,Brown
+dog,male,3 months,medium,Brown and gray
+dog,male,3 months,medium,Brown and white
+dog,male,3 months,medium,Tri-color
+dog,male,3 months,medium,White
+dog,male,3 months,medium,White and orange
+dog,male,3 months,small,Black
+dog,male,3 months,small,Brown
+dog,male,3 months,small,Brown and gray
+dog,male,3 months,small,Brown and white
+dog,male,3 months,small,Tri-color
+dog,male,3 months,small,White
+dog,male,3 months,small,White and orange
+dog,male,3 years,large,Black
+dog,male,3 years,large,Brown
+dog,male,3 years,large,Brown and gray
+dog,male,3 years,large,Brown and white
+dog,male,3 years,large,Tri-color
+dog,male,3 years,large,White
+dog,male,3 years,large,White and orange
+dog,male,3 years,medium,Black
+dog,male,3 years,medium,Brown
+dog,male,3 years,medium,Brown and gray
+dog,male,3 years,medium,Brown and white
+dog,male,3 years,medium,Tri-color
+dog,male,3 years,medium,White
+dog,male,3 years,medium,White and orange
+dog,male,3 years,small,Black
+dog,male,3 years,small,Brown
+dog,male,3 years,small,Brown and gray
+dog,male,3 years,small,Brown and white
+dog,male,3 years,small,Tri-color
+dog,male,3 years,small,White
+dog,male,3 years,small,White and orange
+dog,male,4 years,large,Black
+dog,male,4 years,large,Brown
+dog,male,4 years,large,Brown and gray
+dog,male,4 years,large,Brown and white
+dog,male,4 years,large,Tri-color
+dog,male,4 years,large,White
+dog,male,4 years,large,White and orange
+dog,male,4 years,medium,Black
+dog,male,4 years,medium,Brown
+dog,male,4 years,medium,Brown and gray
+dog,male,4 years,medium,Brown and white
+dog,male,4 years,medium,Tri-color
+dog,male,4 years,medium,White
+dog,male,4 years,medium,White and orange
+dog,male,4 years,small,Black
+dog,male,4 years,small,Brown
+dog,male,4 years,small,Brown and gray
+dog,male,4 years,small,Brown and white
+dog,male,4 years,small,Tri-color
+dog,male,4 years,small,White
+dog,male,4 years,small,White and orange
+dog,male,5 months,large,Black
+dog,male,5 months,large,Brown
+dog,male,5 months,large,Brown and gray
+dog,male,5 months,large,Brown and white
+dog,male,5 months,large,Tri-color
+dog,male,5 months,large,White
+dog,male,5 months,large,White and orange
+dog,male,5 months,medium,Black
+dog,male,5 months,medium,Brown
+dog,male,5 months,medium,Brown and gray
+dog,male,5 months,medium,Brown and white
+dog,male,5 months,medium,Tri-color
+dog,male,5 months,medium,White
+dog,male,5 months,medium,White and orange
+dog,male,5 months,small,Black
+dog,male,5 months,small,Brown
+dog,male,5 months,small,Brown and gray
+dog,male,5 months,small,Brown and white
+dog,male,5 months,small,Tri-color
+dog,male,5 months,small,White
+dog,male,5 months,small,White and orange
+dog,male,5 years,large,Black
+dog,male,5 years,large,Brown
+dog,male,5 years,large,Brown and gray
+dog,male,5 years,large,Brown and white
+dog,male,5 years,large,Tri-color
+dog,male,5 years,large,White
+dog,male,5 years,large,White and orange
+dog,male,5 years,medium,Black
+dog,male,5 years,medium,Brown
+dog,male,5 years,medium,Brown and gray
+dog,male,5 years,medium,Brown and white
+dog,male,5 years,medium,Tri-color
+dog,male,5 years,medium,White
+dog,male,5 years,medium,White and orange
+dog,male,5 years,small,Black
+dog,male,5 years,small,Brown
+dog,male,5 years,small,Brown and gray
+dog,male,5 years,small,Brown and white
+dog,male,5 years,small,Tri-color
+dog,male,5 years,small,White
+dog,male,5 years,small,White and orange

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Test</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+
+    </head>
+    <body class="has-background-dark has-text-white">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="https://bulma.io">
+                <h1 class="title">ANIMAL SHELTER</h1>
+              </a>
+          
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+            <div id="navbarBasicExample" class="navbar-menu">
+              <div class="navbar-start">
+                <a class="navbar-item">
+                  Home
+                </a>
+          
+                <a class="navbar-item">
+                  Find pets
+                </a>
+
+                <a class="navbar-item">
+                    About
+                  </a>
+          
+              </div>
+          
+              <div class="navbar-end">
+                <div class="navbar-item">
+                  <div class="buttons">
+                    <a class="button is-primary">
+                      <strong>Sign up</strong>
+                    </a>
+                    <a class="button is-light">
+                      Log in
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <section class="hero is-medium">
+            <div class="hero-body">
+              <p class="title has-text-light is-1">Eligibility</p>
+              <div class="card p-6" id="card">
+                <div class="card-content container-fluid">
+                  <div class="content is-hidden" id="quiz">
+                    <p class="title" id="question-cat">Category</p>
+                    <p class="subtitle" id="question-text">Take this test to see if you are an eligible owner.</p>
+                    <div class="grid buttons" id="choicescontent">
+
+                    </div>
+                  </div>
+                  </div>
+                
+                <div class="has-text-centered title" id="ready">
+                    <p class="title is-size-1">Are you ready?</p>
+                    <p class="subtitle">Click the button to start</p>
+                    <button class="button is-dark is-large" id="start-btn">
+                        <strong>Let's start!</strong>
+                    </button>
+                </div>
+
+                <div class="has-text-centered title is-hidden" id="result">
+                  <p class="title is-size-1" id="result-text">Congratulations</p>
+                  <p class="has-text-light subtitle" id="result-text-desc">You have passed the test</p>
+                  <div class="container-fluid m-6 is-hidden" id="code">
+                    <input class="input has-background-light" type="text" placeholder="Enter the code"/>
+                  </div>
+                  <a class="button is-dark is-large mt-6" id="continue-btn" href="/search">
+                      <strong>Proceed</strong>
+                  </a>
+              </div>
+                
+              </div>
+            </div>
+          </section>
+          <section class="hero is-large is-fluid">
+            <div class="hero-body">
+                
+            </div>
+          </section>
+          <script src="../static/main.js" async defer></script>
+          <script src="../static/quiz.js" async defer></script>
+        <!--script src="{{ url_for('static',filename='main.js') }}" async defer></script>
+    </body>
+</html>

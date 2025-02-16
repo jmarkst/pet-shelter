@@ -1,0 +1,1225 @@
+pet,age,sex,color,size,want_pet,want_age,want_sex,want_color,want_size
+dog,1 months,male,Brown and white,small,dog,1 months,male,Brown and white,small
+dog,1 months,male,Brown and white,medium,dog,1 months,male,Brown and white,medium
+dog,1 months,male,Brown and white,large,dog,1 months,male,Brown and white,large
+dog,1 months,male,Brown,small,dog,1 months,male,Brown,small
+dog,1 months,male,Brown,medium,dog,1 months,male,Brown,medium
+dog,1 months,male,Brown,large,dog,1 months,male,Brown,large
+dog,1 months,male,White,small,dog,1 months,male,White,small
+dog,1 months,male,White,medium,dog,1 months,male,White,medium
+dog,1 months,male,White,large,dog,1 months,male,White,large
+dog,1 months,male,Black,small,dog,1 months,male,Black,small
+dog,1 months,male,Black,medium,dog,1 months,male,Black,medium
+dog,1 months,male,Black,large,dog,1 months,male,Black,large
+dog,1 months,male,Mocha,small,dog,1 months,male,Mocha,small
+dog,1 months,male,Mocha,medium,dog,1 months,male,Mocha,medium
+dog,1 months,male,Mocha,large,dog,1 months,male,Mocha,large
+dog,1 months,male,Black and white,small,dog,1 months,male,Black and white,small
+dog,1 months,male,Black and white,medium,dog,1 months,male,Black and white,medium
+dog,1 months,male,Black and white,large,dog,1 months,male,Black and white,large
+dog,1 months,female,Brown and white,small,dog,1 months,female,Brown and white,small
+dog,1 months,female,Brown and white,medium,dog,1 months,female,Brown and white,medium
+dog,1 months,female,Brown and white,large,dog,1 months,female,Brown and white,large
+dog,1 months,female,Brown,small,dog,1 months,female,Brown,small
+dog,1 months,female,Brown,medium,dog,1 months,female,Brown,medium
+dog,1 months,female,Brown,large,dog,1 months,female,Brown,large
+dog,1 months,female,White,small,dog,1 months,female,White,small
+dog,1 months,female,White,medium,dog,1 months,female,White,medium
+dog,1 months,female,White,large,dog,1 months,female,White,large
+dog,1 months,female,Black,small,dog,1 months,female,Black,small
+dog,1 months,female,Black,medium,dog,1 months,female,Black,medium
+dog,1 months,female,Black,large,dog,1 months,female,Black,large
+dog,1 months,female,Mocha,small,dog,1 months,female,Mocha,small
+dog,1 months,female,Mocha,medium,dog,1 months,female,Mocha,medium
+dog,1 months,female,Mocha,large,dog,1 months,female,Mocha,large
+dog,1 months,female,Black and white,small,dog,1 months,female,Black and white,small
+dog,1 months,female,Black and white,medium,dog,1 months,female,Black and white,medium
+dog,1 months,female,Black and white,large,dog,1 months,female,Black and white,large
+dog,2 months,male,Brown and white,small,dog,2 months,male,Brown and white,small
+dog,2 months,male,Brown and white,medium,dog,2 months,male,Brown and white,medium
+dog,2 months,male,Brown and white,large,dog,2 months,male,Brown and white,large
+dog,2 months,male,Brown,small,dog,2 months,male,Brown,small
+dog,2 months,male,Brown,medium,dog,2 months,male,Brown,medium
+dog,2 months,male,Brown,large,dog,2 months,male,Brown,large
+dog,2 months,male,White,small,dog,2 months,male,White,small
+dog,2 months,male,White,medium,dog,2 months,male,White,medium
+dog,2 months,male,White,large,dog,2 months,male,White,large
+dog,2 months,male,Black,small,dog,2 months,male,Black,small
+dog,2 months,male,Black,medium,dog,2 months,male,Black,medium
+dog,2 months,male,Black,large,dog,2 months,male,Black,large
+dog,2 months,male,Mocha,small,dog,2 months,male,Mocha,small
+dog,2 months,male,Mocha,medium,dog,2 months,male,Mocha,medium
+dog,2 months,male,Mocha,large,dog,2 months,male,Mocha,large
+dog,2 months,male,Black and white,small,dog,2 months,male,Black and white,small
+dog,2 months,male,Black and white,medium,dog,2 months,male,Black and white,medium
+dog,2 months,male,Black and white,large,dog,2 months,male,Black and white,large
+dog,2 months,female,Brown and white,small,dog,2 months,female,Brown and white,small
+dog,2 months,female,Brown and white,medium,dog,2 months,female,Brown and white,medium
+dog,2 months,female,Brown and white,large,dog,2 months,female,Brown and white,large
+dog,2 months,female,Brown,small,dog,2 months,female,Brown,small
+dog,2 months,female,Brown,medium,dog,2 months,female,Brown,medium
+dog,2 months,female,Brown,large,dog,2 months,female,Brown,large
+dog,2 months,female,White,small,dog,2 months,female,White,small
+dog,2 months,female,White,medium,dog,2 months,female,White,medium
+dog,2 months,female,White,large,dog,2 months,female,White,large
+dog,2 months,female,Black,small,dog,2 months,female,Black,small
+dog,2 months,female,Black,medium,dog,2 months,female,Black,medium
+dog,2 months,female,Black,large,dog,2 months,female,Black,large
+dog,2 months,female,Mocha,small,dog,2 months,female,Mocha,small
+dog,2 months,female,Mocha,medium,dog,2 months,female,Mocha,medium
+dog,2 months,female,Mocha,large,dog,2 months,female,Mocha,large
+dog,2 months,female,Black and white,small,dog,2 months,female,Black and white,small
+dog,2 months,female,Black and white,medium,dog,2 months,female,Black and white,medium
+dog,2 months,female,Black and white,large,dog,2 months,female,Black and white,large
+dog,3 months,male,Brown and white,small,dog,3 months,male,Brown and white,small
+dog,3 months,male,Brown and white,medium,dog,3 months,male,Brown and white,medium
+dog,3 months,male,Brown and white,large,dog,3 months,male,Brown and white,large
+dog,3 months,male,Brown,small,dog,3 months,male,Brown,small
+dog,3 months,male,Brown,medium,dog,3 months,male,Brown,medium
+dog,3 months,male,Brown,large,dog,3 months,male,Brown,large
+dog,3 months,male,White,small,dog,3 months,male,White,small
+dog,3 months,male,White,medium,dog,3 months,male,White,medium
+dog,3 months,male,White,large,dog,3 months,male,White,large
+dog,3 months,male,Black,small,dog,3 months,male,Black,small
+dog,3 months,male,Black,medium,dog,3 months,male,Black,medium
+dog,3 months,male,Black,large,dog,3 months,male,Black,large
+dog,3 months,male,Mocha,small,dog,3 months,male,Mocha,small
+dog,3 months,male,Mocha,medium,dog,3 months,male,Mocha,medium
+dog,3 months,male,Mocha,large,dog,3 months,male,Mocha,large
+dog,3 months,male,Black and white,small,dog,3 months,male,Black and white,small
+dog,3 months,male,Black and white,medium,dog,3 months,male,Black and white,medium
+dog,3 months,male,Black and white,large,dog,3 months,male,Black and white,large
+dog,3 months,female,Brown and white,small,dog,3 months,female,Brown and white,small
+dog,3 months,female,Brown and white,medium,dog,3 months,female,Brown and white,medium
+dog,3 months,female,Brown and white,large,dog,3 months,female,Brown and white,large
+dog,3 months,female,Brown,small,dog,3 months,female,Brown,small
+dog,3 months,female,Brown,medium,dog,3 months,female,Brown,medium
+dog,3 months,female,Brown,large,dog,3 months,female,Brown,large
+dog,3 months,female,White,small,dog,3 months,female,White,small
+dog,3 months,female,White,medium,dog,3 months,female,White,medium
+dog,3 months,female,White,large,dog,3 months,female,White,large
+dog,3 months,female,Black,small,dog,3 months,female,Black,small
+dog,3 months,female,Black,medium,dog,3 months,female,Black,medium
+dog,3 months,female,Black,large,dog,3 months,female,Black,large
+dog,3 months,female,Mocha,small,dog,3 months,female,Mocha,small
+dog,3 months,female,Mocha,medium,dog,3 months,female,Mocha,medium
+dog,3 months,female,Mocha,large,dog,3 months,female,Mocha,large
+dog,3 months,female,Black and white,small,dog,3 months,female,Black and white,small
+dog,3 months,female,Black and white,medium,dog,3 months,female,Black and white,medium
+dog,3 months,female,Black and white,large,dog,3 months,female,Black and white,large
+dog,4 months,male,Brown and white,small,dog,4 months,male,Brown and white,small
+dog,4 months,male,Brown and white,medium,dog,4 months,male,Brown and white,medium
+dog,4 months,male,Brown and white,large,dog,4 months,male,Brown and white,large
+dog,4 months,male,Brown,small,dog,4 months,male,Brown,small
+dog,4 months,male,Brown,medium,dog,4 months,male,Brown,medium
+dog,4 months,male,Brown,large,dog,4 months,male,Brown,large
+dog,4 months,male,White,small,dog,4 months,male,White,small
+dog,4 months,male,White,medium,dog,4 months,male,White,medium
+dog,4 months,male,White,large,dog,4 months,male,White,large
+dog,4 months,male,Black,small,dog,4 months,male,Black,small
+dog,4 months,male,Black,medium,dog,4 months,male,Black,medium
+dog,4 months,male,Black,large,dog,4 months,male,Black,large
+dog,4 months,male,Mocha,small,dog,4 months,male,Mocha,small
+dog,4 months,male,Mocha,medium,dog,4 months,male,Mocha,medium
+dog,4 months,male,Mocha,large,dog,4 months,male,Mocha,large
+dog,4 months,male,Black and white,small,dog,4 months,male,Black and white,small
+dog,4 months,male,Black and white,medium,dog,4 months,male,Black and white,medium
+dog,4 months,male,Black and white,large,dog,4 months,male,Black and white,large
+dog,4 months,female,Brown and white,small,dog,4 months,female,Brown and white,small
+dog,4 months,female,Brown and white,medium,dog,4 months,female,Brown and white,medium
+dog,4 months,female,Brown and white,large,dog,4 months,female,Brown and white,large
+dog,4 months,female,Brown,small,dog,4 months,female,Brown,small
+dog,4 months,female,Brown,medium,dog,4 months,female,Brown,medium
+dog,4 months,female,Brown,large,dog,4 months,female,Brown,large
+dog,4 months,female,White,small,dog,4 months,female,White,small
+dog,4 months,female,White,medium,dog,4 months,female,White,medium
+dog,4 months,female,White,large,dog,4 months,female,White,large
+dog,4 months,female,Black,small,dog,4 months,female,Black,small
+dog,4 months,female,Black,medium,dog,4 months,female,Black,medium
+dog,4 months,female,Black,large,dog,4 months,female,Black,large
+dog,4 months,female,Mocha,small,dog,4 months,female,Mocha,small
+dog,4 months,female,Mocha,medium,dog,4 months,female,Mocha,medium
+dog,4 months,female,Mocha,large,dog,4 months,female,Mocha,large
+dog,4 months,female,Black and white,small,dog,4 months,female,Black and white,small
+dog,4 months,female,Black and white,medium,dog,4 months,female,Black and white,medium
+dog,4 months,female,Black and white,large,dog,4 months,female,Black and white,large
+dog,5 months,male,Brown and white,small,dog,5 months,male,Brown and white,small
+dog,5 months,male,Brown and white,medium,dog,5 months,male,Brown and white,medium
+dog,5 months,male,Brown and white,large,dog,5 months,male,Brown and white,large
+dog,5 months,male,Brown,small,dog,5 months,male,Brown,small
+dog,5 months,male,Brown,medium,dog,5 months,male,Brown,medium
+dog,5 months,male,Brown,large,dog,5 months,male,Brown,large
+dog,5 months,male,White,small,dog,5 months,male,White,small
+dog,5 months,male,White,medium,dog,5 months,male,White,medium
+dog,5 months,male,White,large,dog,5 months,male,White,large
+dog,5 months,male,Black,small,dog,5 months,male,Black,small
+dog,5 months,male,Black,medium,dog,5 months,male,Black,medium
+dog,5 months,male,Black,large,dog,5 months,male,Black,large
+dog,5 months,male,Mocha,small,dog,5 months,male,Mocha,small
+dog,5 months,male,Mocha,medium,dog,5 months,male,Mocha,medium
+dog,5 months,male,Mocha,large,dog,5 months,male,Mocha,large
+dog,5 months,male,Black and white,small,dog,5 months,male,Black and white,small
+dog,5 months,male,Black and white,medium,dog,5 months,male,Black and white,medium
+dog,5 months,male,Black and white,large,dog,5 months,male,Black and white,large
+dog,5 months,female,Brown and white,small,dog,5 months,female,Brown and white,small
+dog,5 months,female,Brown and white,medium,dog,5 months,female,Brown and white,medium
+dog,5 months,female,Brown and white,large,dog,5 months,female,Brown and white,large
+dog,5 months,female,Brown,small,dog,5 months,female,Brown,small
+dog,5 months,female,Brown,medium,dog,5 months,female,Brown,medium
+dog,5 months,female,Brown,large,dog,5 months,female,Brown,large
+dog,5 months,female,White,small,dog,5 months,female,White,small
+dog,5 months,female,White,medium,dog,5 months,female,White,medium
+dog,5 months,female,White,large,dog,5 months,female,White,large
+dog,5 months,female,Black,small,dog,5 months,female,Black,small
+dog,5 months,female,Black,medium,dog,5 months,female,Black,medium
+dog,5 months,female,Black,large,dog,5 months,female,Black,large
+dog,5 months,female,Mocha,small,dog,5 months,female,Mocha,small
+dog,5 months,female,Mocha,medium,dog,5 months,female,Mocha,medium
+dog,5 months,female,Mocha,large,dog,5 months,female,Mocha,large
+dog,5 months,female,Black and white,small,dog,5 months,female,Black and white,small
+dog,5 months,female,Black and white,medium,dog,5 months,female,Black and white,medium
+dog,5 months,female,Black and white,large,dog,5 months,female,Black and white,large
+dog,6 months,male,Brown and white,small,dog,6 months,male,Brown and white,small
+dog,6 months,male,Brown and white,medium,dog,6 months,male,Brown and white,medium
+dog,6 months,male,Brown and white,large,dog,6 months,male,Brown and white,large
+dog,6 months,male,Brown,small,dog,6 months,male,Brown,small
+dog,6 months,male,Brown,medium,dog,6 months,male,Brown,medium
+dog,6 months,male,Brown,large,dog,6 months,male,Brown,large
+dog,6 months,male,White,small,dog,6 months,male,White,small
+dog,6 months,male,White,medium,dog,6 months,male,White,medium
+dog,6 months,male,White,large,dog,6 months,male,White,large
+dog,6 months,male,Black,small,dog,6 months,male,Black,small
+dog,6 months,male,Black,medium,dog,6 months,male,Black,medium
+dog,6 months,male,Black,large,dog,6 months,male,Black,large
+dog,6 months,male,Mocha,small,dog,6 months,male,Mocha,small
+dog,6 months,male,Mocha,medium,dog,6 months,male,Mocha,medium
+dog,6 months,male,Mocha,large,dog,6 months,male,Mocha,large
+dog,6 months,male,Black and white,small,dog,6 months,male,Black and white,small
+dog,6 months,male,Black and white,medium,dog,6 months,male,Black and white,medium
+dog,6 months,male,Black and white,large,dog,6 months,male,Black and white,large
+dog,6 months,female,Brown and white,small,dog,6 months,female,Brown and white,small
+dog,6 months,female,Brown and white,medium,dog,6 months,female,Brown and white,medium
+dog,6 months,female,Brown and white,large,dog,6 months,female,Brown and white,large
+dog,6 months,female,Brown,small,dog,6 months,female,Brown,small
+dog,6 months,female,Brown,medium,dog,6 months,female,Brown,medium
+dog,6 months,female,Brown,large,dog,6 months,female,Brown,large
+dog,6 months,female,White,small,dog,6 months,female,White,small
+dog,6 months,female,White,medium,dog,6 months,female,White,medium
+dog,6 months,female,White,large,dog,6 months,female,White,large
+dog,6 months,female,Black,small,dog,6 months,female,Black,small
+dog,6 months,female,Black,medium,dog,6 months,female,Black,medium
+dog,6 months,female,Black,large,dog,6 months,female,Black,large
+dog,6 months,female,Mocha,small,dog,6 months,female,Mocha,small
+dog,6 months,female,Mocha,medium,dog,6 months,female,Mocha,medium
+dog,6 months,female,Mocha,large,dog,6 months,female,Mocha,large
+dog,6 months,female,Black and white,small,dog,6 months,female,Black and white,small
+dog,6 months,female,Black and white,medium,dog,6 months,female,Black and white,medium
+dog,6 months,female,Black and white,large,dog,6 months,female,Black and white,large
+dog,7 months,male,Brown and white,small,dog,7 months,male,Brown and white,small
+dog,7 months,male,Brown and white,medium,dog,7 months,male,Brown and white,medium
+dog,7 months,male,Brown and white,large,dog,7 months,male,Brown and white,large
+dog,7 months,male,Brown,small,dog,7 months,male,Brown,small
+dog,7 months,male,Brown,medium,dog,7 months,male,Brown,medium
+dog,7 months,male,Brown,large,dog,7 months,male,Brown,large
+dog,7 months,male,White,small,dog,7 months,male,White,small
+dog,7 months,male,White,medium,dog,7 months,male,White,medium
+dog,7 months,male,White,large,dog,7 months,male,White,large
+dog,7 months,male,Black,small,dog,7 months,male,Black,small
+dog,7 months,male,Black,medium,dog,7 months,male,Black,medium
+dog,7 months,male,Black,large,dog,7 months,male,Black,large
+dog,7 months,male,Mocha,small,dog,7 months,male,Mocha,small
+dog,7 months,male,Mocha,medium,dog,7 months,male,Mocha,medium
+dog,7 months,male,Mocha,large,dog,7 months,male,Mocha,large
+dog,7 months,male,Black and white,small,dog,7 months,male,Black and white,small
+dog,7 months,male,Black and white,medium,dog,7 months,male,Black and white,medium
+dog,7 months,male,Black and white,large,dog,7 months,male,Black and white,large
+dog,7 months,female,Brown and white,small,dog,7 months,female,Brown and white,small
+dog,7 months,female,Brown and white,medium,dog,7 months,female,Brown and white,medium
+dog,7 months,female,Brown and white,large,dog,7 months,female,Brown and white,large
+dog,7 months,female,Brown,small,dog,7 months,female,Brown,small
+dog,7 months,female,Brown,medium,dog,7 months,female,Brown,medium
+dog,7 months,female,Brown,large,dog,7 months,female,Brown,large
+dog,7 months,female,White,small,dog,7 months,female,White,small
+dog,7 months,female,White,medium,dog,7 months,female,White,medium
+dog,7 months,female,White,large,dog,7 months,female,White,large
+dog,7 months,female,Black,small,dog,7 months,female,Black,small
+dog,7 months,female,Black,medium,dog,7 months,female,Black,medium
+dog,7 months,female,Black,large,dog,7 months,female,Black,large
+dog,7 months,female,Mocha,small,dog,7 months,female,Mocha,small
+dog,7 months,female,Mocha,medium,dog,7 months,female,Mocha,medium
+dog,7 months,female,Mocha,large,dog,7 months,female,Mocha,large
+dog,7 months,female,Black and white,small,dog,7 months,female,Black and white,small
+dog,7 months,female,Black and white,medium,dog,7 months,female,Black and white,medium
+dog,7 months,female,Black and white,large,dog,7 months,female,Black and white,large
+dog,8 months,male,Brown and white,small,dog,8 months,male,Brown and white,small
+dog,8 months,male,Brown and white,medium,dog,8 months,male,Brown and white,medium
+dog,8 months,male,Brown and white,large,dog,8 months,male,Brown and white,large
+dog,8 months,male,Brown,small,dog,8 months,male,Brown,small
+dog,8 months,male,Brown,medium,dog,8 months,male,Brown,medium
+dog,8 months,male,Brown,large,dog,8 months,male,Brown,large
+dog,8 months,male,White,small,dog,8 months,male,White,small
+dog,8 months,male,White,medium,dog,8 months,male,White,medium
+dog,8 months,male,White,large,dog,8 months,male,White,large
+dog,8 months,male,Black,small,dog,8 months,male,Black,small
+dog,8 months,male,Black,medium,dog,8 months,male,Black,medium
+dog,8 months,male,Black,large,dog,8 months,male,Black,large
+dog,8 months,male,Mocha,small,dog,8 months,male,Mocha,small
+dog,8 months,male,Mocha,medium,dog,8 months,male,Mocha,medium
+dog,8 months,male,Mocha,large,dog,8 months,male,Mocha,large
+dog,8 months,male,Black and white,small,dog,8 months,male,Black and white,small
+dog,8 months,male,Black and white,medium,dog,8 months,male,Black and white,medium
+dog,8 months,male,Black and white,large,dog,8 months,male,Black and white,large
+dog,8 months,female,Brown and white,small,dog,8 months,female,Brown and white,small
+dog,8 months,female,Brown and white,medium,dog,8 months,female,Brown and white,medium
+dog,8 months,female,Brown and white,large,dog,8 months,female,Brown and white,large
+dog,8 months,female,Brown,small,dog,8 months,female,Brown,small
+dog,8 months,female,Brown,medium,dog,8 months,female,Brown,medium
+dog,8 months,female,Brown,large,dog,8 months,female,Brown,large
+dog,8 months,female,White,small,dog,8 months,female,White,small
+dog,8 months,female,White,medium,dog,8 months,female,White,medium
+dog,8 months,female,White,large,dog,8 months,female,White,large
+dog,8 months,female,Black,small,dog,8 months,female,Black,small
+dog,8 months,female,Black,medium,dog,8 months,female,Black,medium
+dog,8 months,female,Black,large,dog,8 months,female,Black,large
+dog,8 months,female,Mocha,small,dog,8 months,female,Mocha,small
+dog,8 months,female,Mocha,medium,dog,8 months,female,Mocha,medium
+dog,8 months,female,Mocha,large,dog,8 months,female,Mocha,large
+dog,8 months,female,Black and white,small,dog,8 months,female,Black and white,small
+dog,8 months,female,Black and white,medium,dog,8 months,female,Black and white,medium
+dog,8 months,female,Black and white,large,dog,8 months,female,Black and white,large
+dog,9 months,male,Brown and white,small,dog,9 months,male,Brown and white,small
+dog,9 months,male,Brown and white,medium,dog,9 months,male,Brown and white,medium
+dog,9 months,male,Brown and white,large,dog,9 months,male,Brown and white,large
+dog,9 months,male,Brown,small,dog,9 months,male,Brown,small
+dog,9 months,male,Brown,medium,dog,9 months,male,Brown,medium
+dog,9 months,male,Brown,large,dog,9 months,male,Brown,large
+dog,9 months,male,White,small,dog,9 months,male,White,small
+dog,9 months,male,White,medium,dog,9 months,male,White,medium
+dog,9 months,male,White,large,dog,9 months,male,White,large
+dog,9 months,male,Black,small,dog,9 months,male,Black,small
+dog,9 months,male,Black,medium,dog,9 months,male,Black,medium
+dog,9 months,male,Black,large,dog,9 months,male,Black,large
+dog,9 months,male,Mocha,small,dog,9 months,male,Mocha,small
+dog,9 months,male,Mocha,medium,dog,9 months,male,Mocha,medium
+dog,9 months,male,Mocha,large,dog,9 months,male,Mocha,large
+dog,9 months,male,Black and white,small,dog,9 months,male,Black and white,small
+dog,9 months,male,Black and white,medium,dog,9 months,male,Black and white,medium
+dog,9 months,male,Black and white,large,dog,9 months,male,Black and white,large
+dog,9 months,female,Brown and white,small,dog,9 months,female,Brown and white,small
+dog,9 months,female,Brown and white,medium,dog,9 months,female,Brown and white,medium
+dog,9 months,female,Brown and white,large,dog,9 months,female,Brown and white,large
+dog,9 months,female,Brown,small,dog,9 months,female,Brown,small
+dog,9 months,female,Brown,medium,dog,9 months,female,Brown,medium
+dog,9 months,female,Brown,large,dog,9 months,female,Brown,large
+dog,9 months,female,White,small,dog,9 months,female,White,small
+dog,9 months,female,White,medium,dog,9 months,female,White,medium
+dog,9 months,female,White,large,dog,9 months,female,White,large
+dog,9 months,female,Black,small,dog,9 months,female,Black,small
+dog,9 months,female,Black,medium,dog,9 months,female,Black,medium
+dog,9 months,female,Black,large,dog,9 months,female,Black,large
+dog,9 months,female,Mocha,small,dog,9 months,female,Mocha,small
+dog,9 months,female,Mocha,medium,dog,9 months,female,Mocha,medium
+dog,9 months,female,Mocha,large,dog,9 months,female,Mocha,large
+dog,9 months,female,Black and white,small,dog,9 months,female,Black and white,small
+dog,9 months,female,Black and white,medium,dog,9 months,female,Black and white,medium
+dog,9 months,female,Black and white,large,dog,9 months,female,Black and white,large
+dog,10 months,male,Brown and white,small,dog,10 months,male,Brown and white,small
+dog,10 months,male,Brown and white,medium,dog,10 months,male,Brown and white,medium
+dog,10 months,male,Brown and white,large,dog,10 months,male,Brown and white,large
+dog,10 months,male,Brown,small,dog,10 months,male,Brown,small
+dog,10 months,male,Brown,medium,dog,10 months,male,Brown,medium
+dog,10 months,male,Brown,large,dog,10 months,male,Brown,large
+dog,10 months,male,White,small,dog,10 months,male,White,small
+dog,10 months,male,White,medium,dog,10 months,male,White,medium
+dog,10 months,male,White,large,dog,10 months,male,White,large
+dog,10 months,male,Black,small,dog,10 months,male,Black,small
+dog,10 months,male,Black,medium,dog,10 months,male,Black,medium
+dog,10 months,male,Black,large,dog,10 months,male,Black,large
+dog,10 months,male,Mocha,small,dog,10 months,male,Mocha,small
+dog,10 months,male,Mocha,medium,dog,10 months,male,Mocha,medium
+dog,10 months,male,Mocha,large,dog,10 months,male,Mocha,large
+dog,10 months,male,Black and white,small,dog,10 months,male,Black and white,small
+dog,10 months,male,Black and white,medium,dog,10 months,male,Black and white,medium
+dog,10 months,male,Black and white,large,dog,10 months,male,Black and white,large
+dog,10 months,female,Brown and white,small,dog,10 months,female,Brown and white,small
+dog,10 months,female,Brown and white,medium,dog,10 months,female,Brown and white,medium
+dog,10 months,female,Brown and white,large,dog,10 months,female,Brown and white,large
+dog,10 months,female,Brown,small,dog,10 months,female,Brown,small
+dog,10 months,female,Brown,medium,dog,10 months,female,Brown,medium
+dog,10 months,female,Brown,large,dog,10 months,female,Brown,large
+dog,10 months,female,White,small,dog,10 months,female,White,small
+dog,10 months,female,White,medium,dog,10 months,female,White,medium
+dog,10 months,female,White,large,dog,10 months,female,White,large
+dog,10 months,female,Black,small,dog,10 months,female,Black,small
+dog,10 months,female,Black,medium,dog,10 months,female,Black,medium
+dog,10 months,female,Black,large,dog,10 months,female,Black,large
+dog,10 months,female,Mocha,small,dog,10 months,female,Mocha,small
+dog,10 months,female,Mocha,medium,dog,10 months,female,Mocha,medium
+dog,10 months,female,Mocha,large,dog,10 months,female,Mocha,large
+dog,10 months,female,Black and white,small,dog,10 months,female,Black and white,small
+dog,10 months,female,Black and white,medium,dog,10 months,female,Black and white,medium
+dog,10 months,female,Black and white,large,dog,10 months,female,Black and white,large
+dog,11 months,male,Brown and white,small,dog,11 months,male,Brown and white,small
+dog,11 months,male,Brown and white,medium,dog,11 months,male,Brown and white,medium
+dog,11 months,male,Brown and white,large,dog,11 months,male,Brown and white,large
+dog,11 months,male,Brown,small,dog,11 months,male,Brown,small
+dog,11 months,male,Brown,medium,dog,11 months,male,Brown,medium
+dog,11 months,male,Brown,large,dog,11 months,male,Brown,large
+dog,11 months,male,White,small,dog,11 months,male,White,small
+dog,11 months,male,White,medium,dog,11 months,male,White,medium
+dog,11 months,male,White,large,dog,11 months,male,White,large
+dog,11 months,male,Black,small,dog,11 months,male,Black,small
+dog,11 months,male,Black,medium,dog,11 months,male,Black,medium
+dog,11 months,male,Black,large,dog,11 months,male,Black,large
+dog,11 months,male,Mocha,small,dog,11 months,male,Mocha,small
+dog,11 months,male,Mocha,medium,dog,11 months,male,Mocha,medium
+dog,11 months,male,Mocha,large,dog,11 months,male,Mocha,large
+dog,11 months,male,Black and white,small,dog,11 months,male,Black and white,small
+dog,11 months,male,Black and white,medium,dog,11 months,male,Black and white,medium
+dog,11 months,male,Black and white,large,dog,11 months,male,Black and white,large
+dog,11 months,female,Brown and white,small,dog,11 months,female,Brown and white,small
+dog,11 months,female,Brown and white,medium,dog,11 months,female,Brown and white,medium
+dog,11 months,female,Brown and white,large,dog,11 months,female,Brown and white,large
+dog,11 months,female,Brown,small,dog,11 months,female,Brown,small
+dog,11 months,female,Brown,medium,dog,11 months,female,Brown,medium
+dog,11 months,female,Brown,large,dog,11 months,female,Brown,large
+dog,11 months,female,White,small,dog,11 months,female,White,small
+dog,11 months,female,White,medium,dog,11 months,female,White,medium
+dog,11 months,female,White,large,dog,11 months,female,White,large
+dog,11 months,female,Black,small,dog,11 months,female,Black,small
+dog,11 months,female,Black,medium,dog,11 months,female,Black,medium
+dog,11 months,female,Black,large,dog,11 months,female,Black,large
+dog,11 months,female,Mocha,small,dog,11 months,female,Mocha,small
+dog,11 months,female,Mocha,medium,dog,11 months,female,Mocha,medium
+dog,11 months,female,Mocha,large,dog,11 months,female,Mocha,large
+dog,11 months,female,Black and white,small,dog,11 months,female,Black and white,small
+dog,11 months,female,Black and white,medium,dog,11 months,female,Black and white,medium
+dog,11 months,female,Black and white,large,dog,11 months,female,Black and white,large
+dog,12 months,male,Brown and white,small,dog,12 months,male,Brown and white,small
+dog,12 months,male,Brown and white,medium,dog,12 months,male,Brown and white,medium
+dog,12 months,male,Brown and white,large,dog,12 months,male,Brown and white,large
+dog,12 months,male,Brown,small,dog,12 months,male,Brown,small
+dog,12 months,male,Brown,medium,dog,12 months,male,Brown,medium
+dog,12 months,male,Brown,large,dog,12 months,male,Brown,large
+dog,12 months,male,White,small,dog,12 months,male,White,small
+dog,12 months,male,White,medium,dog,12 months,male,White,medium
+dog,12 months,male,White,large,dog,12 months,male,White,large
+dog,12 months,male,Black,small,dog,12 months,male,Black,small
+dog,12 months,male,Black,medium,dog,12 months,male,Black,medium
+dog,12 months,male,Black,large,dog,12 months,male,Black,large
+dog,12 months,male,Mocha,small,dog,12 months,male,Mocha,small
+dog,12 months,male,Mocha,medium,dog,12 months,male,Mocha,medium
+dog,12 months,male,Mocha,large,dog,12 months,male,Mocha,large
+dog,12 months,male,Black and white,small,dog,12 months,male,Black and white,small
+dog,12 months,male,Black and white,medium,dog,12 months,male,Black and white,medium
+dog,12 months,male,Black and white,large,dog,12 months,male,Black and white,large
+dog,12 months,female,Brown and white,small,dog,12 months,female,Brown and white,small
+dog,12 months,female,Brown and white,medium,dog,12 months,female,Brown and white,medium
+dog,12 months,female,Brown and white,large,dog,12 months,female,Brown and white,large
+dog,12 months,female,Brown,small,dog,12 months,female,Brown,small
+dog,12 months,female,Brown,medium,dog,12 months,female,Brown,medium
+dog,12 months,female,Brown,large,dog,12 months,female,Brown,large
+dog,12 months,female,White,small,dog,12 months,female,White,small
+dog,12 months,female,White,medium,dog,12 months,female,White,medium
+dog,12 months,female,White,large,dog,12 months,female,White,large
+dog,12 months,female,Black,small,dog,12 months,female,Black,small
+dog,12 months,female,Black,medium,dog,12 months,female,Black,medium
+dog,12 months,female,Black,large,dog,12 months,female,Black,large
+dog,12 months,female,Mocha,small,dog,12 months,female,Mocha,small
+dog,12 months,female,Mocha,medium,dog,12 months,female,Mocha,medium
+dog,12 months,female,Mocha,large,dog,12 months,female,Mocha,large
+dog,12 months,female,Black and white,small,dog,12 months,female,Black and white,small
+dog,12 months,female,Black and white,medium,dog,12 months,female,Black and white,medium
+dog,12 months,female,Black and white,large,dog,12 months,female,Black and white,large
+dog,1 years,male,Brown and white,small,dog,1 years,male,Brown and white,small
+dog,1 years,male,Brown and white,medium,dog,1 years,male,Brown and white,medium
+dog,1 years,male,Brown and white,large,dog,1 years,male,Brown and white,large
+dog,1 years,male,Brown,small,dog,1 years,male,Brown,small
+dog,1 years,male,Brown,medium,dog,1 years,male,Brown,medium
+dog,1 years,male,Brown,large,dog,1 years,male,Brown,large
+dog,1 years,male,White,small,dog,1 years,male,White,small
+dog,1 years,male,White,medium,dog,1 years,male,White,medium
+dog,1 years,male,White,large,dog,1 years,male,White,large
+dog,1 years,male,Black,small,dog,1 years,male,Black,small
+dog,1 years,male,Black,medium,dog,1 years,male,Black,medium
+dog,1 years,male,Black,large,dog,1 years,male,Black,large
+dog,1 years,male,Mocha,small,dog,1 years,male,Mocha,small
+dog,1 years,male,Mocha,medium,dog,1 years,male,Mocha,medium
+dog,1 years,male,Mocha,large,dog,1 years,male,Mocha,large
+dog,1 years,male,Black and white,small,dog,1 years,male,Black and white,small
+dog,1 years,male,Black and white,medium,dog,1 years,male,Black and white,medium
+dog,1 years,male,Black and white,large,dog,1 years,male,Black and white,large
+dog,1 years,female,Brown and white,small,dog,1 years,female,Brown and white,small
+dog,1 years,female,Brown and white,medium,dog,1 years,female,Brown and white,medium
+dog,1 years,female,Brown and white,large,dog,1 years,female,Brown and white,large
+dog,1 years,female,Brown,small,dog,1 years,female,Brown,small
+dog,1 years,female,Brown,medium,dog,1 years,female,Brown,medium
+dog,1 years,female,Brown,large,dog,1 years,female,Brown,large
+dog,1 years,female,White,small,dog,1 years,female,White,small
+dog,1 years,female,White,medium,dog,1 years,female,White,medium
+dog,1 years,female,White,large,dog,1 years,female,White,large
+dog,1 years,female,Black,small,dog,1 years,female,Black,small
+dog,1 years,female,Black,medium,dog,1 years,female,Black,medium
+dog,1 years,female,Black,large,dog,1 years,female,Black,large
+dog,1 years,female,Mocha,small,dog,1 years,female,Mocha,small
+dog,1 years,female,Mocha,medium,dog,1 years,female,Mocha,medium
+dog,1 years,female,Mocha,large,dog,1 years,female,Mocha,large
+dog,1 years,female,Black and white,small,dog,1 years,female,Black and white,small
+dog,1 years,female,Black and white,medium,dog,1 years,female,Black and white,medium
+dog,1 years,female,Black and white,large,dog,1 years,female,Black and white,large
+dog,2 years,male,Brown and white,small,dog,2 years,male,Brown and white,small
+dog,2 years,male,Brown and white,medium,dog,2 years,male,Brown and white,medium
+dog,2 years,male,Brown and white,large,dog,2 years,male,Brown and white,large
+dog,2 years,male,Brown,small,dog,2 years,male,Brown,small
+dog,2 years,male,Brown,medium,dog,2 years,male,Brown,medium
+dog,2 years,male,Brown,large,dog,2 years,male,Brown,large
+dog,2 years,male,White,small,dog,2 years,male,White,small
+dog,2 years,male,White,medium,dog,2 years,male,White,medium
+dog,2 years,male,White,large,dog,2 years,male,White,large
+dog,2 years,male,Black,small,dog,2 years,male,Black,small
+dog,2 years,male,Black,medium,dog,2 years,male,Black,medium
+dog,2 years,male,Black,large,dog,2 years,male,Black,large
+dog,2 years,male,Mocha,small,dog,2 years,male,Mocha,small
+dog,2 years,male,Mocha,medium,dog,2 years,male,Mocha,medium
+dog,2 years,male,Mocha,large,dog,2 years,male,Mocha,large
+dog,2 years,male,Black and white,small,dog,2 years,male,Black and white,small
+dog,2 years,male,Black and white,medium,dog,2 years,male,Black and white,medium
+dog,2 years,male,Black and white,large,dog,2 years,male,Black and white,large
+dog,2 years,female,Brown and white,small,dog,2 years,female,Brown and white,small
+dog,2 years,female,Brown and white,medium,dog,2 years,female,Brown and white,medium
+dog,2 years,female,Brown and white,large,dog,2 years,female,Brown and white,large
+dog,2 years,female,Brown,small,dog,2 years,female,Brown,small
+dog,2 years,female,Brown,medium,dog,2 years,female,Brown,medium
+dog,2 years,female,Brown,large,dog,2 years,female,Brown,large
+dog,2 years,female,White,small,dog,2 years,female,White,small
+dog,2 years,female,White,medium,dog,2 years,female,White,medium
+dog,2 years,female,White,large,dog,2 years,female,White,large
+dog,2 years,female,Black,small,dog,2 years,female,Black,small
+dog,2 years,female,Black,medium,dog,2 years,female,Black,medium
+dog,2 years,female,Black,large,dog,2 years,female,Black,large
+dog,2 years,female,Mocha,small,dog,2 years,female,Mocha,small
+dog,2 years,female,Mocha,medium,dog,2 years,female,Mocha,medium
+dog,2 years,female,Mocha,large,dog,2 years,female,Mocha,large
+dog,2 years,female,Black and white,small,dog,2 years,female,Black and white,small
+dog,2 years,female,Black and white,medium,dog,2 years,female,Black and white,medium
+dog,2 years,female,Black and white,large,dog,2 years,female,Black and white,large
+dog,3 years,male,Brown and white,small,dog,3 years,male,Brown and white,small
+dog,3 years,male,Brown and white,medium,dog,3 years,male,Brown and white,medium
+dog,3 years,male,Brown and white,large,dog,3 years,male,Brown and white,large
+dog,3 years,male,Brown,small,dog,3 years,male,Brown,small
+dog,3 years,male,Brown,medium,dog,3 years,male,Brown,medium
+dog,3 years,male,Brown,large,dog,3 years,male,Brown,large
+dog,3 years,male,White,small,dog,3 years,male,White,small
+dog,3 years,male,White,medium,dog,3 years,male,White,medium
+dog,3 years,male,White,large,dog,3 years,male,White,large
+dog,3 years,male,Black,small,dog,3 years,male,Black,small
+dog,3 years,male,Black,medium,dog,3 years,male,Black,medium
+dog,3 years,male,Black,large,dog,3 years,male,Black,large
+dog,3 years,male,Mocha,small,dog,3 years,male,Mocha,small
+dog,3 years,male,Mocha,medium,dog,3 years,male,Mocha,medium
+dog,3 years,male,Mocha,large,dog,3 years,male,Mocha,large
+dog,3 years,male,Black and white,small,dog,3 years,male,Black and white,small
+dog,3 years,male,Black and white,medium,dog,3 years,male,Black and white,medium
+dog,3 years,male,Black and white,large,dog,3 years,male,Black and white,large
+dog,3 years,female,Brown and white,small,dog,3 years,female,Brown and white,small
+dog,3 years,female,Brown and white,medium,dog,3 years,female,Brown and white,medium
+dog,3 years,female,Brown and white,large,dog,3 years,female,Brown and white,large
+dog,3 years,female,Brown,small,dog,3 years,female,Brown,small
+dog,3 years,female,Brown,medium,dog,3 years,female,Brown,medium
+dog,3 years,female,Brown,large,dog,3 years,female,Brown,large
+dog,3 years,female,White,small,dog,3 years,female,White,small
+dog,3 years,female,White,medium,dog,3 years,female,White,medium
+dog,3 years,female,White,large,dog,3 years,female,White,large
+dog,3 years,female,Black,small,dog,3 years,female,Black,small
+dog,3 years,female,Black,medium,dog,3 years,female,Black,medium
+dog,3 years,female,Black,large,dog,3 years,female,Black,large
+dog,3 years,female,Mocha,small,dog,3 years,female,Mocha,small
+dog,3 years,female,Mocha,medium,dog,3 years,female,Mocha,medium
+dog,3 years,female,Mocha,large,dog,3 years,female,Mocha,large
+dog,3 years,female,Black and white,small,dog,3 years,female,Black and white,small
+dog,3 years,female,Black and white,medium,dog,3 years,female,Black and white,medium
+dog,3 years,female,Black and white,large,dog,3 years,female,Black and white,large
+dog,4 years,male,Brown and white,small,dog,4 years,male,Brown and white,small
+dog,4 years,male,Brown and white,medium,dog,4 years,male,Brown and white,medium
+dog,4 years,male,Brown and white,large,dog,4 years,male,Brown and white,large
+dog,4 years,male,Brown,small,dog,4 years,male,Brown,small
+dog,4 years,male,Brown,medium,dog,4 years,male,Brown,medium
+dog,4 years,male,Brown,large,dog,4 years,male,Brown,large
+dog,4 years,male,White,small,dog,4 years,male,White,small
+dog,4 years,male,White,medium,dog,4 years,male,White,medium
+dog,4 years,male,White,large,dog,4 years,male,White,large
+dog,4 years,male,Black,small,dog,4 years,male,Black,small
+dog,4 years,male,Black,medium,dog,4 years,male,Black,medium
+dog,4 years,male,Black,large,dog,4 years,male,Black,large
+dog,4 years,male,Mocha,small,dog,4 years,male,Mocha,small
+dog,4 years,male,Mocha,medium,dog,4 years,male,Mocha,medium
+dog,4 years,male,Mocha,large,dog,4 years,male,Mocha,large
+dog,4 years,male,Black and white,small,dog,4 years,male,Black and white,small
+dog,4 years,male,Black and white,medium,dog,4 years,male,Black and white,medium
+dog,4 years,male,Black and white,large,dog,4 years,male,Black and white,large
+dog,4 years,female,Brown and white,small,dog,4 years,female,Brown and white,small
+dog,4 years,female,Brown and white,medium,dog,4 years,female,Brown and white,medium
+dog,4 years,female,Brown and white,large,dog,4 years,female,Brown and white,large
+dog,4 years,female,Brown,small,dog,4 years,female,Brown,small
+dog,4 years,female,Brown,medium,dog,4 years,female,Brown,medium
+dog,4 years,female,Brown,large,dog,4 years,female,Brown,large
+dog,4 years,female,White,small,dog,4 years,female,White,small
+dog,4 years,female,White,medium,dog,4 years,female,White,medium
+dog,4 years,female,White,large,dog,4 years,female,White,large
+dog,4 years,female,Black,small,dog,4 years,female,Black,small
+dog,4 years,female,Black,medium,dog,4 years,female,Black,medium
+dog,4 years,female,Black,large,dog,4 years,female,Black,large
+dog,4 years,female,Mocha,small,dog,4 years,female,Mocha,small
+dog,4 years,female,Mocha,medium,dog,4 years,female,Mocha,medium
+dog,4 years,female,Mocha,large,dog,4 years,female,Mocha,large
+dog,4 years,female,Black and white,small,dog,4 years,female,Black and white,small
+dog,4 years,female,Black and white,medium,dog,4 years,female,Black and white,medium
+dog,4 years,female,Black and white,large,dog,4 years,female,Black and white,large
+dog,5 years,male,Brown and white,small,dog,5 years,male,Brown and white,small
+dog,5 years,male,Brown and white,medium,dog,5 years,male,Brown and white,medium
+dog,5 years,male,Brown and white,large,dog,5 years,male,Brown and white,large
+dog,5 years,male,Brown,small,dog,5 years,male,Brown,small
+dog,5 years,male,Brown,medium,dog,5 years,male,Brown,medium
+dog,5 years,male,Brown,large,dog,5 years,male,Brown,large
+dog,5 years,male,White,small,dog,5 years,male,White,small
+dog,5 years,male,White,medium,dog,5 years,male,White,medium
+dog,5 years,male,White,large,dog,5 years,male,White,large
+dog,5 years,male,Black,small,dog,5 years,male,Black,small
+dog,5 years,male,Black,medium,dog,5 years,male,Black,medium
+dog,5 years,male,Black,large,dog,5 years,male,Black,large
+dog,5 years,male,Mocha,small,dog,5 years,male,Mocha,small
+dog,5 years,male,Mocha,medium,dog,5 years,male,Mocha,medium
+dog,5 years,male,Mocha,large,dog,5 years,male,Mocha,large
+dog,5 years,male,Black and white,small,dog,5 years,male,Black and white,small
+dog,5 years,male,Black and white,medium,dog,5 years,male,Black and white,medium
+dog,5 years,male,Black and white,large,dog,5 years,male,Black and white,large
+dog,5 years,female,Brown and white,small,dog,5 years,female,Brown and white,small
+dog,5 years,female,Brown and white,medium,dog,5 years,female,Brown and white,medium
+dog,5 years,female,Brown and white,large,dog,5 years,female,Brown and white,large
+dog,5 years,female,Brown,small,dog,5 years,female,Brown,small
+dog,5 years,female,Brown,medium,dog,5 years,female,Brown,medium
+dog,5 years,female,Brown,large,dog,5 years,female,Brown,large
+dog,5 years,female,White,small,dog,5 years,female,White,small
+dog,5 years,female,White,medium,dog,5 years,female,White,medium
+dog,5 years,female,White,large,dog,5 years,female,White,large
+dog,5 years,female,Black,small,dog,5 years,female,Black,small
+dog,5 years,female,Black,medium,dog,5 years,female,Black,medium
+dog,5 years,female,Black,large,dog,5 years,female,Black,large
+dog,5 years,female,Mocha,small,dog,5 years,female,Mocha,small
+dog,5 years,female,Mocha,medium,dog,5 years,female,Mocha,medium
+dog,5 years,female,Mocha,large,dog,5 years,female,Mocha,large
+dog,5 years,female,Black and white,small,dog,5 years,female,Black and white,small
+dog,5 years,female,Black and white,medium,dog,5 years,female,Black and white,medium
+dog,5 years,female,Black and white,large,dog,5 years,female,Black and white,large
+cat,1 months,male,Tri-color,small,cat,1 months,male,Tri-color,small
+cat,1 months,male,Tri-color,medium,cat,1 months,male,Tri-color,medium
+cat,1 months,male,Tri-color,large,cat,1 months,male,Tri-color,large
+cat,1 months,male,Black and white,small,cat,1 months,male,Black and white,small
+cat,1 months,male,Black and white,medium,cat,1 months,male,Black and white,medium
+cat,1 months,male,Black and white,large,cat,1 months,male,Black and white,large
+cat,1 months,male,White and orange,small,cat,1 months,male,White and orange,small
+cat,1 months,male,White and orange,medium,cat,1 months,male,White and orange,medium
+cat,1 months,male,White and orange,large,cat,1 months,male,White and orange,large
+cat,1 months,male,White and gray,small,cat,1 months,male,White and gray,small
+cat,1 months,male,White and gray,medium,cat,1 months,male,White and gray,medium
+cat,1 months,male,White and gray,large,cat,1 months,male,White and gray,large
+cat,1 months,male,White,small,cat,1 months,male,White,small
+cat,1 months,male,White,medium,cat,1 months,male,White,medium
+cat,1 months,male,White,large,cat,1 months,male,White,large
+cat,1 months,male,Brown and gray,small,cat,1 months,male,Brown and gray,small
+cat,1 months,male,Brown and gray,medium,cat,1 months,male,Brown and gray,medium
+cat,1 months,male,Brown and gray,large,cat,1 months,male,Brown and gray,large
+cat,1 months,female,Tri-color,small,cat,1 months,female,Tri-color,small
+cat,1 months,female,Tri-color,medium,cat,1 months,female,Tri-color,medium
+cat,1 months,female,Tri-color,large,cat,1 months,female,Tri-color,large
+cat,1 months,female,Black and white,small,cat,1 months,female,Black and white,small
+cat,1 months,female,Black and white,medium,cat,1 months,female,Black and white,medium
+cat,1 months,female,Black and white,large,cat,1 months,female,Black and white,large
+cat,1 months,female,White and orange,small,cat,1 months,female,White and orange,small
+cat,1 months,female,White and orange,medium,cat,1 months,female,White and orange,medium
+cat,1 months,female,White and orange,large,cat,1 months,female,White and orange,large
+cat,1 months,female,White and gray,small,cat,1 months,female,White and gray,small
+cat,1 months,female,White and gray,medium,cat,1 months,female,White and gray,medium
+cat,1 months,female,White and gray,large,cat,1 months,female,White and gray,large
+cat,1 months,female,White,small,cat,1 months,female,White,small
+cat,1 months,female,White,medium,cat,1 months,female,White,medium
+cat,1 months,female,White,large,cat,1 months,female,White,large
+cat,1 months,female,Brown and gray,small,cat,1 months,female,Brown and gray,small
+cat,1 months,female,Brown and gray,medium,cat,1 months,female,Brown and gray,medium
+cat,1 months,female,Brown and gray,large,cat,1 months,female,Brown and gray,large
+cat,2 months,male,Tri-color,small,cat,2 months,male,Tri-color,small
+cat,2 months,male,Tri-color,medium,cat,2 months,male,Tri-color,medium
+cat,2 months,male,Tri-color,large,cat,2 months,male,Tri-color,large
+cat,2 months,male,Black and white,small,cat,2 months,male,Black and white,small
+cat,2 months,male,Black and white,medium,cat,2 months,male,Black and white,medium
+cat,2 months,male,Black and white,large,cat,2 months,male,Black and white,large
+cat,2 months,male,White and orange,small,cat,2 months,male,White and orange,small
+cat,2 months,male,White and orange,medium,cat,2 months,male,White and orange,medium
+cat,2 months,male,White and orange,large,cat,2 months,male,White and orange,large
+cat,2 months,male,White and gray,small,cat,2 months,male,White and gray,small
+cat,2 months,male,White and gray,medium,cat,2 months,male,White and gray,medium
+cat,2 months,male,White and gray,large,cat,2 months,male,White and gray,large
+cat,2 months,male,White,small,cat,2 months,male,White,small
+cat,2 months,male,White,medium,cat,2 months,male,White,medium
+cat,2 months,male,White,large,cat,2 months,male,White,large
+cat,2 months,male,Brown and gray,small,cat,2 months,male,Brown and gray,small
+cat,2 months,male,Brown and gray,medium,cat,2 months,male,Brown and gray,medium
+cat,2 months,male,Brown and gray,large,cat,2 months,male,Brown and gray,large
+cat,2 months,female,Tri-color,small,cat,2 months,female,Tri-color,small
+cat,2 months,female,Tri-color,medium,cat,2 months,female,Tri-color,medium
+cat,2 months,female,Tri-color,large,cat,2 months,female,Tri-color,large
+cat,2 months,female,Black and white,small,cat,2 months,female,Black and white,small
+cat,2 months,female,Black and white,medium,cat,2 months,female,Black and white,medium
+cat,2 months,female,Black and white,large,cat,2 months,female,Black and white,large
+cat,2 months,female,White and orange,small,cat,2 months,female,White and orange,small
+cat,2 months,female,White and orange,medium,cat,2 months,female,White and orange,medium
+cat,2 months,female,White and orange,large,cat,2 months,female,White and orange,large
+cat,2 months,female,White and gray,small,cat,2 months,female,White and gray,small
+cat,2 months,female,White and gray,medium,cat,2 months,female,White and gray,medium
+cat,2 months,female,White and gray,large,cat,2 months,female,White and gray,large
+cat,2 months,female,White,small,cat,2 months,female,White,small
+cat,2 months,female,White,medium,cat,2 months,female,White,medium
+cat,2 months,female,White,large,cat,2 months,female,White,large
+cat,2 months,female,Brown and gray,small,cat,2 months,female,Brown and gray,small
+cat,2 months,female,Brown and gray,medium,cat,2 months,female,Brown and gray,medium
+cat,2 months,female,Brown and gray,large,cat,2 months,female,Brown and gray,large
+cat,3 months,male,Tri-color,small,cat,3 months,male,Tri-color,small
+cat,3 months,male,Tri-color,medium,cat,3 months,male,Tri-color,medium
+cat,3 months,male,Tri-color,large,cat,3 months,male,Tri-color,large
+cat,3 months,male,Black and white,small,cat,3 months,male,Black and white,small
+cat,3 months,male,Black and white,medium,cat,3 months,male,Black and white,medium
+cat,3 months,male,Black and white,large,cat,3 months,male,Black and white,large
+cat,3 months,male,White and orange,small,cat,3 months,male,White and orange,small
+cat,3 months,male,White and orange,medium,cat,3 months,male,White and orange,medium
+cat,3 months,male,White and orange,large,cat,3 months,male,White and orange,large
+cat,3 months,male,White and gray,small,cat,3 months,male,White and gray,small
+cat,3 months,male,White and gray,medium,cat,3 months,male,White and gray,medium
+cat,3 months,male,White and gray,large,cat,3 months,male,White and gray,large
+cat,3 months,male,White,small,cat,3 months,male,White,small
+cat,3 months,male,White,medium,cat,3 months,male,White,medium
+cat,3 months,male,White,large,cat,3 months,male,White,large
+cat,3 months,male,Brown and gray,small,cat,3 months,male,Brown and gray,small
+cat,3 months,male,Brown and gray,medium,cat,3 months,male,Brown and gray,medium
+cat,3 months,male,Brown and gray,large,cat,3 months,male,Brown and gray,large
+cat,3 months,female,Tri-color,small,cat,3 months,female,Tri-color,small
+cat,3 months,female,Tri-color,medium,cat,3 months,female,Tri-color,medium
+cat,3 months,female,Tri-color,large,cat,3 months,female,Tri-color,large
+cat,3 months,female,Black and white,small,cat,3 months,female,Black and white,small
+cat,3 months,female,Black and white,medium,cat,3 months,female,Black and white,medium
+cat,3 months,female,Black and white,large,cat,3 months,female,Black and white,large
+cat,3 months,female,White and orange,small,cat,3 months,female,White and orange,small
+cat,3 months,female,White and orange,medium,cat,3 months,female,White and orange,medium
+cat,3 months,female,White and orange,large,cat,3 months,female,White and orange,large
+cat,3 months,female,White and gray,small,cat,3 months,female,White and gray,small
+cat,3 months,female,White and gray,medium,cat,3 months,female,White and gray,medium
+cat,3 months,female,White and gray,large,cat,3 months,female,White and gray,large
+cat,3 months,female,White,small,cat,3 months,female,White,small
+cat,3 months,female,White,medium,cat,3 months,female,White,medium
+cat,3 months,female,White,large,cat,3 months,female,White,large
+cat,3 months,female,Brown and gray,small,cat,3 months,female,Brown and gray,small
+cat,3 months,female,Brown and gray,medium,cat,3 months,female,Brown and gray,medium
+cat,3 months,female,Brown and gray,large,cat,3 months,female,Brown and gray,large
+cat,4 months,male,Tri-color,small,cat,4 months,male,Tri-color,small
+cat,4 months,male,Tri-color,medium,cat,4 months,male,Tri-color,medium
+cat,4 months,male,Tri-color,large,cat,4 months,male,Tri-color,large
+cat,4 months,male,Black and white,small,cat,4 months,male,Black and white,small
+cat,4 months,male,Black and white,medium,cat,4 months,male,Black and white,medium
+cat,4 months,male,Black and white,large,cat,4 months,male,Black and white,large
+cat,4 months,male,White and orange,small,cat,4 months,male,White and orange,small
+cat,4 months,male,White and orange,medium,cat,4 months,male,White and orange,medium
+cat,4 months,male,White and orange,large,cat,4 months,male,White and orange,large
+cat,4 months,male,White and gray,small,cat,4 months,male,White and gray,small
+cat,4 months,male,White and gray,medium,cat,4 months,male,White and gray,medium
+cat,4 months,male,White and gray,large,cat,4 months,male,White and gray,large
+cat,4 months,male,White,small,cat,4 months,male,White,small
+cat,4 months,male,White,medium,cat,4 months,male,White,medium
+cat,4 months,male,White,large,cat,4 months,male,White,large
+cat,4 months,male,Brown and gray,small,cat,4 months,male,Brown and gray,small
+cat,4 months,male,Brown and gray,medium,cat,4 months,male,Brown and gray,medium
+cat,4 months,male,Brown and gray,large,cat,4 months,male,Brown and gray,large
+cat,4 months,female,Tri-color,small,cat,4 months,female,Tri-color,small
+cat,4 months,female,Tri-color,medium,cat,4 months,female,Tri-color,medium
+cat,4 months,female,Tri-color,large,cat,4 months,female,Tri-color,large
+cat,4 months,female,Black and white,small,cat,4 months,female,Black and white,small
+cat,4 months,female,Black and white,medium,cat,4 months,female,Black and white,medium
+cat,4 months,female,Black and white,large,cat,4 months,female,Black and white,large
+cat,4 months,female,White and orange,small,cat,4 months,female,White and orange,small
+cat,4 months,female,White and orange,medium,cat,4 months,female,White and orange,medium
+cat,4 months,female,White and orange,large,cat,4 months,female,White and orange,large
+cat,4 months,female,White and gray,small,cat,4 months,female,White and gray,small
+cat,4 months,female,White and gray,medium,cat,4 months,female,White and gray,medium
+cat,4 months,female,White and gray,large,cat,4 months,female,White and gray,large
+cat,4 months,female,White,small,cat,4 months,female,White,small
+cat,4 months,female,White,medium,cat,4 months,female,White,medium
+cat,4 months,female,White,large,cat,4 months,female,White,large
+cat,4 months,female,Brown and gray,small,cat,4 months,female,Brown and gray,small
+cat,4 months,female,Brown and gray,medium,cat,4 months,female,Brown and gray,medium
+cat,4 months,female,Brown and gray,large,cat,4 months,female,Brown and gray,large
+cat,5 months,male,Tri-color,small,cat,5 months,male,Tri-color,small
+cat,5 months,male,Tri-color,medium,cat,5 months,male,Tri-color,medium
+cat,5 months,male,Tri-color,large,cat,5 months,male,Tri-color,large
+cat,5 months,male,Black and white,small,cat,5 months,male,Black and white,small
+cat,5 months,male,Black and white,medium,cat,5 months,male,Black and white,medium
+cat,5 months,male,Black and white,large,cat,5 months,male,Black and white,large
+cat,5 months,male,White and orange,small,cat,5 months,male,White and orange,small
+cat,5 months,male,White and orange,medium,cat,5 months,male,White and orange,medium
+cat,5 months,male,White and orange,large,cat,5 months,male,White and orange,large
+cat,5 months,male,White and gray,small,cat,5 months,male,White and gray,small
+cat,5 months,male,White and gray,medium,cat,5 months,male,White and gray,medium
+cat,5 months,male,White and gray,large,cat,5 months,male,White and gray,large
+cat,5 months,male,White,small,cat,5 months,male,White,small
+cat,5 months,male,White,medium,cat,5 months,male,White,medium
+cat,5 months,male,White,large,cat,5 months,male,White,large
+cat,5 months,male,Brown and gray,small,cat,5 months,male,Brown and gray,small
+cat,5 months,male,Brown and gray,medium,cat,5 months,male,Brown and gray,medium
+cat,5 months,male,Brown and gray,large,cat,5 months,male,Brown and gray,large
+cat,5 months,female,Tri-color,small,cat,5 months,female,Tri-color,small
+cat,5 months,female,Tri-color,medium,cat,5 months,female,Tri-color,medium
+cat,5 months,female,Tri-color,large,cat,5 months,female,Tri-color,large
+cat,5 months,female,Black and white,small,cat,5 months,female,Black and white,small
+cat,5 months,female,Black and white,medium,cat,5 months,female,Black and white,medium
+cat,5 months,female,Black and white,large,cat,5 months,female,Black and white,large
+cat,5 months,female,White and orange,small,cat,5 months,female,White and orange,small
+cat,5 months,female,White and orange,medium,cat,5 months,female,White and orange,medium
+cat,5 months,female,White and orange,large,cat,5 months,female,White and orange,large
+cat,5 months,female,White and gray,small,cat,5 months,female,White and gray,small
+cat,5 months,female,White and gray,medium,cat,5 months,female,White and gray,medium
+cat,5 months,female,White and gray,large,cat,5 months,female,White and gray,large
+cat,5 months,female,White,small,cat,5 months,female,White,small
+cat,5 months,female,White,medium,cat,5 months,female,White,medium
+cat,5 months,female,White,large,cat,5 months,female,White,large
+cat,5 months,female,Brown and gray,small,cat,5 months,female,Brown and gray,small
+cat,5 months,female,Brown and gray,medium,cat,5 months,female,Brown and gray,medium
+cat,5 months,female,Brown and gray,large,cat,5 months,female,Brown and gray,large
+cat,6 months,male,Tri-color,small,cat,6 months,male,Tri-color,small
+cat,6 months,male,Tri-color,medium,cat,6 months,male,Tri-color,medium
+cat,6 months,male,Tri-color,large,cat,6 months,male,Tri-color,large
+cat,6 months,male,Black and white,small,cat,6 months,male,Black and white,small
+cat,6 months,male,Black and white,medium,cat,6 months,male,Black and white,medium
+cat,6 months,male,Black and white,large,cat,6 months,male,Black and white,large
+cat,6 months,male,White and orange,small,cat,6 months,male,White and orange,small
+cat,6 months,male,White and orange,medium,cat,6 months,male,White and orange,medium
+cat,6 months,male,White and orange,large,cat,6 months,male,White and orange,large
+cat,6 months,male,White and gray,small,cat,6 months,male,White and gray,small
+cat,6 months,male,White and gray,medium,cat,6 months,male,White and gray,medium
+cat,6 months,male,White and gray,large,cat,6 months,male,White and gray,large
+cat,6 months,male,White,small,cat,6 months,male,White,small
+cat,6 months,male,White,medium,cat,6 months,male,White,medium
+cat,6 months,male,White,large,cat,6 months,male,White,large
+cat,6 months,male,Brown and gray,small,cat,6 months,male,Brown and gray,small
+cat,6 months,male,Brown and gray,medium,cat,6 months,male,Brown and gray,medium
+cat,6 months,male,Brown and gray,large,cat,6 months,male,Brown and gray,large
+cat,6 months,female,Tri-color,small,cat,6 months,female,Tri-color,small
+cat,6 months,female,Tri-color,medium,cat,6 months,female,Tri-color,medium
+cat,6 months,female,Tri-color,large,cat,6 months,female,Tri-color,large
+cat,6 months,female,Black and white,small,cat,6 months,female,Black and white,small
+cat,6 months,female,Black and white,medium,cat,6 months,female,Black and white,medium
+cat,6 months,female,Black and white,large,cat,6 months,female,Black and white,large
+cat,6 months,female,White and orange,small,cat,6 months,female,White and orange,small
+cat,6 months,female,White and orange,medium,cat,6 months,female,White and orange,medium
+cat,6 months,female,White and orange,large,cat,6 months,female,White and orange,large
+cat,6 months,female,White and gray,small,cat,6 months,female,White and gray,small
+cat,6 months,female,White and gray,medium,cat,6 months,female,White and gray,medium
+cat,6 months,female,White and gray,large,cat,6 months,female,White and gray,large
+cat,6 months,female,White,small,cat,6 months,female,White,small
+cat,6 months,female,White,medium,cat,6 months,female,White,medium
+cat,6 months,female,White,large,cat,6 months,female,White,large
+cat,6 months,female,Brown and gray,small,cat,6 months,female,Brown and gray,small
+cat,6 months,female,Brown and gray,medium,cat,6 months,female,Brown and gray,medium
+cat,6 months,female,Brown and gray,large,cat,6 months,female,Brown and gray,large
+cat,7 months,male,Tri-color,small,cat,7 months,male,Tri-color,small
+cat,7 months,male,Tri-color,medium,cat,7 months,male,Tri-color,medium
+cat,7 months,male,Tri-color,large,cat,7 months,male,Tri-color,large
+cat,7 months,male,Black and white,small,cat,7 months,male,Black and white,small
+cat,7 months,male,Black and white,medium,cat,7 months,male,Black and white,medium
+cat,7 months,male,Black and white,large,cat,7 months,male,Black and white,large
+cat,7 months,male,White and orange,small,cat,7 months,male,White and orange,small
+cat,7 months,male,White and orange,medium,cat,7 months,male,White and orange,medium
+cat,7 months,male,White and orange,large,cat,7 months,male,White and orange,large
+cat,7 months,male,White and gray,small,cat,7 months,male,White and gray,small
+cat,7 months,male,White and gray,medium,cat,7 months,male,White and gray,medium
+cat,7 months,male,White and gray,large,cat,7 months,male,White and gray,large
+cat,7 months,male,White,small,cat,7 months,male,White,small
+cat,7 months,male,White,medium,cat,7 months,male,White,medium
+cat,7 months,male,White,large,cat,7 months,male,White,large
+cat,7 months,male,Brown and gray,small,cat,7 months,male,Brown and gray,small
+cat,7 months,male,Brown and gray,medium,cat,7 months,male,Brown and gray,medium
+cat,7 months,male,Brown and gray,large,cat,7 months,male,Brown and gray,large
+cat,7 months,female,Tri-color,small,cat,7 months,female,Tri-color,small
+cat,7 months,female,Tri-color,medium,cat,7 months,female,Tri-color,medium
+cat,7 months,female,Tri-color,large,cat,7 months,female,Tri-color,large
+cat,7 months,female,Black and white,small,cat,7 months,female,Black and white,small
+cat,7 months,female,Black and white,medium,cat,7 months,female,Black and white,medium
+cat,7 months,female,Black and white,large,cat,7 months,female,Black and white,large
+cat,7 months,female,White and orange,small,cat,7 months,female,White and orange,small
+cat,7 months,female,White and orange,medium,cat,7 months,female,White and orange,medium
+cat,7 months,female,White and orange,large,cat,7 months,female,White and orange,large
+cat,7 months,female,White and gray,small,cat,7 months,female,White and gray,small
+cat,7 months,female,White and gray,medium,cat,7 months,female,White and gray,medium
+cat,7 months,female,White and gray,large,cat,7 months,female,White and gray,large
+cat,7 months,female,White,small,cat,7 months,female,White,small
+cat,7 months,female,White,medium,cat,7 months,female,White,medium
+cat,7 months,female,White,large,cat,7 months,female,White,large
+cat,7 months,female,Brown and gray,small,cat,7 months,female,Brown and gray,small
+cat,7 months,female,Brown and gray,medium,cat,7 months,female,Brown and gray,medium
+cat,7 months,female,Brown and gray,large,cat,7 months,female,Brown and gray,large
+cat,8 months,male,Tri-color,small,cat,8 months,male,Tri-color,small
+cat,8 months,male,Tri-color,medium,cat,8 months,male,Tri-color,medium
+cat,8 months,male,Tri-color,large,cat,8 months,male,Tri-color,large
+cat,8 months,male,Black and white,small,cat,8 months,male,Black and white,small
+cat,8 months,male,Black and white,medium,cat,8 months,male,Black and white,medium
+cat,8 months,male,Black and white,large,cat,8 months,male,Black and white,large
+cat,8 months,male,White and orange,small,cat,8 months,male,White and orange,small
+cat,8 months,male,White and orange,medium,cat,8 months,male,White and orange,medium
+cat,8 months,male,White and orange,large,cat,8 months,male,White and orange,large
+cat,8 months,male,White and gray,small,cat,8 months,male,White and gray,small
+cat,8 months,male,White and gray,medium,cat,8 months,male,White and gray,medium
+cat,8 months,male,White and gray,large,cat,8 months,male,White and gray,large
+cat,8 months,male,White,small,cat,8 months,male,White,small
+cat,8 months,male,White,medium,cat,8 months,male,White,medium
+cat,8 months,male,White,large,cat,8 months,male,White,large
+cat,8 months,male,Brown and gray,small,cat,8 months,male,Brown and gray,small
+cat,8 months,male,Brown and gray,medium,cat,8 months,male,Brown and gray,medium
+cat,8 months,male,Brown and gray,large,cat,8 months,male,Brown and gray,large
+cat,8 months,female,Tri-color,small,cat,8 months,female,Tri-color,small
+cat,8 months,female,Tri-color,medium,cat,8 months,female,Tri-color,medium
+cat,8 months,female,Tri-color,large,cat,8 months,female,Tri-color,large
+cat,8 months,female,Black and white,small,cat,8 months,female,Black and white,small
+cat,8 months,female,Black and white,medium,cat,8 months,female,Black and white,medium
+cat,8 months,female,Black and white,large,cat,8 months,female,Black and white,large
+cat,8 months,female,White and orange,small,cat,8 months,female,White and orange,small
+cat,8 months,female,White and orange,medium,cat,8 months,female,White and orange,medium
+cat,8 months,female,White and orange,large,cat,8 months,female,White and orange,large
+cat,8 months,female,White and gray,small,cat,8 months,female,White and gray,small
+cat,8 months,female,White and gray,medium,cat,8 months,female,White and gray,medium
+cat,8 months,female,White and gray,large,cat,8 months,female,White and gray,large
+cat,8 months,female,White,small,cat,8 months,female,White,small
+cat,8 months,female,White,medium,cat,8 months,female,White,medium
+cat,8 months,female,White,large,cat,8 months,female,White,large
+cat,8 months,female,Brown and gray,small,cat,8 months,female,Brown and gray,small
+cat,8 months,female,Brown and gray,medium,cat,8 months,female,Brown and gray,medium
+cat,8 months,female,Brown and gray,large,cat,8 months,female,Brown and gray,large
+cat,9 months,male,Tri-color,small,cat,9 months,male,Tri-color,small
+cat,9 months,male,Tri-color,medium,cat,9 months,male,Tri-color,medium
+cat,9 months,male,Tri-color,large,cat,9 months,male,Tri-color,large
+cat,9 months,male,Black and white,small,cat,9 months,male,Black and white,small
+cat,9 months,male,Black and white,medium,cat,9 months,male,Black and white,medium
+cat,9 months,male,Black and white,large,cat,9 months,male,Black and white,large
+cat,9 months,male,White and orange,small,cat,9 months,male,White and orange,small
+cat,9 months,male,White and orange,medium,cat,9 months,male,White and orange,medium
+cat,9 months,male,White and orange,large,cat,9 months,male,White and orange,large
+cat,9 months,male,White and gray,small,cat,9 months,male,White and gray,small
+cat,9 months,male,White and gray,medium,cat,9 months,male,White and gray,medium
+cat,9 months,male,White and gray,large,cat,9 months,male,White and gray,large
+cat,9 months,male,White,small,cat,9 months,male,White,small
+cat,9 months,male,White,medium,cat,9 months,male,White,medium
+cat,9 months,male,White,large,cat,9 months,male,White,large
+cat,9 months,male,Brown and gray,small,cat,9 months,male,Brown and gray,small
+cat,9 months,male,Brown and gray,medium,cat,9 months,male,Brown and gray,medium
+cat,9 months,male,Brown and gray,large,cat,9 months,male,Brown and gray,large
+cat,9 months,female,Tri-color,small,cat,9 months,female,Tri-color,small
+cat,9 months,female,Tri-color,medium,cat,9 months,female,Tri-color,medium
+cat,9 months,female,Tri-color,large,cat,9 months,female,Tri-color,large
+cat,9 months,female,Black and white,small,cat,9 months,female,Black and white,small
+cat,9 months,female,Black and white,medium,cat,9 months,female,Black and white,medium
+cat,9 months,female,Black and white,large,cat,9 months,female,Black and white,large
+cat,9 months,female,White and orange,small,cat,9 months,female,White and orange,small
+cat,9 months,female,White and orange,medium,cat,9 months,female,White and orange,medium
+cat,9 months,female,White and orange,large,cat,9 months,female,White and orange,large
+cat,9 months,female,White and gray,small,cat,9 months,female,White and gray,small
+cat,9 months,female,White and gray,medium,cat,9 months,female,White and gray,medium
+cat,9 months,female,White and gray,large,cat,9 months,female,White and gray,large
+cat,9 months,female,White,small,cat,9 months,female,White,small
+cat,9 months,female,White,medium,cat,9 months,female,White,medium
+cat,9 months,female,White,large,cat,9 months,female,White,large
+cat,9 months,female,Brown and gray,small,cat,9 months,female,Brown and gray,small
+cat,9 months,female,Brown and gray,medium,cat,9 months,female,Brown and gray,medium
+cat,9 months,female,Brown and gray,large,cat,9 months,female,Brown and gray,large
+cat,10 months,male,Tri-color,small,cat,10 months,male,Tri-color,small
+cat,10 months,male,Tri-color,medium,cat,10 months,male,Tri-color,medium
+cat,10 months,male,Tri-color,large,cat,10 months,male,Tri-color,large
+cat,10 months,male,Black and white,small,cat,10 months,male,Black and white,small
+cat,10 months,male,Black and white,medium,cat,10 months,male,Black and white,medium
+cat,10 months,male,Black and white,large,cat,10 months,male,Black and white,large
+cat,10 months,male,White and orange,small,cat,10 months,male,White and orange,small
+cat,10 months,male,White and orange,medium,cat,10 months,male,White and orange,medium
+cat,10 months,male,White and orange,large,cat,10 months,male,White and orange,large
+cat,10 months,male,White and gray,small,cat,10 months,male,White and gray,small
+cat,10 months,male,White and gray,medium,cat,10 months,male,White and gray,medium
+cat,10 months,male,White and gray,large,cat,10 months,male,White and gray,large
+cat,10 months,male,White,small,cat,10 months,male,White,small
+cat,10 months,male,White,medium,cat,10 months,male,White,medium
+cat,10 months,male,White,large,cat,10 months,male,White,large
+cat,10 months,male,Brown and gray,small,cat,10 months,male,Brown and gray,small
+cat,10 months,male,Brown and gray,medium,cat,10 months,male,Brown and gray,medium
+cat,10 months,male,Brown and gray,large,cat,10 months,male,Brown and gray,large
+cat,10 months,female,Tri-color,small,cat,10 months,female,Tri-color,small
+cat,10 months,female,Tri-color,medium,cat,10 months,female,Tri-color,medium
+cat,10 months,female,Tri-color,large,cat,10 months,female,Tri-color,large
+cat,10 months,female,Black and white,small,cat,10 months,female,Black and white,small
+cat,10 months,female,Black and white,medium,cat,10 months,female,Black and white,medium
+cat,10 months,female,Black and white,large,cat,10 months,female,Black and white,large
+cat,10 months,female,White and orange,small,cat,10 months,female,White and orange,small
+cat,10 months,female,White and orange,medium,cat,10 months,female,White and orange,medium
+cat,10 months,female,White and orange,large,cat,10 months,female,White and orange,large
+cat,10 months,female,White and gray,small,cat,10 months,female,White and gray,small
+cat,10 months,female,White and gray,medium,cat,10 months,female,White and gray,medium
+cat,10 months,female,White and gray,large,cat,10 months,female,White and gray,large
+cat,10 months,female,White,small,cat,10 months,female,White,small
+cat,10 months,female,White,medium,cat,10 months,female,White,medium
+cat,10 months,female,White,large,cat,10 months,female,White,large
+cat,10 months,female,Brown and gray,small,cat,10 months,female,Brown and gray,small
+cat,10 months,female,Brown and gray,medium,cat,10 months,female,Brown and gray,medium
+cat,10 months,female,Brown and gray,large,cat,10 months,female,Brown and gray,large
+cat,11 months,male,Tri-color,small,cat,11 months,male,Tri-color,small
+cat,11 months,male,Tri-color,medium,cat,11 months,male,Tri-color,medium
+cat,11 months,male,Tri-color,large,cat,11 months,male,Tri-color,large
+cat,11 months,male,Black and white,small,cat,11 months,male,Black and white,small
+cat,11 months,male,Black and white,medium,cat,11 months,male,Black and white,medium
+cat,11 months,male,Black and white,large,cat,11 months,male,Black and white,large
+cat,11 months,male,White and orange,small,cat,11 months,male,White and orange,small
+cat,11 months,male,White and orange,medium,cat,11 months,male,White and orange,medium
+cat,11 months,male,White and orange,large,cat,11 months,male,White and orange,large
+cat,11 months,male,White and gray,small,cat,11 months,male,White and gray,small
+cat,11 months,male,White and gray,medium,cat,11 months,male,White and gray,medium
+cat,11 months,male,White and gray,large,cat,11 months,male,White and gray,large
+cat,11 months,male,White,small,cat,11 months,male,White,small
+cat,11 months,male,White,medium,cat,11 months,male,White,medium
+cat,11 months,male,White,large,cat,11 months,male,White,large
+cat,11 months,male,Brown and gray,small,cat,11 months,male,Brown and gray,small
+cat,11 months,male,Brown and gray,medium,cat,11 months,male,Brown and gray,medium
+cat,11 months,male,Brown and gray,large,cat,11 months,male,Brown and gray,large
+cat,11 months,female,Tri-color,small,cat,11 months,female,Tri-color,small
+cat,11 months,female,Tri-color,medium,cat,11 months,female,Tri-color,medium
+cat,11 months,female,Tri-color,large,cat,11 months,female,Tri-color,large
+cat,11 months,female,Black and white,small,cat,11 months,female,Black and white,small
+cat,11 months,female,Black and white,medium,cat,11 months,female,Black and white,medium
+cat,11 months,female,Black and white,large,cat,11 months,female,Black and white,large
+cat,11 months,female,White and orange,small,cat,11 months,female,White and orange,small
+cat,11 months,female,White and orange,medium,cat,11 months,female,White and orange,medium
+cat,11 months,female,White and orange,large,cat,11 months,female,White and orange,large
+cat,11 months,female,White and gray,small,cat,11 months,female,White and gray,small
+cat,11 months,female,White and gray,medium,cat,11 months,female,White and gray,medium
+cat,11 months,female,White and gray,large,cat,11 months,female,White and gray,large
+cat,11 months,female,White,small,cat,11 months,female,White,small
+cat,11 months,female,White,medium,cat,11 months,female,White,medium
+cat,11 months,female,White,large,cat,11 months,female,White,large
+cat,11 months,female,Brown and gray,small,cat,11 months,female,Brown and gray,small
+cat,11 months,female,Brown and gray,medium,cat,11 months,female,Brown and gray,medium
+cat,11 months,female,Brown and gray,large,cat,11 months,female,Brown and gray,large
+cat,12 months,male,Tri-color,small,cat,12 months,male,Tri-color,small
+cat,12 months,male,Tri-color,medium,cat,12 months,male,Tri-color,medium
+cat,12 months,male,Tri-color,large,cat,12 months,male,Tri-color,large
+cat,12 months,male,Black and white,small,cat,12 months,male,Black and white,small
+cat,12 months,male,Black and white,medium,cat,12 months,male,Black and white,medium
+cat,12 months,male,Black and white,large,cat,12 months,male,Black and white,large
+cat,12 months,male,White and orange,small,cat,12 months,male,White and orange,small
+cat,12 months,male,White and orange,medium,cat,12 months,male,White and orange,medium
+cat,12 months,male,White and orange,large,cat,12 months,male,White and orange,large
+cat,12 months,male,White and gray,small,cat,12 months,male,White and gray,small
+cat,12 months,male,White and gray,medium,cat,12 months,male,White and gray,medium
+cat,12 months,male,White and gray,large,cat,12 months,male,White and gray,large
+cat,12 months,male,White,small,cat,12 months,male,White,small
+cat,12 months,male,White,medium,cat,12 months,male,White,medium
+cat,12 months,male,White,large,cat,12 months,male,White,large
+cat,12 months,male,Brown and gray,small,cat,12 months,male,Brown and gray,small
+cat,12 months,male,Brown and gray,medium,cat,12 months,male,Brown and gray,medium
+cat,12 months,male,Brown and gray,large,cat,12 months,male,Brown and gray,large
+cat,12 months,female,Tri-color,small,cat,12 months,female,Tri-color,small
+cat,12 months,female,Tri-color,medium,cat,12 months,female,Tri-color,medium
+cat,12 months,female,Tri-color,large,cat,12 months,female,Tri-color,large
+cat,12 months,female,Black and white,small,cat,12 months,female,Black and white,small
+cat,12 months,female,Black and white,medium,cat,12 months,female,Black and white,medium
+cat,12 months,female,Black and white,large,cat,12 months,female,Black and white,large
+cat,12 months,female,White and orange,small,cat,12 months,female,White and orange,small
+cat,12 months,female,White and orange,medium,cat,12 months,female,White and orange,medium
+cat,12 months,female,White and orange,large,cat,12 months,female,White and orange,large
+cat,12 months,female,White and gray,small,cat,12 months,female,White and gray,small
+cat,12 months,female,White and gray,medium,cat,12 months,female,White and gray,medium
+cat,12 months,female,White and gray,large,cat,12 months,female,White and gray,large
+cat,12 months,female,White,small,cat,12 months,female,White,small
+cat,12 months,female,White,medium,cat,12 months,female,White,medium
+cat,12 months,female,White,large,cat,12 months,female,White,large
+cat,12 months,female,Brown and gray,small,cat,12 months,female,Brown and gray,small
+cat,12 months,female,Brown and gray,medium,cat,12 months,female,Brown and gray,medium
+cat,12 months,female,Brown and gray,large,cat,12 months,female,Brown and gray,large
+cat,1 years,male,Tri-color,small,cat,1 years,male,Tri-color,small
+cat,1 years,male,Tri-color,medium,cat,1 years,male,Tri-color,medium
+cat,1 years,male,Tri-color,large,cat,1 years,male,Tri-color,large
+cat,1 years,male,Black and white,small,cat,1 years,male,Black and white,small
+cat,1 years,male,Black and white,medium,cat,1 years,male,Black and white,medium
+cat,1 years,male,Black and white,large,cat,1 years,male,Black and white,large
+cat,1 years,male,White and orange,small,cat,1 years,male,White and orange,small
+cat,1 years,male,White and orange,medium,cat,1 years,male,White and orange,medium
+cat,1 years,male,White and orange,large,cat,1 years,male,White and orange,large
+cat,1 years,male,White and gray,small,cat,1 years,male,White and gray,small
+cat,1 years,male,White and gray,medium,cat,1 years,male,White and gray,medium
+cat,1 years,male,White and gray,large,cat,1 years,male,White and gray,large
+cat,1 years,male,White,small,cat,1 years,male,White,small
+cat,1 years,male,White,medium,cat,1 years,male,White,medium
+cat,1 years,male,White,large,cat,1 years,male,White,large
+cat,1 years,male,Brown and gray,small,cat,1 years,male,Brown and gray,small
+cat,1 years,male,Brown and gray,medium,cat,1 years,male,Brown and gray,medium
+cat,1 years,male,Brown and gray,large,cat,1 years,male,Brown and gray,large
+cat,1 years,female,Tri-color,small,cat,1 years,female,Tri-color,small
+cat,1 years,female,Tri-color,medium,cat,1 years,female,Tri-color,medium
+cat,1 years,female,Tri-color,large,cat,1 years,female,Tri-color,large
+cat,1 years,female,Black and white,small,cat,1 years,female,Black and white,small
+cat,1 years,female,Black and white,medium,cat,1 years,female,Black and white,medium
+cat,1 years,female,Black and white,large,cat,1 years,female,Black and white,large
+cat,1 years,female,White and orange,small,cat,1 years,female,White and orange,small
+cat,1 years,female,White and orange,medium,cat,1 years,female,White and orange,medium
+cat,1 years,female,White and orange,large,cat,1 years,female,White and orange,large
+cat,1 years,female,White and gray,small,cat,1 years,female,White and gray,small
+cat,1 years,female,White and gray,medium,cat,1 years,female,White and gray,medium
+cat,1 years,female,White and gray,large,cat,1 years,female,White and gray,large
+cat,1 years,female,White,small,cat,1 years,female,White,small
+cat,1 years,female,White,medium,cat,1 years,female,White,medium
+cat,1 years,female,White,large,cat,1 years,female,White,large
+cat,1 years,female,Brown and gray,small,cat,1 years,female,Brown and gray,small
+cat,1 years,female,Brown and gray,medium,cat,1 years,female,Brown and gray,medium
+cat,1 years,female,Brown and gray,large,cat,1 years,female,Brown and gray,large
+cat,2 years,male,Tri-color,small,cat,2 years,male,Tri-color,small
+cat,2 years,male,Tri-color,medium,cat,2 years,male,Tri-color,medium
+cat,2 years,male,Tri-color,large,cat,2 years,male,Tri-color,large
+cat,2 years,male,Black and white,small,cat,2 years,male,Black and white,small
+cat,2 years,male,Black and white,medium,cat,2 years,male,Black and white,medium
+cat,2 years,male,Black and white,large,cat,2 years,male,Black and white,large
+cat,2 years,male,White and orange,small,cat,2 years,male,White and orange,small
+cat,2 years,male,White and orange,medium,cat,2 years,male,White and orange,medium
+cat,2 years,male,White and orange,large,cat,2 years,male,White and orange,large
+cat,2 years,male,White and gray,small,cat,2 years,male,White and gray,small
+cat,2 years,male,White and gray,medium,cat,2 years,male,White and gray,medium
+cat,2 years,male,White and gray,large,cat,2 years,male,White and gray,large
+cat,2 years,male,White,small,cat,2 years,male,White,small
+cat,2 years,male,White,medium,cat,2 years,male,White,medium
+cat,2 years,male,White,large,cat,2 years,male,White,large
+cat,2 years,male,Brown and gray,small,cat,2 years,male,Brown and gray,small
+cat,2 years,male,Brown and gray,medium,cat,2 years,male,Brown and gray,medium
+cat,2 years,male,Brown and gray,large,cat,2 years,male,Brown and gray,large
+cat,2 years,female,Tri-color,small,cat,2 years,female,Tri-color,small
+cat,2 years,female,Tri-color,medium,cat,2 years,female,Tri-color,medium
+cat,2 years,female,Tri-color,large,cat,2 years,female,Tri-color,large
+cat,2 years,female,Black and white,small,cat,2 years,female,Black and white,small
+cat,2 years,female,Black and white,medium,cat,2 years,female,Black and white,medium
+cat,2 years,female,Black and white,large,cat,2 years,female,Black and white,large
+cat,2 years,female,White and orange,small,cat,2 years,female,White and orange,small
+cat,2 years,female,White and orange,medium,cat,2 years,female,White and orange,medium
+cat,2 years,female,White and orange,large,cat,2 years,female,White and orange,large
+cat,2 years,female,White and gray,small,cat,2 years,female,White and gray,small
+cat,2 years,female,White and gray,medium,cat,2 years,female,White and gray,medium
+cat,2 years,female,White and gray,large,cat,2 years,female,White and gray,large
+cat,2 years,female,White,small,cat,2 years,female,White,small
+cat,2 years,female,White,medium,cat,2 years,female,White,medium
+cat,2 years,female,White,large,cat,2 years,female,White,large
+cat,2 years,female,Brown and gray,small,cat,2 years,female,Brown and gray,small
+cat,2 years,female,Brown and gray,medium,cat,2 years,female,Brown and gray,medium
+cat,2 years,female,Brown and gray,large,cat,2 years,female,Brown and gray,large
+cat,3 years,male,Tri-color,small,cat,3 years,male,Tri-color,small
+cat,3 years,male,Tri-color,medium,cat,3 years,male,Tri-color,medium
+cat,3 years,male,Tri-color,large,cat,3 years,male,Tri-color,large
+cat,3 years,male,Black and white,small,cat,3 years,male,Black and white,small
+cat,3 years,male,Black and white,medium,cat,3 years,male,Black and white,medium
+cat,3 years,male,Black and white,large,cat,3 years,male,Black and white,large
+cat,3 years,male,White and orange,small,cat,3 years,male,White and orange,small
+cat,3 years,male,White and orange,medium,cat,3 years,male,White and orange,medium
+cat,3 years,male,White and orange,large,cat,3 years,male,White and orange,large
+cat,3 years,male,White and gray,small,cat,3 years,male,White and gray,small
+cat,3 years,male,White and gray,medium,cat,3 years,male,White and gray,medium
+cat,3 years,male,White and gray,large,cat,3 years,male,White and gray,large
+cat,3 years,male,White,small,cat,3 years,male,White,small
+cat,3 years,male,White,medium,cat,3 years,male,White,medium
+cat,3 years,male,White,large,cat,3 years,male,White,large
+cat,3 years,male,Brown and gray,small,cat,3 years,male,Brown and gray,small
+cat,3 years,male,Brown and gray,medium,cat,3 years,male,Brown and gray,medium
+cat,3 years,male,Brown and gray,large,cat,3 years,male,Brown and gray,large
+cat,3 years,female,Tri-color,small,cat,3 years,female,Tri-color,small
+cat,3 years,female,Tri-color,medium,cat,3 years,female,Tri-color,medium
+cat,3 years,female,Tri-color,large,cat,3 years,female,Tri-color,large
+cat,3 years,female,Black and white,small,cat,3 years,female,Black and white,small
+cat,3 years,female,Black and white,medium,cat,3 years,female,Black and white,medium
+cat,3 years,female,Black and white,large,cat,3 years,female,Black and white,large
+cat,3 years,female,White and orange,small,cat,3 years,female,White and orange,small
+cat,3 years,female,White and orange,medium,cat,3 years,female,White and orange,medium
+cat,3 years,female,White and orange,large,cat,3 years,female,White and orange,large
+cat,3 years,female,White and gray,small,cat,3 years,female,White and gray,small
+cat,3 years,female,White and gray,medium,cat,3 years,female,White and gray,medium
+cat,3 years,female,White and gray,large,cat,3 years,female,White and gray,large
+cat,3 years,female,White,small,cat,3 years,female,White,small
+cat,3 years,female,White,medium,cat,3 years,female,White,medium
+cat,3 years,female,White,large,cat,3 years,female,White,large
+cat,3 years,female,Brown and gray,small,cat,3 years,female,Brown and gray,small
+cat,3 years,female,Brown and gray,medium,cat,3 years,female,Brown and gray,medium
+cat,3 years,female,Brown and gray,large,cat,3 years,female,Brown and gray,large
+cat,4 years,male,Tri-color,small,cat,4 years,male,Tri-color,small
+cat,4 years,male,Tri-color,medium,cat,4 years,male,Tri-color,medium
+cat,4 years,male,Tri-color,large,cat,4 years,male,Tri-color,large
+cat,4 years,male,Black and white,small,cat,4 years,male,Black and white,small
+cat,4 years,male,Black and white,medium,cat,4 years,male,Black and white,medium
+cat,4 years,male,Black and white,large,cat,4 years,male,Black and white,large
+cat,4 years,male,White and orange,small,cat,4 years,male,White and orange,small
+cat,4 years,male,White and orange,medium,cat,4 years,male,White and orange,medium
+cat,4 years,male,White and orange,large,cat,4 years,male,White and orange,large
+cat,4 years,male,White and gray,small,cat,4 years,male,White and gray,small
+cat,4 years,male,White and gray,medium,cat,4 years,male,White and gray,medium
+cat,4 years,male,White and gray,large,cat,4 years,male,White and gray,large
+cat,4 years,male,White,small,cat,4 years,male,White,small
+cat,4 years,male,White,medium,cat,4 years,male,White,medium
+cat,4 years,male,White,large,cat,4 years,male,White,large
+cat,4 years,male,Brown and gray,small,cat,4 years,male,Brown and gray,small
+cat,4 years,male,Brown and gray,medium,cat,4 years,male,Brown and gray,medium
+cat,4 years,male,Brown and gray,large,cat,4 years,male,Brown and gray,large
+cat,4 years,female,Tri-color,small,cat,4 years,female,Tri-color,small
+cat,4 years,female,Tri-color,medium,cat,4 years,female,Tri-color,medium
+cat,4 years,female,Tri-color,large,cat,4 years,female,Tri-color,large
+cat,4 years,female,Black and white,small,cat,4 years,female,Black and white,small
+cat,4 years,female,Black and white,medium,cat,4 years,female,Black and white,medium
+cat,4 years,female,Black and white,large,cat,4 years,female,Black and white,large
+cat,4 years,female,White and orange,small,cat,4 years,female,White and orange,small
+cat,4 years,female,White and orange,medium,cat,4 years,female,White and orange,medium
+cat,4 years,female,White and orange,large,cat,4 years,female,White and orange,large
+cat,4 years,female,White and gray,small,cat,4 years,female,White and gray,small
+cat,4 years,female,White and gray,medium,cat,4 years,female,White and gray,medium
+cat,4 years,female,White and gray,large,cat,4 years,female,White and gray,large
+cat,4 years,female,White,small,cat,4 years,female,White,small
+cat,4 years,female,White,medium,cat,4 years,female,White,medium
+cat,4 years,female,White,large,cat,4 years,female,White,large
+cat,4 years,female,Brown and gray,small,cat,4 years,female,Brown and gray,small
+cat,4 years,female,Brown and gray,medium,cat,4 years,female,Brown and gray,medium
+cat,4 years,female,Brown and gray,large,cat,4 years,female,Brown and gray,large
+cat,5 years,male,Tri-color,small,cat,5 years,male,Tri-color,small
+cat,5 years,male,Tri-color,medium,cat,5 years,male,Tri-color,medium
+cat,5 years,male,Tri-color,large,cat,5 years,male,Tri-color,large
+cat,5 years,male,Black and white,small,cat,5 years,male,Black and white,small
+cat,5 years,male,Black and white,medium,cat,5 years,male,Black and white,medium
+cat,5 years,male,Black and white,large,cat,5 years,male,Black and white,large
+cat,5 years,male,White and orange,small,cat,5 years,male,White and orange,small
+cat,5 years,male,White and orange,medium,cat,5 years,male,White and orange,medium
+cat,5 years,male,White and orange,large,cat,5 years,male,White and orange,large
+cat,5 years,male,White and gray,small,cat,5 years,male,White and gray,small
+cat,5 years,male,White and gray,medium,cat,5 years,male,White and gray,medium
+cat,5 years,male,White and gray,large,cat,5 years,male,White and gray,large
+cat,5 years,male,White,small,cat,5 years,male,White,small
+cat,5 years,male,White,medium,cat,5 years,male,White,medium
+cat,5 years,male,White,large,cat,5 years,male,White,large
+cat,5 years,male,Brown and gray,small,cat,5 years,male,Brown and gray,small
+cat,5 years,male,Brown and gray,medium,cat,5 years,male,Brown and gray,medium
+cat,5 years,male,Brown and gray,large,cat,5 years,male,Brown and gray,large
+cat,5 years,female,Tri-color,small,cat,5 years,female,Tri-color,small
+cat,5 years,female,Tri-color,medium,cat,5 years,female,Tri-color,medium
+cat,5 years,female,Tri-color,large,cat,5 years,female,Tri-color,large
+cat,5 years,female,Black and white,small,cat,5 years,female,Black and white,small
+cat,5 years,female,Black and white,medium,cat,5 years,female,Black and white,medium
+cat,5 years,female,Black and white,large,cat,5 years,female,Black and white,large
+cat,5 years,female,White and orange,small,cat,5 years,female,White and orange,small
+cat,5 years,female,White and orange,medium,cat,5 years,female,White and orange,medium
+cat,5 years,female,White and orange,large,cat,5 years,female,White and orange,large
+cat,5 years,female,White and gray,small,cat,5 years,female,White and gray,small
+cat,5 years,female,White and gray,medium,cat,5 years,female,White and gray,medium
+cat,5 years,female,White and gray,large,cat,5 years,female,White and gray,large
+cat,5 years,female,White,small,cat,5 years,female,White,small
+cat,5 years,female,White,medium,cat,5 years,female,White,medium
+cat,5 years,female,White,large,cat,5 years,female,White,large
+cat,5 years,female,Brown and gray,small,cat,5 years,female,Brown and gray,small
+cat,5 years,female,Brown and gray,medium,cat,5 years,female,Brown and gray,medium
+cat,5 years,female,Brown and gray,large,cat,5 years,female,Brown and gray,large

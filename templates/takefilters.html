@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Test</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+
+    </head>
+    <body class="has-background-dark has-text-white">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="https://bulma.io">
+                <h1 class="title">ANIMAL SHELTER</h1>
+              </a>
+          
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+            <div id="navbarBasicExample" class="navbar-menu">
+              <div class="navbar-start">
+                <a class="navbar-item">
+                  Home
+                </a>
+          
+                <a class="navbar-item">
+                  Find pets
+                </a>
+
+                <a class="navbar-item">
+                    About
+                  </a>
+          
+              </div>
+          
+              <div class="navbar-end">
+                <div class="navbar-item">
+                  <div class="buttons">
+                    <a class="button is-primary">
+                      <strong>Sign up</strong>
+                    </a>
+                    <a class="button is-light">
+                      Log in
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <section class="hero is-medium">
+            <div class="hero-body">
+              <p class="title has-text-light is-1">Search for pets</p>
+              <div class="card p-6" id="card">
+                <div class="card-content container-fluid">
+                  <div class="content is-hidden" id="quiz">
+                    <p class="title" id="question-cat">Category</p>
+                    <p class="subtitle" id="question-text">Take this test to see if you are an eligible owner.</p>
+                    <div class="grid buttons" id="choicescontent">
+
+                    </div>
+                  </div>
+                  </div>
+                
+                <div class="has-text-centered title" id="ready">
+                    <p class="title is-size-1">Let's find your future pet</p>
+                    <p class="subtitle">Answer the following questions truthfully.</p>
+                    <p class="subtitle">We will recommend someone from our shelter.</p>
+                    <button class="button is-dark is-large" id="start-btn">
+                        <strong>Let's start!</strong>
+                    </button>
+                </div>
+                <div id="results" class="is-hidden">
+                  <p class="title">Candidates</p>
+                  <p class="subtitle">Note that results may appear different from what you might prefer.</p>
+                  <div class="fixed-grid has-auto-count">
+                    <div class="block has-text-centered is-hidden" id="noresults">
+                      <p class="subtitle has-text-centered">No results.</p>
+                      <a class="button is-primary is-large" id="start-btn" href="/search">
+                        <strong>Try again</strong>
+                      </a>
+                    </div>
+                    <div class="block has-text-centered" id="candidates">
+                      <div id="skeleton">
+                        <p class="heading is-size-3 has-text-weight-bold">Test</p>
+                        <div class="level">
+                          <div class="level-item has-text-centered">
+                            <div>
+                              <p class="heading">Pet</p>
+                              <p class="subtitle">dog</p>
+                            </div>
+                          </div>
+                          <div class="level-item has-text-centered">
+                            <div>
+                              <p class="heading">Pet</p>
+                              <p class="subtitle">dog</p>
+                            </div>
+                          </div>
+                          <div class="level-item has-text-centered">
+                            <div>
+                              <p class="heading">Pet</p>
+                              <p class="subtitle">dog</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="level">
+                          <div class="level-item has-text-centered">
+                            <div>
+                              <p class="heading">Pet</p>
+                              <p class="subtitle">dog</p>
+                            </div>
+                          </div>
+                          <div class="level-item has-text-centered">
+                            <div>
+                              <p class="heading">Pet</p>
+                              <p class="subtitle">dog</p>
+                            </div>
+                          </div>
+                          <div class="level-item has-text-centered">
+                            <div>
+                              <p class="heading">Pet</p>
+                              <p class="subtitle">dog</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="hero is-large is-fluid">
+            <div class="hero-body">
+                
+            </div>
+          </section>
+          <script src="../static/main.js" async defer></script>
+          <script src="../static/search.js" async defer></script>
+        <!--script src="{{ url_for('static',filename='main.js') }}" async defer></script>
+    </body>
+</html>

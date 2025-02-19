@@ -7,6 +7,8 @@ import numpy as np
 import joblib
 import os
 
+from Database import db, Comment
+
 app = Flask(__name__)
 cors = CORS(app)
 owners = joblib.load("owners.pickle")
@@ -98,6 +100,27 @@ def predict():
 @app.route("/info", methods=["GET"])
 def pet_info():
     return render_template('pet.html')
+
+@app.route('/comment', methods=['POST'])
+def post_comment():
+    data = request.get_json()
+    post_id = data.get('post_id')
+    content = data.get('content')
+
+    if not post_id or not content:
+        return jsonify({'error': 'Post ID and content are required'}), 400
+
+    new_comment = Comment(post_id=post_id, content=content)
+    db.session.add(new_comment)
+    db.session.commit()
+
+    return jsonify({'message': 'Comment added successfully'}), 201
+
+@app.route('/comments/<int:post_id>', methods=['GET'])
+def get_comments(post_id):
+    comments = Comment.query.filter_by(post_id=post_id).order_by(Comment.created_at.desc()).all()
+    return jsonify([{'id': c.id, 'content': c.content, 'created_at': c.created_at} for c in comments])
+
 
 @app.route("/pet", methods=["POST"])
 def predict_pet():

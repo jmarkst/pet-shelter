@@ -172,7 +172,7 @@ function submitAnswers() {
 
                 const button = document.createElement("a");
                 button.classList.add("button", "is-large", "is-primary");
-                button.href = `/pet?id=${indices[i]}`;
+                button.href = `/info?id=${indices[i]}`;
                 button.textContent = `Check ${pet.sex == "male" ? "him": "her"}`;
 
                 // Append button to content

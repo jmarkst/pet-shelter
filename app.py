@@ -94,6 +94,11 @@ def predict():
     except Exception as e:
         return f"Error: {str(e)}", 500
 
+
+@app.route("/info", methods=["GET"])
+def pet_info():
+    return render_template('pet.html')
+
 @app.route("/pet", methods=["POST"])
 def predict_pet():
     try:

@@ -124,7 +124,7 @@ function submitAnswers() {
               let keys = ["pet", "age", "sex", "size", "color"]
               for (let i = 0; i < Object.keys(data.selected_indices).length; i++) {
                 const levelDiv = document.createElement('div');
-                levelDiv.className = 'card has-background-dark';
+                levelDiv.className = 'card has-background-white';
                 console.log(indices[i])
                 console.log(db[indices[i]])
                 let pet = db[indices[i]]

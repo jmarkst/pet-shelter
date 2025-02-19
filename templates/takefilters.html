@@ -11,57 +11,14 @@
 
     </head>
     <body class="has-background-dark has-text-white">
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-              <a class="navbar-item" href="/">
-                <h1 class="title">ANIMAL SHELTER</h1>
-              </a>
-          
-              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-              </a>
-            </div>
-          
-            <div id="navbarBasicExample" class="navbar-menu">
-              <div class="navbar-start">
-                <a class="navbar-item">
-                  Home
-                </a>
-          
-                <a class="navbar-item">
-                  Find pets
-                </a>
-
-                <a class="navbar-item">
-                    About
-                  </a>
-          
-              </div>
-          
-              <div class="navbar-end">
-                <div class="navbar-item">
-                  <div class="buttons">
-                    <a class="button is-primary">
-                      <strong>Sign up</strong>
-                    </a>
-                    <a class="button is-light">
-                      Log in
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </nav>
+      {% include 'header.html' %}
           <section class="hero is-medium">
             <div class="hero-body">
               <div class="block" id="card">
                 <div class="card-content container-fluid">
                   <div class="content is-hidden" id="quiz">
                     <p class="title" id="question-cat">Category</p>
-                    <p class="subtitle" id="question-text">Take this test to see if you are an eligible owner.</p>
+                    <p class="subtitle has-text-white" id="question-text">Take this test to see if you are an eligible owner.</p>
                     <div class="grid buttons" id="choicescontent">
 
                     </div>
@@ -70,15 +27,15 @@
                 
                 <div class="has-text-centered title" id="ready">
                     <p class="title is-size-1">Let's find your future pet</p>
-                    <p class="subtitle">Answer the following questions truthfully.</p>
-                    <p class="subtitle">We will recommend someone from our shelter.</p>
-                    <button class="button is-dark is-large" id="start-btn">
+                    <p class="subtitle has-text-white">Answer the following questions truthfully.</p>
+                    <p class="subtitle has-text-white">We will recommend someone from our shelter.</p>
+                    <button class="button is-primary is-large" id="start-btn">
                         <strong>Let's start!</strong>
                     </button>
                 </div>
-                <div id="results" class="is-hidden">
+                <div id="results" class="is-hidden container-fluid">
                   <p class="title">Candidates</p>
-                  <p class="subtitle">Note that results may appear different from what you might prefer.</p>
+                  <p class="subtitle has-text-white ml-2">Note that results may appear different from what you might prefer.</p>
                   <div class="fixed-grid">
                     <div class="block has-text-centered is-hidden" id="noresults">
                       <p class="subtitle has-text-centered">No results.</p>

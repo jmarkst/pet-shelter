@@ -52,11 +52,11 @@
                     <p class="title is-6">Comments</p>
 
                     <div class="container is-fluid card p-3">
-                        <input type="text" class="input is-large" placeholder="Comment...">
-                        <button class="button is-medium m-3 is-primary w-100">Post comment</button>
+                        <input type="text" class="input is-large" placeholder="Comment..." id="commentContent">
+                        <button class="button is-medium m-3 is-primary w-100" onclick="postComment();" id="commentBtn" disabled>Post comment</button>
                     </div>
-                    <div>
-                        <div class="container is-fluid card p-3">
+                    <div id="comments">
+                        <div class="container is-fluid card p-3 skeleton-block" id="error-card">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare
                                       magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa
                                       sem. Etiam finibus odio quis feugiat facilisis.
@@ -66,6 +66,6 @@
                   </div>
               </div>
         </section>
-        <script src="" async defer></script>
+        <script src="{{ url_for('static',filename='pet.js') }}" async defer></script>
     </body>
 </html>

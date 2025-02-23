@@ -1,5 +1,7 @@
 from flask import Flask, request, jsonify, render_template, send_from_directory, abort
 from flask_cors import CORS, cross_origin
+from flask_sqlalchemy import SQLAlchemy
+from datetime import datetime
 import pickle
 import sklearn
 import pandas as pd
@@ -7,10 +9,7 @@ import numpy as np
 import joblib
 import os
 
-from Database import db, Comment
 
-app = Flask(__name__)
-cors = CORS(app)
 owners = joblib.load("owners.pickle")
 pets = joblib.load("pets3.pickle")
 
@@ -49,6 +48,24 @@ output_labels = ["no", "maybe", "yes"]
 
 pet_db = pd.read_csv("animals.csv")
 
+
+app = Flask(__name__)
+cors = CORS(app)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///comments.db'  # Change to your actual database
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+db = SQLAlchemy(app)
+
+class Comment(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    post_id = db.Column(db.Integer, nullable=False)
+    content = db.Column(db.Text, nullable=False)
+    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+
+# Initialize DB
+with app.app_context():
+    db.create_all()
+
 @app.route('/')
 def home():
     return render_template("main.html")
@@ -62,7 +79,7 @@ def search():
     return render_template("takefilters.html")
 
 @app.route("/db")
-def db():
+def animals():
     animals = pd.read_csv("animals.csv")
     json = animals.to_json(orient="records", indent=2)
     return json

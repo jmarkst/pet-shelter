@@ -72,3 +72,7 @@
 .hidden {
     display: none !important;
 }
+
+.card:hover {
+    border: 5px gold solid;
+}

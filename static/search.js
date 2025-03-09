@@ -118,7 +118,7 @@ function submitAnswers() {
             .then(text => {
               console.log(text)
               db = text
-              skeleton.classList.add("is-hidden")
+              candidates.innerHTML = ""
 
               let indices = data.selected_indices;
               let keys = ["pet", "age", "sex", "size", "color"]

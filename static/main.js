@@ -17,7 +17,7 @@ const questionsJSONPets = `[
   {"cat": "Color", "question": "Select a color", "choices": ["Tri-color", "Black and white", "White and orange", "White and gray", "White", "Brown and gray"]}
 ]`;
 
-const questions = JSON.parse(questionsJSON); // Convert JSON string to object
+let questions = JSON.parse(questionsJSON); // Convert JSON string to object
 let currentIndex = 0;
 let userAnswers = [];
 
@@ -75,12 +75,14 @@ document.addEventListener('DOMContentLoaded', () => {
         submitAnswersPets();
         return;
     }
-    
+
     const questionCat = document.getElementById("question-cat");
     const questionText = document.getElementById("question-ask");
     const choicesContainer = document.getElementById("test-choices");
 
-    const currentQuestion = questions[currentIndex];
+    let petChoice = userAnswers[0]?.answer == "dog" ? "dog" : "cat"
+
+    const currentQuestion = currentIndex >= 4 ? (petChoice == "dog" ? questions[4] : questions[5]) : questions[currentIndex];
     questionCat.textContent = currentQuestion.cat;
     questionText.textContent = currentQuestion.question;
     choicesContainer.innerHTML = ""; // Clear previous choices
@@ -231,8 +233,10 @@ function submitAnswersPets() {
   const questionCat = document.getElementById("question-cat");
   const questionText = document.getElementById("question-ask");
   const choicesContainer = document.getElementById("test-choices");
-  const card = document.getElementById("test-card-body");
+  const card = document.getElementById("test-card");
+  const candidates = document.getElementById("results");
   card.classList.toggle("hidden");
+  document.getElementById("load").classList.toggle("hidden")
 
 
   fetch("/pet", {
@@ -252,7 +256,7 @@ function submitAnswersPets() {
       let indices = {}
       if (data.selected_indices.length == 0) {
         indices = data.selected_indices
-        noresultsDiv.classList.remove("is-hidden");
+        //noresultsDiv.classList.remove("is-hidden");
       } else {
         indices = data.selected_indices
         fetch("/db")
@@ -260,75 +264,54 @@ function submitAnswersPets() {
           .then(text => {
             console.log(text)
             db = text
-            skeleton.classList.add("is-hidden")
+
+            document.getElementById("load").classList.toggle("hidden")
 
             let indices = data.selected_indices;
             let keys = ["pet", "age", "sex", "size", "color"]
-            for (let i = 0; i < Object.keys(data.selected_indices).length; i++) {
-              const levelDiv = document.createElement('div');
-              levelDiv.className = 'card has-background-white';
-              console.log(indices[i])
-              console.log(db[indices[i]])
-              let pet = db[indices[i]]
+            for (let j = 0; j < Object.keys(data.selected_indices).length; j+=5) {
+              console.log(j)
+              const cardrow = document.createElement("div")
+              cardrow.classList.add("d-flex","flex-row","w-100", "gap-3", "align-items-center", "justify-content-center");
+              for (let i = j; i < 5; i++) {
+                const levelDiv = document.createElement('div');
+                levelDiv.classList.add("card", "d-flex", "gap-2")
+                levelDiv.style.width = "18rem";
+                console.log(indices[i])
+                console.log(db[indices[i]])
+                let pet = db[indices[i]]
 
-              const cardImage = document.createElement("div");
-              cardImage.classList.add("card-image");
+                const img = document.createElement("img");
+                img.src = `/pics/${indices[i]}` || "https://bulma.io/assets/images/placeholders/1280x960.png";
+                img.alt = `Image of ${pet.name || "Unknown"}`;
+                img.classList.add("card-img-top");
 
-              const figure = document.createElement("figure");
-              figure.classList.add("image", "is-4by3");
+                const cardbody = document.createElement("div")
+                cardbody.classList.add("card-body");
 
-              const img = document.createElement("img");
-              img.src = `/pics/${indices[i]}` || "https://bulma.io/assets/images/placeholders/1280x960.png";
-              img.alt = `Image of ${pet.name || "Unknown"}`;
+                const cardtitle = document.createElement("div")
+                cardtitle.classList.add("card-title", "fw-bold", "fs-5");
+                cardtitle.textContent = `Candidate #${i+1}`
 
-              // Append image to figure, then to cardImage
-              figure.appendChild(img);
-              cardImage.appendChild(figure);
+                const cardtext = document.createElement("div")
+                cardtext.classList.add("card-text");
+                cardtext.textContent = `${pet.pet || "Unknown"} | ${pet.color || ""} | ${pet.age || "Unknown"} | ${pet.sex || ""} | ${pet.size || ""}`;
 
-              const cardContent = document.createElement("div");
-              cardContent.classList.add("card-content");
+                cardbody.appendChild(cardtitle)
+                cardbody.appendChild(cardtext)
 
-              // Create media section
-              const media = document.createElement("div");
-              media.classList.add("media");
+                const button = document.createElement("a");
+                button.classList.add("btn", "btn-lg", "btn-warning", "fw-bold");
+                button.href = `/info?id=${indices[i]}`;
+                button.textContent = `Check ${pet.sex == "male" ? "him": "her"}`;
 
-              const mediaContent = document.createElement("div");
-              mediaContent.classList.add("media-content");
-
-              const title = document.createElement("p");
-              title.classList.add("title", "is-4");
-              title.textContent = `Candidate #${i + 1}`;
-
-              const subtitle = document.createElement("p");
-              subtitle.classList.add("subtitle", "is-6");
-              subtitle.textContent = `${pet.pet || "Unknown"} | ${pet.color || ""} | ${pet.age || "Unknown"} | ${pet.sex || ""} | ${pet.size || ""}`;
-
-              // Append title and subtitle to media content
-              mediaContent.appendChild(title);
-              mediaContent.appendChild(subtitle);
-              media.appendChild(mediaContent);
-
-              // Create button section
-              const content = document.createElement("div");
-              content.classList.add("content");
-
-              const button = document.createElement("a");
-              button.classList.add("button", "is-large", "is-primary");
-              button.href = `/info?id=${indices[i]}`;
-              button.textContent = `Check ${pet.sex == "male" ? "him": "her"}`;
-
-              // Append button to content
-              content.appendChild(button);
-
-              // Assemble card components
-              cardContent.appendChild(media);
-              cardContent.appendChild(content);
-
-              levelDiv.appendChild(cardImage)
-              levelDiv.appendChild(cardContent)
-
-              candidates.appendChild(levelDiv);
-            }
+                levelDiv.appendChild(img)
+                levelDiv.appendChild(cardbody)
+                levelDiv.appendChild(button)
+                cardrow.appendChild(levelDiv);
+              }
+              candidates.appendChild(cardrow);
+          }
         })
       }
 

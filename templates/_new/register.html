@@ -30,11 +30,11 @@
                 <div class="card p-4 shadow-lg" style="width: 30vw;">
                     <div class="card-body d-flex flex-column gap-3">
                         <h3 class="text-center fw-bold">Register</h3>
-        
-                        <input type="text" class="form-control" placeholder="Username">
-                        <input type="password" class="form-control" placeholder="Password">
-                        <input type="password" class="form-control" placeholder="Repeat password">
-                        <button class="btn btn-primary w-100">Create account</button>
+                        <div id="errorCard" class="alert alert-danger d-none"></div>
+                        <input id="registerUsername" type="text" class="form-control" placeholder="Username">
+                        <input id="registerPassword" type="password" class="form-control" placeholder="Password">
+                        <input id="registerRepeatPassword" type="password" class="form-control" placeholder="Repeat password">
+                        <button class="btn btn-primary w-100" onclick="handleRegister();">Create account</button>
                     </div>
                 </div>
             </div>

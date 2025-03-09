@@ -1,5 +1,6 @@
-from flask import Flask, request, jsonify, render_template, send_from_directory, abort
+from flask import Flask, request, jsonify, render_template, send_from_directory, abort, session, redirect, url_for, send_file
 from flask_cors import CORS, cross_origin
+from flask_session import Session
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 import pickle
@@ -8,6 +9,9 @@ import pandas as pd
 import numpy as np
 import joblib
 import os
+
+from flask_bcrypt import Bcrypt
+from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity, JWTManager
 
 
 owners = joblib.load("owners.pickle")
@@ -53,8 +57,16 @@ app = Flask(__name__)
 cors = CORS(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///comments.db'  # Change to your actual database
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['JWT_SECRET_KEY'] = 'petshelter'
+app.config["SECRET_KEY"] = "petsheltersession"
+
+app.config["SESSION_PERMANENT"] = False
+app.config["SESSION_TYPE"] = "filesystem"
 
 db = SQLAlchemy(app)
+bcrypt = Bcrypt(app)
+jwt = JWTManager(app)
+Session(app)
 
 class Comment(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -62,29 +74,39 @@ class Comment(db.Model):
     content = db.Column(db.Text, nullable=False)
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
 
+class User(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(50), unique=True, nullable=False)
+    password = db.Column(db.String(100), nullable=False)
+
 # Initialize DB
 with app.app_context():
     db.create_all()
 
 @app.route('/')
 def home():
-    return render_template("/_new/landing.html")
+    user = session.get("user")
+    return render_template("/_new/landing.html", user=user)
 
 @app.route('/resources')
 def resources():
-    return render_template("/_new/resources.html")
+    user = session.get("user")
+    return render_template("/_new/resources.html", user=user)
 
 @app.route('/faq')
 def faq():
-    return render_template("/_new/faq.html")
+    user = session.get("user")
+    return render_template("/_new/faq.html", user=user)
 
 @app.route('/find-pet')
 def eligibility():
+    
     return render_template("/_new/find-pet.html")
 
 @app.route('/find-ai')
 def findAi():
-    return render_template("/_new/find-ai.html")
+    user = session.get("user")
+    return render_template("/_new/find-ai.html", user=user)
 
 @app.route('/search')
 def search():
@@ -106,11 +128,55 @@ def row():
 
 @app.route("/login")
 def login():
-    return render_template("/_new/login.html")
+    user = session.get("user")
+    return render_template("/_new/login.html", user=user)
+
+@app.route("/logout")
+def logout():
+    session.pop("user", None)
+    return redirect(url_for('home'))
 
 @app.route("/register")
 def register():
-    return render_template("/_new/register.html")
+    user = session.get("user")
+    return render_template("/_new/register.html", user=user)
+
+@app.route("/user/register", methods=["POST"])
+def registerUser():
+    data = request.get_json()
+    username = data.get('username')
+    password = data.get('password')
+
+    if User.query.filter_by(username=username).first():
+        return jsonify({"message": "User already exists"}), 400
+
+    hashed_password = bcrypt.generate_password_hash(password).decode('utf-8')
+    new_user = User(username=username, password=hashed_password)
+    db.session.add(new_user)
+    db.session.commit()
+
+    return jsonify({"message": "User registered successfully"}), 201
+
+@app.route("/user/login", methods=["POST"])
+def loginUser():
+    data = request.get_json()
+    username = data.get('username')
+    password = data.get('password')
+
+    user = User.query.filter_by(username=username).first()
+    if not user or not bcrypt.check_password_hash(user.password, password):
+        return jsonify({"message": "Invalid credentials"}), 401
+
+    access_token = create_access_token(identity=username)
+    session['user'] = username
+    return jsonify({"message": "Login successful", "token": access_token}), 200
+
+@app.route('/protected', methods=['GET'])
+@jwt_required()
+def protected():
+    current_user = get_jwt_identity()
+    return jsonify({"message": "You are logged in", "user": current_user}), 200
+
 
 @app.route('/owner', methods=['POST'])
 def predict():
@@ -144,7 +210,17 @@ def predict():
 
 @app.route("/info", methods=["GET"])
 def pet_info():
-    return render_template('_new/info.html')
+    user = session.get("user")
+    return render_template('_new/info.html', user=user)
+
+@app.route("/adoption-form")
+def adoptionform():
+    filepath = url_for("static", filename="adoption-form.pdf")  # Path to the file
+    return send_file(filepath, as_attachment=True)
+
+@app.route("/pdf")
+def serve_pdf():
+    return send_file(url_for("static", filename="adoption-form.pdf"), as_attachment=False)
 
 @app.route('/comment', methods=['POST'])
 def post_comment():

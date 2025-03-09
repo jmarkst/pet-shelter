@@ -242,6 +242,11 @@ def get_comments(post_id):
     comments = Comment.query.filter_by(post_id=post_id).order_by(Comment.created_at.desc()).all()
     return jsonify([{'id': c.id, 'content': c.content, 'created_at': c.created_at} for c in comments])
 
+@app.route('/browse')
+def browse():
+    user= session.get("user")
+    return render_template("_new/browse.html", user=user)
+
 
 @app.route("/pet", methods=["POST"])
 def predict_pet():

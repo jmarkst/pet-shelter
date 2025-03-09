@@ -104,6 +104,14 @@ def row():
     json = row.to_json(orient="records", indent=2)
     return json
 
+@app.route("/login")
+def login():
+    return render_template("/_new/login.html")
+
+@app.route("/register")
+def register():
+    return render_template("/_new/register.html")
+
 @app.route('/owner', methods=['POST'])
 def predict():
     print("owner")

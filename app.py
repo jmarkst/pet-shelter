@@ -68,11 +68,23 @@ with app.app_context():
 
 @app.route('/')
 def home():
-    return render_template("main.html")
+    return render_template("/_new/landing.html")
 
-@app.route('/eligibility')
+@app.route('/resources')
+def resources():
+    return render_template("/_new/resources.html")
+
+@app.route('/faq')
+def faq():
+    return render_template("/_new/faq.html")
+
+@app.route('/find-pet')
 def eligibility():
-    return render_template("taketest.html")
+    return render_template("/_new/find-pet.html")
+
+@app.route('/find-ai')
+def findAi():
+    return render_template("/_new/find-ai.html")
 
 @app.route('/search')
 def search():

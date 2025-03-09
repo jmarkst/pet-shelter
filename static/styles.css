@@ -1,3 +1,74 @@
 * {
-    font-family: "Lexend";
+    font-family: "Work Sans" !important;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-out;
+}
+
+.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.circularcard {
+    height: 600px;
+    width: 600px;
+    padding: 20px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(1,1,1,0.3);
+    color: white !important;
+    border: 5px gold solid;
+}
+
+.circularcardsuccess {
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,128,0, 0.3);
+    color: white !important;
+    border: 5px green solid;
+}
+
+.circularcardfailed {
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(128,0,0, 0.3);
+    color: white !important;
+    border: 5px red solid;
+}
+
+.boxcard {
+    height: auto;
+    width: 600px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(1,1,1,0.3);
+    color: white !important;
+    border: 5px gold solid;
+}
+
+.hidden {
+    display: none !important;
 }

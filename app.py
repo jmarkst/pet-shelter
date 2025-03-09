@@ -157,6 +157,11 @@ def registerUser():
 
     return jsonify({"message": "User registered successfully"}), 201
 
+@app.route("/contact")
+def contact():
+    user = session.get("user")
+    return render_template("_new/contact.html", user=user)
+
 @app.route("/user/login", methods=["POST"])
 def loginUser():
     data = request.get_json()
@@ -211,7 +216,8 @@ def predict():
 @app.route("/info", methods=["GET"])
 def pet_info():
     user = session.get("user")
-    return render_template('_new/info.html', user=user)
+    id=request.args.get('id')
+    return render_template('_new/info.html', user=user, id=id)
 
 @app.route("/adoption-form")
 def adoptionform():
@@ -247,6 +253,41 @@ def browse():
     user= session.get("user")
     return render_template("_new/browse.html", user=user)
 
+
+@app.route('/password')
+def password():
+    user= session.get("user")
+    return render_template("_new/password.html", user=user)
+
+@app.route('/change-password', methods=['POST'])
+def change_password():
+    data = request.get_json()
+    current_password = data.get('currentPassword')
+    new_password = data.get('newPassword')
+    current_user = data.get('user')
+
+    # Get the current logged-in user (this assumes user is authenticated)
+    user = User.query.filter_by(username=current_user).first()  # Replace with actual user session or login logic
+
+    if not user:
+        return jsonify({"success": False, "message": "User not found."})
+
+    # Check if the current password is correct using bcrypt
+    if not user or not bcrypt.check_password_hash(user.password, current_password):
+        return jsonify({"message": "Invalid credentials"}), 401
+
+    # Validate the new password (e.g., check minimum length)
+    if len(new_password) < 8:
+        return jsonify({"success": False, "message": "New password must be at least 6 characters long."})
+
+    # Hash the new password using bcrypt
+    hashed_password = bcrypt.generate_password_hash(new_password).decode('utf-8')
+    
+    # Update the password in the database
+    user.password = hashed_password
+    db.session.commit()
+
+    return jsonify({"success": True, "message": "Password successfully changed!"})
 
 @app.route("/pet", methods=["POST"])
 def predict_pet():
@@ -357,7 +398,6 @@ def serve_image(image_id):
         abort(404)  # Return 404 if the file does not exist
 
     return send_from_directory(IMAGE_FOLDER, filename, mimetype="image/png")
-
 
 if __name__ == '__main__':
     app.run(debug=True)

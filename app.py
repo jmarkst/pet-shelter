@@ -96,6 +96,14 @@ def animals():
     json = animals.to_json(orient="records", indent=2)
     return json
 
+@app.route("/row", methods=["GET"])
+def row():
+    animals = pd.read_csv("animals.csv")
+    id = request.args.get('id', default=0, type=int)
+    row = animals.iloc[id]
+    json = row.to_json(orient="records", indent=2)
+    return json
+
 @app.route('/owner', methods=['POST'])
 def predict():
     print("owner")
@@ -128,7 +136,7 @@ def predict():
 
 @app.route("/info", methods=["GET"])
 def pet_info():
-    return render_template('pet.html')
+    return render_template('_new/info.html')
 
 @app.route('/comment', methods=['POST'])
 def post_comment():

@@ -4,6 +4,14 @@
     font-family: "Work Sans" !important;
 }
 
+.nav-link:hover {
+    background-color: gold;
+    font-weight: bold;
+    border-radius: 10px;
+    color: black !important;
+    font-size: 20pt;
+}
+
 .titlelogo {
     font-family: "Chango" !important;
     size: 50rem;

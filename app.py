@@ -272,6 +272,11 @@ def browse():
     user= session.get("user")
     return render_template("_new/browse.html", user=user)
 
+@app.route('/events')
+def events():
+    user = session.get("user")
+    return render_template("_new/events.html", user=user)
+
 
 @app.route('/password')
 def password():

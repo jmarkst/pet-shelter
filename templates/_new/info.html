@@ -29,14 +29,17 @@
             </div>
 
             <div class="d-flex flex-column gap-3 p-3 w-100" style="max-width: 60vw; width: 100%; margin-top: 10rem;">
-
+                {%if user %}
                 <div class="card d-flex flex-column gap-3 p-3">
+                    
                     <input type="text" class="form-control" style="height: 10vh;" placeholder="Comment..." id="commentContent">
                     <button class="btn btn-large btn-warning fw-bold w-100" style="height: 5vh;" onclick="postComment();" id="commentBtn" disabled>Post comment</button>
+                
                 </div>
+                {% endif  %}
                 <div id="comments" class="w-100 d-flex flex-column gap-3" style="margin-top: 5rem;">
-                    <div class="card" id="error-card">
-                        <div class="card-body" style="font-size: 20px;">
+                    <div class="card" style="padding: 10px;" id="error-card">
+                        <div class="card-body" style="font-size: 20px; ">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare
                                   magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa
                                   sem. Etiam finibus odio quis feugiat facilisis.
@@ -47,6 +50,7 @@
             </div>
 
         </section>
+        {% include "_new/components/footer.html" %}
         <script>
             let user =  `{{ user }}`;
             console.log(user)

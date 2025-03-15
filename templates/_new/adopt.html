@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Pets Shelter - Find your ideal pet!</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href={{ url_for('static',filename='styles.css')}} rel="stylesheet">
+    </head>
+    <body style="height: 100vh; background: url({{url_for("static", filename="pics/Background.png")}}) no-repeat center center; background-size: 100%; backdrop-filter: blur(10px); background-attachment: fixed; padding-top: 10vh !important;">
+        {% include "_new/components/header.html" %}
+        <section class="text-white text-center d-flex flex-column align-items-center justify-content-center" style="height: 100%; max-height: 100vh; margin-top: 20rem;">
+            <div class="d-flex flex-column" style="padding:10rem;">
+                <div class="container py-4">
+                    <div class="card shadow-sm border-0">
+                      <div class="card-body">
+                        <h2 class="card-title text-primary">Our Adoption Program</h2>
+                        <p class="card-text">Adopting a pet is a profound act of love and compassion. When you adopt from our shelter, you are not only providing a loving home to an animal in need but also opening up space for another animal to be rescued. Our adoption process is designed to ensure that both the pet and the adopter are a perfect match.</p>
+                        
+                        <h4 class="mt-4">Why Adopt?</h4>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Provides a forever home to an animal in need, offering them love and security.</li>
+                          <li class="list-group-item">Helps reduce the overpopulation of homeless pets in the community.</li>
+                          <li class="list-group-item">Encourages responsible pet ownership and promotes animal welfare.</li>
+                          <li class="list-group-item">You gain a loyal companion who will bring joy and companionship to your life.</li>
+                        </ul>
+                  
+                        <h4 class="mt-4">Our Adoption Process</h4>
+                        <p>Every pet in our shelter undergoes thorough health checks, vaccinations, and behavioral assessments. We take the time to understand your lifestyle and preferences, helping you find the pet that best fits your home and heart.</p>
+                        <p>To begin the adoption process, you can:</p>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Visit our shelter to meet the animals in person.</li>
+                          <li class="list-group-item">Explore our online adoption gallery to view available pets.</li>
+                          <li class="list-group-item">Schedule a meet-and-greet to interact with potential pets and ask our staff questions.</li>
+                        </ul>
+                        <p>Once you find your perfect match, we'll guide you through the adoption paperwork and ensure you are fully prepared to welcome your new family member.</p>
+                  
+                        <h4 class="mt-4">Post-Adoption Support</h4>
+                        <p>Our commitment doesn't end with adoption. We provide post-adoption support, including guidance on pet care, adjustment, and training. We are always here to ensure that both you and your new pet have a smooth transition and a happy life together.</p>
+                  
+                        <h4 class="mt-4">Get Involved</h4>
+                        <p>There are many ways to contribute and make a positive impact:</p>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Adopt a pet and provide a loving, lifelong home.</li>
+                          <li class="list-group-item">Volunteer at our shelter to help with daily care, events, and fostering programs.</li>
+                          <li class="list-group-item">Donate to support our rescue, care, and adoption efforts.</li>
+                          <li class="list-group-item">Spread the word about the importance of pet adoption and responsible ownership.</li>
+                        </ul>
+                        <p>Contact us today to learn more about adopting or getting involved. Together, we can give every animal the chance they deserve.</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+            </div>
+        </section>
+        <script src={{url_for('static',filename='main.js')}}></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -18,8 +18,12 @@
     </head>
     <body style="height: 100vh; background: url({{url_for("static", filename="pics/Background.png")}}) no-repeat center center; background-size: 100%; backdrop-filter: blur(10px); background-attachment: fixed; padding-top: 10vh !important;">
         {% include "_new/components/header.html" %}
-        <section class="text-white text-center d-flex flex-column align-items-center justify-content-center" style="100%;">
-            <div class="d-flex flex-column" style="height: 100%; max-height: 100vh;" id="results">
+        <section class="text-white text-center d-flex flex-column align-items-center justify-content-center" style="100%; margin-top: 5rem;">
+            <h1 class="titlelogo">Dogs</h1>
+            <div class="d-flex flex-column" style="height: 100%; padding: 1rem 10rem;" id="dogs">
+            </div>
+            <h1 class="titlelogo">Cats</h1>
+            <div class="d-flex flex-column" style="height: 100%; padding: 1rem 10rem;" id="cats">
             </div>
         </section>
         <script src={{url_for('static',filename='browse.js')}}></script>

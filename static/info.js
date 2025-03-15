@@ -76,12 +76,14 @@ function drawComments (comments) {
             card.className = "card"
             const cardbody = document.createElement("div")
             cardbody.className = "card-body w-100 d-flex flex-column"
-
+            let createdate = new Date(comm.created_at)
+            console.log(createdate.toLocaleString('en-US', { timeZone: 'Asia/Manila' }))
             cardbody.innerHTML = `
                 <blockquote class="blockquote">
                     <p>${comm.content}</p>
                     <figcaption class="blockquote-footer text-secondary">
-                        ${comm.created_at}
+                        ${comm.user}
+                        ${createdate.toLocaleString('en-US', { timeZone: 'Asia/Manila' })}
                     </figcaption>
                 </blockquote>
             `
@@ -107,7 +109,7 @@ async function postComment () {
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ post_id: petId, content: content.value})
+                body: JSON.stringify({ post_id: petId, content: content.value, user_id: user})
             })
 
             if (!comment.ok) {

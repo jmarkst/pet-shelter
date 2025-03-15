@@ -16,17 +16,122 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link href={{ url_for('static',filename='styles.css')}} rel="stylesheet">
     </head>
-    <body>
+    <body style="min-height: 100vh; background: url({{url_for("static", filename="pics/Background.png")}}) no-repeat center center; background-size: 100%; backdrop-filter: blur(10px);  background-attachment: fixed;">
         {% include "_new/components/header.html" %}
-        <section class="text-white text-center d-flex align-items-center justify-content-center" style="height: 100vh; background: url({{url_for("static", filename="pics/Background.png")}}) no-repeat center center; background-size: 100%; backdrop-filter: blur(10px);">
-            <div class="d-flex flex-column">
-                <h1 class="fs-1 fw-bold fade-in">Find your new best friend today</h1>
-                <h2 class="fs-2 fade-in">Browse pets from our network of over 14,500 shelters and rescues</h2>
-                <div class="d-flex flex-row align-items-center justify-content-center gap-3 m-3">
+        <section class="text-white text-center d-flex align-items-center justify-content-center d-flex flex-column" style="min-height: 100%;">
+            <div class="d-flex flex-column text-start align-items-center justify-content-center" style="height: 100vh;">
+                <h1 class="fw-bold fade-in alttitle" style="background-color: gold; border-radius: 20px; padding: 20px; color: black; font-size: 40pt !important; ">Animals are our <b class="titlelogo" style="border-bottom: 10px solid green;">friends</b>.</h1>
+                <h2 class="fs-4 fade-in alttitle" style="font-size: 40pt !important;">Give them better home</h2>
+                <div class="d-flex flex-row gap-3 m-3">
                     <a href="/find-pet" class="btn btn-lg btn-primary fw-bold fade-in" style="transition-delay: 0.4s;">Adopt a pet</a>
                 </div>
             </div>
+            <div class="d-flex flex-column text-start" style="margin-top: 10rem;">
+                <h1 class="fs-1 fw-bold fade-in alttitle" style="font-size: 60pt !important;">Who are <b class="titlelogo" style="border-bottom: 10px solid green;">we</b>?</h1>
+            </div>
+
+            <div class="d-flex flex-row gap-3 align-items-center justify-content-center" style="min-height: 50vh; min-width: 60vw; padding: 5rem 20rem;">
+                <div class="d-flex flex-column gap-2 text-start" style="min-width: 80%;">
+                    <h1 class="titlelogo" style="background-color: gold; border-radius: 20px; color:black; padding: 20px; box-shadow: 10px 10px 0  black;">Quezon City Veterinary Department</h1>
+                    <p class="alttitle fs-4">
+                        Conducts animal vaccinations, animal pounding operations, animal adoption services and other veterinary services. It promotes and implements animal health, animal welfare, animal rights and protection within the city. To execute different policies, programs and other services, quezon city veterinary department divided it into three (3) divisions which are animal care and disease control division, city pound division, and food hygiene and regulatory division.
+                    </p>
+                </div>
+                <div style="d-flex flex-column align-items-center justify-content-center" style="min-width: 20%;">
+                    <img src="/pics/veterinary" class="img-fluid" style="max-height:200%; max-width: 200%; border-radius: 20px; box-shadow: 10px 10px 0 green;"/>
+                </div>
+            </div>
+
+            <div class="d-flex flex-row gap-3 align-items-center justify-content-center" style="min-height: 50vh; min-width: 60vw; padding: 5rem 20rem;">
+                <div style="d-flex flex-column align-items-center justify-content-center" style="min-width: 20%;">
+                    <img src="/pics/control" class="img-fluid" style="max-height:200%; max-width: 200%; border-radius: 20px; box-shadow: 10px 10px 0 green;"/>
+                </div>
+                <div class="d-flex flex-column gap-2 text-start align-items-end justify-content-end" style="min-width: 80%;">
+                    <h1 class="titlelogo" style="background-color: gold; border-radius: 20px; color:black; padding: 20px; max-width: 600px; box-shadow: 10px 10px 0 black;">Animal Care And Disease Control</h1>
+                    <p class="alttitle fs-4 text-end">
+                        Conducts the mass registration, vaccination, dog tagging and spay and neuter of pets.                    </p>
+                    </p>
+                    </div>
+                
+            </div>
+
+            <div class="d-flex flex-row gap-3 align-items-center justify-content-center" style="min-height: 50vh; min-width: 60vw; padding: 5rem 20rem;">
+                <div class="d-flex flex-column gap-2 text-start" style="min-width: 80%;">
+                    <h1 class="titlelogo" style="background-color: gold; border-radius: 20px; color:black; padding: 20px; box-shadow: 10px 10px 0  black;">City Pound Division</h1>
+                    <p class="alttitle fs-4">
+                        Are for animal impounding, redemption of impounded animals, field control and disposition of unregistered stray and unvaccinated dogs. Under this division is the animal care and adoption center which conducts the process of animal adoption.                    </p>
+                    </p>
+                    </div>
+                <div style="d-flex flex-column align-items-center justify-content-center" style="min-width: 20%;">
+                    <img src="/pics/pound" class="img-fluid" style="max-height:200%; max-width: 200%; border-radius: 20px; box-shadow: 10px 10px 0 green;"/>
+                </div>
+            </div>
+
+            <div class="d-flex flex-row gap-3 align-items-center justify-content-center" style="min-height: 50vh; min-width: 60vw; padding: 5rem 20rem;">
+                <div style="d-flex flex-column align-items-center justify-content-center" style="min-width: 20%;">
+                    <img src="/pics/hygiene" class="img-fluid" style="max-height:200%; max-width: 200%; border-radius: 20px; box-shadow: 10px 10px 0 green;"/>
+                </div>
+                <div class="d-flex flex-column gap-2 text-end align-items-end justify-content-end" style="min-width: 80%;">
+                    <h1 class="titlelogo" style="background-color: gold; border-radius: 20px; color:black; padding: 20px; max-width: 600px; box-shadow: 10px 10px 0 black;">Food Hygiene And Regulatory Division</h1>
+                    <p class="alttitle fs-4 text-end">
+                        Is assigned in meat inspection, license meat handlers, veterinary clearance and meat transport vehicle.                </div>
+                    </p>
+                </div>
+            </div>
+
+            <div class="d-flex flex-row gap-3 align-items-center justify-content-center" style="min-height: 50vh; min-width: 60vw; padding: 5rem 20rem;">
+                <div class="d-flex flex-column gap-2 text-start" style="min-width: 80%;">
+                    <h1 class="titlelogo" style="background-color: gold; border-radius: 20px; color:black; padding: 20px; box-shadow: 10px 10px 0  black;">Animal Care and Adoption Center</h1>
+                    <p class="alttitle fs-4" >
+                        Under the city pound division provides an electronic services (eservices) that can help the citizens to adopt easily through this website. Its mission is to promote animal adoption in the city and help the animals to find a new family. Aside from that, qc animal care and adoption center e-services offers services such as surrendering of pets, reporting of missing pets and provides information about pet vaccination and other programs for pets.                    </p>
+                    </div>
+                <div style="d-flex flex-column align-items-center justify-content-center" style="min-width: 20%;">
+                    <img src="/pics/adoption" class="img-fluid" style="max-height:200%; max-width: 200%; border-radius: 20px; box-shadow: 10px 10px 0 green;"/>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column text-start" style="margin-top: 10rem;">
+                <h1 class="fs-1 fw-bold fade-in alttitle" style="font-size: 40pt !important;">Our <b class="titlelogo" style="border-bottom: 10px solid green;">services</b></h1>
+            </div>
+
+            <div class="d-flex flex-row gap-3" style="margin: 5rem 10rem; margin-bottom: 5px;">
+                <div class="card" style="max-width: 80vw; background-color: gold; border: 10px solid green; border-radius: 20px;">
+                    <div class="card-body">
+                        <h1 class="titlelogo">Adopt Pets</h1>
+                        Don't shop. Adopt. Qc animal care and adoption center are encouraging pet owners to adopt pets who are looking for a new family or a friend. Give a chance to the pet to be your companion, bestfriend or even a fur baby! Share your love and support to our pets by sliding learn more.
+                    </div>
+                  </div>
+                  <div class="card" style="max-width: 80vw; background-color: gold; border: 10px solid black; border-radius: 20px;">
+                    <div class="card-body">
+                        <h1 class="titlelogo">Surrender Pets</h1>
+                        A pet deserves to have a home where they can feel safe and loved. Remember that we are not encouraging the pet owners to surrender their pets to our shelter but if you have no other choice, we will always welcome them with a big hug and small kisses.
+                    </div>
+                  </div>
+                  <div class="card" style="max-width: 80vw; background-color: gold; border: 10px solid green; border-radius: 20px;">
+                    <div class="card-body">
+                        <h1 class="titlelogo">Missing Pets</h1>
+                        Our pet is one of our family members and being away from them is an awful feeling. We at qc animal care and adoption center are willing to help the pet owners to find their fur baby. Let's all help the pet to find their way back to their home.
+                    </div>
+                  </div>
+            </div>
+
+            <div class="d-flex flex-row gap-3" style="margin: 5rem 10rem; margin-top: 5px;">
+                <div class="card" style="max-width: 80vw; max-width: 80vw; background-color: gold; border: 10px solid black; border-radius: 20px;">
+                    <div class="card-body">
+                        <h1 class="titlelogo">Pet Program</h1>
+                        We offer free vaccination to our beloved pets. Help them be free from sickness and continue to wag their tail with energy and happiness. Slide learn more for more details.
+                    </div>
+                  </div>
+                  <div class="card" style="max-width: 80vw; background-color: gold; border: 10px solid green; border-radius: 20px;">
+                    <div class="card-body" >
+                        <h1 class="titlelogo">Animal Care</h1>
+                        Being a pet owner comes with responsibilities. It is not just for other purposes but mainly to bring love and care to the animals. One of the duties of a responsible pet owner is knowing how to take care of their pet. Here are some of the things a pet owner must know. Be one of us
+                    </div>
+            </div>
+
+
         </section>
+        
         <script src={{url_for('static',filename='main.js')}}></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

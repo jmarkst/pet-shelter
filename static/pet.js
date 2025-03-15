@@ -70,7 +70,7 @@ async function postComment () {
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ post_id: petId, content: content.value})
+                body: JSON.stringify({ post_id: petId, content: content.value, user_id: userId })
             })
 
             if (!comment.ok) {

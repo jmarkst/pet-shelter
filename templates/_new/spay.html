@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Pets Shelter - Find your ideal pet!</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href={{ url_for('static',filename='styles.css')}} rel="stylesheet">
+    </head>
+    <body style="height: 100vh; background: url({{url_for("static", filename="pics/Background.png")}}) no-repeat center center; background-size: 100%; backdrop-filter: blur(10px); background-attachment: fixed; padding-top: 10vh !important;">
+        {% include "_new/components/header.html" %}
+        <section class="text-white text-center d-flex flex-column align-items-center justify-content-center" style="height: 100%; max-height: 100vh; margin-top: 20rem;">
+            <div class="d-flex flex-column" style="padding:10rem;">
+                <div class="container py-4">
+                    <div class="card shadow-sm border-0">
+                      <div class="card-body">
+                        <h2 class="card-title text-primary">Our Spay and Neuter Program</h2>
+                        <p class="card-text">At our shelter, we are deeply committed to the health and well-being of every pet. One of the most impactful ways we support this mission is through our Spay and Neuter Program. This program is designed not only to improve the lives of individual animals but also to address the broader issue of pet overpopulation in our community.</p>
+                        
+                        <h4 class="mt-4">Why Spay or Neuter?</h4>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Helps control the pet population and reduces the number of homeless animals, preventing unnecessary euthanasia.</li>
+                          <li class="list-group-item">Promotes healthier, longer lives by reducing the risk of certain cancers and infections, such as uterine infections and testicular cancer.</li>
+                          <li class="list-group-item">Minimizes behavioral issues like roaming, spraying, and aggression, making pets more docile and family-friendly.</li>
+                          <li class="list-group-item">Contributes to a safer community by reducing the number of stray animals on the streets.</li>
+                        </ul>
+                  
+                        <h4 class="mt-4">How the Program Works</h4>
+                        <img src="/pics/spay"/>
+                        <p>When you adopt from our shelter, your pet will already be spayed or neutered, ensuring they're ready for a healthy start in their new home. We also offer affordable spay and neuter services for community pets, including financial assistance for pet owners in need. Our dedicated veterinary team ensures a safe, comfortable procedure for every animal, followed by careful monitoring during the recovery process.</p>
+                        <p>Appointments can be scheduled online or by visiting our shelter. We provide pre-surgical consultations to answer any questions and ensure that your pet is healthy and ready for the procedure.</p>
+                  
+                        <h4 class="mt-4">Benefits to the Community</h4>
+                        <p>By reducing the number of stray and homeless animals, our program helps create a safer, cleaner, and more compassionate community. Fewer stray animals mean fewer incidents of accidents, fewer public health concerns, and a reduction in the strain on local animal control resources.</p>
+                  
+                        <h4 class="mt-4">Get Involved</h4>
+                        <p>By participating in our program, you're not just caring for your pet—you’re contributing to a larger cause of reducing overpopulation and promoting animal welfare. You can help by:</p>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Scheduling your pet for spaying or neutering.</li>
+                          <li class="list-group-item">Volunteering to assist with educational outreach and events.</li>
+                          <li class="list-group-item">Donating to help subsidize costs for low-income pet owners.</li>
+                          <li class="list-group-item">Spreading awareness about the importance of responsible pet ownership.</li>
+                        </ul>
+                        <p>Contact us today to learn more about our services or to schedule an appointment. Together, we can make a lasting difference.</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+            </div>
+              
+        </section>
+        <script src={{url_for('static',filename='main.js')}}></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>

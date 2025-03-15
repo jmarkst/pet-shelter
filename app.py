@@ -9,6 +9,7 @@ import pandas as pd
 import numpy as np
 import joblib
 import os
+from pytz import timezone, UTC
 
 from flask_bcrypt import Bcrypt
 from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity, JWTManager
@@ -71,8 +72,9 @@ Session(app)
 class Comment(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     post_id = db.Column(db.Integer, nullable=False)
+    user_id = db.Column(db.String, nullable=False)
     content = db.Column(db.Text, nullable=False)
-    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    created_at = db.Column(db.DateTime, default=datetime.now(UTC))
 
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -87,6 +89,21 @@ with app.app_context():
 def home():
     user = session.get("user")
     return render_template("/_new/landing.html", user=user)
+
+@app.route('/projects/spay')
+def spay():
+    user = session.get("user")
+    return render_template("/_new/spay.html", user=user)
+
+@app.route('/projects/adopt')
+def adopt():
+    user = session.get("user")
+    return render_template("/_new/adopt.html", user=user)
+
+@app.route('/projects/education')
+def education():
+    user = session.get("user")
+    return render_template("/_new/education.html", user=user)
 
 @app.route('/resources')
 def resources():
@@ -233,11 +250,12 @@ def post_comment():
     data = request.get_json()
     post_id = data.get('post_id')
     content = data.get('content')
+    user = data.get('user_id')
 
     if not post_id or not content:
         return jsonify({'error': 'Post ID and content are required'}), 400
 
-    new_comment = Comment(post_id=post_id, content=content)
+    new_comment = Comment(post_id=post_id, content=content, user_id=user)
     db.session.add(new_comment)
     db.session.commit()
 
@@ -245,8 +263,9 @@ def post_comment():
 
 @app.route('/comments/<int:post_id>', methods=['GET'])
 def get_comments(post_id):
+    pst = timezone('Asia/Manila')
     comments = Comment.query.filter_by(post_id=post_id).order_by(Comment.created_at.desc()).all()
-    return jsonify([{'id': c.id, 'content': c.content, 'created_at': c.created_at} for c in comments])
+    return jsonify([{'id': c.id, 'content': c.content, 'created_at': c.created_at.astimezone(pst).isoformat(), 'user': c.user_id} for c in comments])
 
 @app.route('/browse')
 def browse():
@@ -391,6 +410,18 @@ IMAGE_FOLDER = os.path.join(app.static_folder, "pics")
 def serve_image(image_id):
     """Serves a PNG image from the 'pics' directory based on the given ID."""
     filename = f"{image_id}.png"
+    image_path = os.path.join(IMAGE_FOLDER, filename)
+
+    # Check if the image exists
+    if not os.path.exists(image_path):
+        abort(404)  # Return 404 if the file does not exist
+
+    return send_from_directory(IMAGE_FOLDER, filename, mimetype="image/png")
+
+@app.route("/pics/<string:img>")
+def serve_image_file(img):
+    """Serves a PNG image from the 'pics' directory based on the given ID."""
+    filename = f"{img}.png"
     image_path = os.path.join(IMAGE_FOLDER, filename)
 
     # Check if the image exists

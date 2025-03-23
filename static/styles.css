@@ -5,18 +5,18 @@
 }
 
 .nav-link:hover {
-    background-color: gold;
+    background-color: rgb(255, 217, 0);
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 100px;
     color: black !important;
     font-size: 20pt;
 }
 
 .titlelogo {
-    font-family: "Chango" !important;
-    size: 50rem;
-    font-weight: 700;
-    font-style: italic;
+    font-family: "Anton", !important;
+    font-weight: 400;
+    font-size: 120%;
+    font-style: normal;
 }
 
 .alttitle {

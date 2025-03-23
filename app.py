@@ -15,6 +15,17 @@ from flask_bcrypt import Bcrypt
 from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity, JWTManager
 
 
+# Load the trained model and preprocessors
+MODEL_FILE = "pet_recommendation_model.h5"
+SCALER_FILE = "scaler.pkl"
+AGE_ENCODER_FILE = "age_encoder.pkl"
+FEATURE_COLUMNS_FILE = "feature_columns.pkl"
+
+model = tf.keras.models.load_model(MODEL_FILE)
+scaler = joblib.load(SCALER_FILE)
+age_encoder = joblib.load(AGE_ENCODER_FILE)
+feature_columns = joblib.load(FEATURE_COLUMNS_FILE)
+
 owners = joblib.load("owners.pickle")
 pets = joblib.load("pets3.pickle")
 
@@ -434,6 +445,59 @@ def serve_image_file(img):
         abort(404)  # Return 404 if the file does not exist
 
     return send_from_directory(IMAGE_FOLDER, filename, mimetype="image/png")
+
+
+def predict_pet_recommendation(base_data, want_data):
+    df = pd.DataFrame([base_data | want_data])  # Merge base and want values
+    
+    categorical_columns = ["pet", "sex", "color", "size", "want_pet", "want_sex", "want_color", "want_size"]
+    df = pd.get_dummies(df, columns=categorical_columns)
+    
+    for col in feature_columns:
+        if col not in df.columns:
+            df[col] = 0
+    
+    df["age"] = age_encoder.transform([df["age"].iloc[0]])
+    df["want_age"] = age_encoder.transform([df["want_age"].iloc[0]])
+    
+    df = df[feature_columns]
+    X_new = scaler.transform(df)
+    prediction = model.predict(X_new)[0]
+    
+    label_decoder = {0: "maybe", 1: "no", 2: "yes"}
+    predicted_label = np.argmax(prediction)
+    
+    return label_decoder[predicted_label], prediction[0]  # Return label and "maybe" probability
+
+@app.route("/pred", methods=["POST"])
+def pred():
+    data = request.json
+    required_keys = ["want_pet", "want_sex", "want_color", "want_size", "want_age"]
+    
+    if not all(key in data for key in required_keys):
+        return jsonify({"error": "Missing required fields"}), 400
+    
+    # Load CSV dataset
+    df = pd.read_csv("animals.csv")
+    predictions = []
+    
+    for idx, row in df.iterrows():
+        base_data = {
+            "pet": row["pet"],
+            "sex": row["sex"],
+            "color": row["color"],
+            "size": row["size"],
+            "age": row["age"]
+        }
+        
+        prediction_label, maybe_prob = predict_pet_recommendation(base_data, data)
+        maybe_prob_percentage = maybe_prob * 100
+        
+        if prediction_label == "yes" or maybe_prob_percentage > 60:
+            predictions.append(idx)
+    
+    return jsonify({"predictions": predictions})
+
 
 if __name__ == '__main__':
     app.run(debug=True)

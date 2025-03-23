@@ -19,9 +19,12 @@ document.addEventListener('DOMContentLoaded', () => {
             db.forEach((item, index) => {
                 const div = document.createElement("div");
                 div.className = "d-flex flex-column text-align-center";
+                petInfo.style.backgroundColor = "rgba(1,1,1,0.4)"
+                petInfo.style.borderRadius = "20px"
+                petInfo.style.padding = "20px"
             
                 div.innerHTML = `
-                    <h1 class="text-white text-center fw-bold fs-3">${attrs[index]}</h1>
+                    <h1 class="text-white text-center fw-bold fs-3">${attrs[index].toUpperCase()}</h1>
                     <p class="text-white text-center fs-4">${item}</p>
                 `;
             

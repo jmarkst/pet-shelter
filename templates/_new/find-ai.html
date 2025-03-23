@@ -5,6 +5,7 @@
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
+        <link rel="icon" type="image/png" href="{{ url_for('static', filename='/pics/logo.png') }}">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Pets Shelter - Find your ideal pet!</title>
@@ -18,7 +19,7 @@
     </head>
     <body style="height: 100vh; background: url({{url_for("static", filename="pics/Background.png")}}) no-repeat center center; background-size: 100%; backdrop-filter: blur(10px); background-attachment: fixed; padding-top: 10vh !important;">
         {% include "_new/components/header.html" %}
-        <section class="text-white text-center d-flex flex-column align-items-center justify-content-center" style="padding: 5rem;">
+        <section class="text-white text-center d-flex flex-column align-items-center justify-content-center" style="padding: 5rem; min-height: 100vh;">
             <div class="card card-primary fade-in circularcard" id="test-card">
                 <div class="w-100 card-body text-center d-flex flex-column gap-2 align-items-center justify-content-center">
                     <div id="test-card-header">

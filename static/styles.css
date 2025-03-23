@@ -1,15 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Chango&family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
 
 * {
-    font-family: "Work Sans" !important;
+    font-family: "Funnel Display" !important;
+}
+
+chaindesk-chatbox-bubble {
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust transparency */
+    backdrop-filter: blur(10px); /* Optional: adds blur effect */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px;
+    position: absolute;
+    display: flex;
+    bottom: 10px !important;
+    z-index: 99999;
+    right: 20px;
 }
 
 .nav-link:hover {
-    background-color: rgb(255, 217, 0);
     font-weight: bold;
-    border-radius: 100px;
-    color: black !important;
-    font-size: 20pt;
+    border-radius: 0;
+    color: gold !important;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: gold;
+    border-top: 5px solid gold;
 }
 
 .titlelogo {

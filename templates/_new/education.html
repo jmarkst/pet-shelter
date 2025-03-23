@@ -11,27 +11,48 @@
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link href={{ url_for('static',filename='styles.css')}} rel="stylesheet">
+        <link rel="icon" type="image/png" href="{{ url_for('static', filename='/pics/logo.png') }}">
     </head>
     <body style="min-height: 100vh; background: url({{url_for("static", filename="pics/Background.png")}}) no-repeat center center; background-size: 100%; backdrop-filter: blur(10px); background-attachment: fixed; padding-top: 10vh !important;">
         {% include "_new/components/header.html" %}
-        <section class="text-white text-center d-flex flex-column align-items-center justify-content-center" style="height: 100%;">
-            <div class="d-flex flex-column" style="padding:10rem;">
-                <div class="container py-4">
-                    <div class="card shadow-sm border-0">
-                      <div class="card-body">
-                        <h2 class="card-title text-primary">Human Education on Pet Adoption and Care</h2>
+        <section class="text-white text-center d-flex flex-column align-items-center justify-content-center" style="min-height: 100vh;">
+            <div class="d-flex flex-column" style="padding:10rem; min-height:100vh;">
+              <h2 class="fs-1 fw-bold">Human Education on Pet Adoption and Care</h2>
                         <p class="card-text">Educating our community about responsible pet adoption and care is a cornerstone of our mission. We believe that informed pet owners create happier, healthier lives for their companions, and contribute to the overall well-being of animals in our community.</p>
+
+                        <div class="d-flex flex-row p-3 gap-3 align-items-center justify-content-center" style="max-width:80vw;">
+                          <img src="/pics/RPO1" class="img-fluid fade-in" style="max-width: 20vw; height:30vh; object-fit:cover;"/>
+                          <img src="/pics/RPO2" class="img-fluid fade-in" style="max-width: 20vw; height:30vh; object-fit:cover;"/>
+                          <img src="/pics/RPO3" class="img-fluid fade-in" style="max-width: 20vw; height:30vh; object-fit:cover;"/>
+                      </div>
                         
-                        <h4 class="mt-4">Why Education Matters</h4>
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">Promotes responsible pet ownership and helps reduce pet abandonment.</li>
-                          <li class="list-group-item">Ensures that adopters understand the lifelong commitment of caring for a pet.</li>
-                          <li class="list-group-item">Improves the health and behavior of pets through informed care and training.</li>
-                          <li class="list-group-item">Fosters a compassionate and responsible community.</li>
-                        </ul>
-                  
-                        <h4 class="mt-4">Key Aspects of Responsible Pet Care</h4>
-                        <p>We educate potential and current pet owners about the essential aspects of caring for their animals. This includes:</p>
+                        <div class="accordion" id="accordionExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Why education matters?
+                              </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">Promotes responsible pet ownership and helps reduce pet abandonment.</li>
+                                  <li class="list-group-item">Ensures that adopters understand the lifelong commitment of caring for a pet.</li>
+                                  <li class="list-group-item">Improves the health and behavior of pets through informed care and training.</li>
+                                  <li class="list-group-item">Fosters a compassionate and responsible community.</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Key aspects of responsible pet care
+                              </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <p>We educate potential and current pet owners about the essential aspects of caring for their animals. This includes:</p>
                         <ul class="list-group list-group-flush">
                           <li class="list-group-item"><strong>Nutrition:</strong> Providing balanced diets suitable for the pet's age, size, and health conditions.</li>
                           <li class="list-group-item"><strong>Healthcare:</strong> Scheduling regular veterinary visits for vaccinations, check-ups, and preventative care.</li>
@@ -39,33 +60,44 @@
                           <li class="list-group-item"><strong>Grooming:</strong> Maintaining hygiene with regular grooming and cleanliness routines.</li>
                           <li class="list-group-item"><strong>Training:</strong> Teaching basic obedience and socialization to ensure well-behaved and adaptable pets.</li>
                         </ul>
-                  
-                        <h4 class="mt-4">Understanding the Adoption Commitment</h4>
-                        <p>Adopting a pet is a lifelong commitment. We educate adopters about:</p>
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">The time, emotional, and financial responsibilities of pet ownership.</li>
-                          <li class="list-group-item">The importance of patience during the pet's adjustment period.</li>
-                          <li class="list-group-item">Recognizing and meeting the unique needs of different breeds and species.</li>
-                        </ul>
-                  
-                        <h4 class="mt-4">Community Workshops and Resources</h4>
-                        <p>We offer various educational resources and workshops to empower pet owners, including:</p>
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">Adoption readiness workshops.</li>
-                          <li class="list-group-item">Pet care classes for first-time owners.</li>
-                          <li class="list-group-item">Behavioral training sessions.</li>
-                          <li class="list-group-item">Resource guides and support hotlines.</li>
-                        </ul>
-                  
-                        <h4 class="mt-4">Get Involved</h4>
-                        <p>Help us spread the importance of responsible pet care:</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Understanding commitment
+                              </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <p>Adopting a pet is a lifelong commitment. We educate adopters about:</p>
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">The time, emotional, and financial responsibilities of pet ownership.</li>
+                                  <li class="list-group-item">The importance of patience during the pet's adjustment period.</li>
+                                  <li class="list-group-item">Recognizing and meeting the unique needs of different breeds and species.</li>
+                                </ul>                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Get involved!
+                              </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <p>Help us spread the importance of responsible pet care:</p>
                         <ul class="list-group list-group-flush">
                           <li class="list-group-item">Attend and promote our educational events.</li>
                           <li class="list-group-item">Volunteer to assist in training or community outreach.</li>
                           <li class="list-group-item">Share information about pet care and adoption within your network.</li>
                         </ul>
                         <p>Together, we can build a more compassionate and informed community where every pet is cherished and cared for. Contact us to learn more or participate in our educational initiatives.</p>
-                        <a href="#" class="btn btn-primary mt-3">Learn More</a>
+                        
+                              </div>
+                            </div>
+
                       </div>
                     </div>
                   </div>

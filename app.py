@@ -10,6 +10,7 @@ import numpy as np
 import joblib
 import os
 from pytz import timezone, UTC
+import tensorflow as tf
 
 from flask_bcrypt import Bcrypt
 from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity, JWTManager
@@ -467,7 +468,7 @@ def predict_pet_recommendation(base_data, want_data):
     label_decoder = {0: "maybe", 1: "no", 2: "yes"}
     predicted_label = np.argmax(prediction)
     
-    return label_decoder[predicted_label], prediction[0]  # Return label and "maybe" probability
+    return label_decoder[predicted_label], prediction  # Return label and "maybe" probability
 
 @app.route("/pred", methods=["POST"])
 def pred():
@@ -480,8 +481,12 @@ def pred():
     # Load CSV dataset
     df = pd.read_csv("animals.csv")
     predictions = []
+    prediction_info = []
     
     for idx, row in df.iterrows():
+        if row["pet"] != data["want_pet"]:
+            continue
+        
         base_data = {
             "pet": row["pet"],
             "sex": row["sex"],
@@ -493,11 +498,18 @@ def pred():
         prediction_label, maybe_prob = predict_pet_recommendation(base_data, data)
         maybe_prob_percentage = maybe_prob * 100
         
-        if prediction_label == "yes" or maybe_prob_percentage > 60:
+        class_labels = ["no", "maybe", "yes"]
+        prob_dict = {class_labels[i]: float(maybe_prob[i]) for i in range(len(class_labels))}
+        
+        if prob_dict["yes"] > max(prob_dict["maybe"], prob_dict["no"]) or prob_dict["maybe"] > prob_dict["no"]:
             predictions.append(idx)
+            prediction_info.append({
+                "row": idx,
+                "pct": prob_dict
+            })
     
-    return jsonify({"predictions": predictions})
+    return jsonify({"predictions": predictions, "info": prediction_info})
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', debug=True)

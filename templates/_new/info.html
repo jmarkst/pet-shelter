@@ -5,6 +5,7 @@
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
+        <link rel="icon" type="image/png" href="{{ url_for('static', filename='/pics/logo.png') }}">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Pets Shelter - Find your ideal pet!</title>
@@ -50,6 +51,8 @@
             </div>
 
         </section>
+
+        
         {% include "_new/components/footer.html" %}
         <script>
             let user =  `{{ user }}`;

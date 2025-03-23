@@ -239,7 +239,7 @@ function submitAnswersPets() {
   document.getElementById("load").classList.toggle("hidden")
 
 
-  fetch("/pet", {
+  fetch("/pred", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
@@ -247,18 +247,18 @@ function submitAnswersPets() {
       want_age: age,
       want_sex: sex,
       want_size: size,
-      want_color: color,
-      number: 10
+      want_color: color
     })
   })
     .then(response => response.json())
     .then(data => {
+      console.log(data.predictions)
       let indices = {}
-      if (data.selected_indices.length == 0) {
-        indices = data.selected_indices
+      if (data.predictions.length == 0) {
+        indices = data.predictions
         //noresultsDiv.classList.remove("is-hidden");
       } else {
-        indices = data.selected_indices
+        indices = data.predictions
         fetch("/db")
           .then(response => response.json())
           .then(text => {
@@ -267,51 +267,69 @@ function submitAnswersPets() {
 
             document.getElementById("load").classList.toggle("hidden")
 
-            let indices = data.selected_indices;
+            let indices = data.predictions;
+            let info = data.info
             let keys = ["pet", "age", "sex", "size", "color"]
-            for (let j = 0; j < Object.keys(data.selected_indices).length; j+=5) {
-              console.log(j)
-              const cardrow = document.createElement("div")
-              cardrow.classList.add("d-flex","flex-row","w-100", "gap-3", "align-items-center", "justify-content-center");
-              for (let i = j; i < 5; i++) {
-                const levelDiv = document.createElement('div');
-                levelDiv.classList.add("card", "d-flex", "gap-2")
-                levelDiv.style.width = "18rem";
-                console.log(indices[i])
-                console.log(db[indices[i]])
-                let pet = db[indices[i]]
 
-                const img = document.createElement("img");
-                img.src = `/pics/${indices[i]}` || "https://bulma.io/assets/images/placeholders/1280x960.png";
-                img.alt = `Image of ${pet.name || "Unknown"}`;
-                img.classList.add("card-img-top");
-
-                const cardbody = document.createElement("div")
-                cardbody.classList.add("card-body");
-
-                const cardtitle = document.createElement("div")
-                cardtitle.classList.add("card-title", "fw-bold", "fs-5");
-                cardtitle.textContent = `Candidate #${i+1}`
-
-                const cardtext = document.createElement("div")
-                cardtext.classList.add("card-text");
-                cardtext.textContent = `${pet.pet || "Unknown"} | ${pet.color || ""} | ${pet.age || "Unknown"} | ${pet.sex || ""} | ${pet.size || ""}`;
-
-                cardbody.appendChild(cardtitle)
-                cardbody.appendChild(cardtext)
-
-                const button = document.createElement("a");
-                button.classList.add("btn", "btn-lg", "btn-warning", "fw-bold");
-                button.href = `/info?id=${indices[i]}`;
-                button.textContent = `Check ${pet.sex == "male" ? "him": "her"}`;
-
-                levelDiv.appendChild(img)
-                levelDiv.appendChild(cardbody)
-                levelDiv.appendChild(button)
-                cardrow.appendChild(levelDiv);
-              }
-              candidates.appendChild(cardrow);
+            if (data.predictions.length == 0) {
+              candidates.innerHTML += "No recommendations. Please try again."
+            } else {
+              for (let j = 0; j < Object.keys(data.predictions).length; j+=5) {
+                console.log(j)
+                const cardrow = document.createElement("div")
+                cardrow.classList.add("d-flex","flex-row","w-100", "gap-3", "align-items-center", "justify-content-center");
+                for (let i = j; i < 5; i++) {
+                  const levelDiv = document.createElement('div');
+                  levelDiv.classList.add("card", "d-flex", "gap-2")
+                  levelDiv.style.width = "18rem";
+                  console.log(indices[i])
+                  console.log(db[indices[i]])
+                  let pet = db[indices[i]]
+  
+                  const img = document.createElement("img");
+                  img.src = `/pics/${indices[i]}` || "https://bulma.io/assets/images/placeholders/1280x960.png";
+                  img.alt = `Image of ${pet.name || "Unknown"}`;
+                  img.classList.add("card-img-top");
+  
+                  img.style.height = "50vh"
+  
+                  const cardbody = document.createElement("div")
+                  cardbody.classList.add("card-body");
+  
+                  const cardtitle = document.createElement("div")
+                  cardtitle.classList.add("card-title", "fw-bold", "fs-5");
+                  cardtitle.textContent = `Candidate #${i+1}`
+  
+                  const cardtext = document.createElement("div")
+                  cardtext.classList.add("card-text");
+                  cardtext.textContent = `${pet.pet || "Unknown"} | ${pet.color || ""} | ${pet.age || "Unknown"} | ${pet.sex || ""} | ${pet.size || ""}`;
+  
+                  cardbody.appendChild(cardtitle)
+                  cardbody.appendChild(cardtext)
+  
+                  if (info[i].pct.yes > info[i].pct.maybe > info[i].pct.no)  {
+                    levelDiv.style.border = "5px solid gold"
+                    cardbody.innerHTML += "<b>PERFECT MATCH!</b>"
+                  }
+  
+                  cardrow.style.maxHeight = "50vh"
+                  levelDiv.style.maxHeight = "100%"
+  
+                  const button = document.createElement("a");
+                  button.classList.add("btn", "btn-lg", "btn-warning", "fw-bold");
+                  button.href = `/info?id=${indices[i]}`;
+                  button.textContent = `Check ${pet.sex == "male" ? "him": "her"}`;
+  
+                  levelDiv.appendChild(img)
+                  levelDiv.appendChild(cardbody)
+                  levelDiv.appendChild(button)
+                  cardrow.appendChild(levelDiv);
+                }
+                candidates.appendChild(cardrow);
+            }
           }
+
+            
         })
       }
 

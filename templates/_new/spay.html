@@ -9,36 +9,78 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="{{ url_for('static', filename='/pics/logo.png') }}">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link href={{ url_for('static',filename='styles.css')}} rel="stylesheet">
     </head>
     <body style="height: 100vh; background: url({{url_for("static", filename="pics/Background.png")}}) no-repeat center center; background-size: 100%; backdrop-filter: blur(10px); background-attachment: fixed; padding-top: 10vh  !important;">
         {% include "_new/components/header.html" %}
-        <section class="text-white text-center d-flex flex-column align-items-center justify-content-center" style="height: 100%; max-height: 100vh; margin-top: 20rem;">
-            <div class="d-flex flex-column" style="padding:10rem;">
-                <div class="container py-4">
-                    <div class="card shadow-sm border-0">
-                      <div class="card-body">
-                        <h2 class="card-title text-primary">Our Spay and Neuter Program</h2>
-                        <p class="card-text">At our shelter, we are deeply committed to the health and well-being of every pet. One of the most impactful ways we support this mission is through our Spay and Neuter Program. This program is designed not only to improve the lives of individual animals but also to address the broader issue of pet overpopulation in our community.</p>
-                        
-                        <h4 class="mt-4">Why Spay or Neuter?</h4>
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">Helps control the pet population and reduces the number of homeless animals, preventing unnecessary euthanasia.</li>
-                          <li class="list-group-item">Promotes healthier, longer lives by reducing the risk of certain cancers and infections, such as uterine infections and testicular cancer.</li>
-                          <li class="list-group-item">Minimizes behavioral issues like roaming, spraying, and aggression, making pets more docile and family-friendly.</li>
-                          <li class="list-group-item">Contributes to a safer community by reducing the number of stray animals on the streets.</li>
-                        </ul>
-                  
-                        <h4 class="mt-4">How the Program Works</h4>
-                        <p>When you adopt from our shelter, your pet will already be spayed or neutered, ensuring they're ready for a healthy start in their new home. We also offer affordable spay and neuter services for community pets, including financial assistance for pet owners in need. Our dedicated veterinary team ensures a safe, comfortable procedure for every animal, followed by careful monitoring during the recovery process.</p>
+        <section class="text-white text-center d-flex flex-column align-items-center justify-content-center" style="min-height: 100vh;  margin-top: 10rem;">
+            <div class="d-flex flex-column" style="padding:10rem; min-height: 100vh; padding-top: 0;">
+              <h2 class="fs-1 fw-bold">Our Spay and Neuter Program</h2>
+              <p class="card-text">At our shelter, we are deeply committed to the health and well-being of every pet. One of the most impactful ways we support this mission is through our Spay and Neuter Program. This program is designed not only to improve the lives of individual animals but also to address the broader issue of pet overpopulation in our community.</p>
+              
+              <div class="d-flex flex-row p-3 gap-3 align-items-center justify-content-center" style="max-width:80vw;">
+                  <img src="/pics/SN1" class="img-fluid fade-in" style="max-width: 20vw; height:30vh; object-fit:cover;"/>
+                  <img src="/pics/SN2" class="img-fluid fade-in" style="max-width: 20vw; height:30vh; object-fit:cover;"/>
+                  <img src="/pics/SN3" class="img-fluid fade-in" style="max-width: 20vw; height:30vh; object-fit:cover;"/>
+                  <img src="/pics/SN4" class="img-fluid fade-in" style="max-width: 20vw; height:30vh; object-fit:cover;"/>
+                  <img src="/pics/SN5" class="img-fluid fade-in" style="max-width: 20vw; height:30vh; object-fit:cover;"/>
+              </div>
+
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Why spay or neuter?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Helps control the pet population and reduces the number of homeless animals, preventing unnecessary euthanasia.</li>
+                        <li class="list-group-item">Promotes healthier, longer lives by reducing the risk of certain cancers and infections, such as uterine infections and testicular cancer.</li>
+                        <li class="list-group-item">Minimizes behavioral issues like roaming, spraying, and aggression, making pets more docile and family-friendly.</li>
+                        <li class="list-group-item">Contributes to a safer community by reducing the number of stray animals on the streets.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      How the program works?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>When you adopt from our shelter, your pet will already be spayed or neutered, ensuring they're ready for a healthy start in their new home. We also offer affordable spay and neuter services for community pets, including financial assistance for pet owners in need. Our dedicated veterinary team ensures a safe, comfortable procedure for every animal, followed by careful monitoring during the recovery process.</p>
                         <p>Appointments can be scheduled online or by visiting our shelter. We provide pre-surgical consultations to answer any questions and ensure that your pet is healthy and ready for the procedure.</p>
                   
-                        <h4 class="mt-4">Benefits to the Community</h4>
-                        <p>By reducing the number of stray and homeless animals, our program helps create a safer, cleaner, and more compassionate community. Fewer stray animals mean fewer incidents of accidents, fewer public health concerns, and a reduction in the strain on local animal control resources.</p>
-                  
-                        <h4 class="mt-4">Get Involved</h4>
-                        <p>By participating in our program, you're not just caring for your pet—you’re contributing to a larger cause of reducing overpopulation and promoting animal welfare. You can help by:</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Benefits to the community
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>By reducing the number of stray and homeless animals, our program helps create a safer, cleaner, and more compassionate community. Fewer stray animals mean fewer incidents of accidents, fewer public health concerns, and a reduction in the strain on local animal control resources.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Get involved!
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>By participating in our program, you're not just caring for your pet—you’re contributing to a larger cause of reducing overpopulation and promoting animal welfare. You can help by:</p>
                         <ul class="list-group list-group-flush">
                           <li class="list-group-item">Scheduling your pet for spaying or neutering.</li>
                           <li class="list-group-item">Volunteering to assist with educational outreach and events.</li>
@@ -46,9 +88,11 @@
                           <li class="list-group-item">Spreading awareness about the importance of responsible pet ownership.</li>
                         </ul>
                         <p>Contact us today to learn more about our services or to schedule an appointment. Together, we can make a lasting difference.</p>
-                      </div>
+                      
                     </div>
                   </div>
+                </div>
+              </div>
             </div>
         </section>
         {% include "_new/components/footer.html" %}

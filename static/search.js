@@ -93,7 +93,7 @@ function submitAnswers() {
   })
 
   
-    fetch("/pet", {
+    fetch("/pred", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -101,9 +101,7 @@ function submitAnswers() {
         want_age: age,
         want_sex: sex,
         want_size: size,
-        want_color: color,
-        number: 10
-      })
+        want_color: color
     })
       .then(response => response.json())
       .then(data => {

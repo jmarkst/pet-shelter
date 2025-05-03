@@ -12,6 +12,8 @@ import os
 from pytz import timezone, UTC
 import tensorflow as tf
 
+from flask_login import current_user, login_required
+
 from flask_bcrypt import Bcrypt
 from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity, JWTManager
 
@@ -92,50 +94,193 @@ class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(50), unique=True, nullable=False)
     password = db.Column(db.String(100), nullable=False)
+    isAdmin = db.Column(db.Boolean, default=False)
+    
+class Pet(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    pet = db.Column(db.String(50), nullable=False)
+    color = db.Column(db.String(50), nullable=False)
+    age = db.Column(db.String(50), nullable=False)
+    sex = db.Column(db.String(50), nullable=False)
+    size = db.Column(db.String(50), nullable=False)
+    adopted = db.Column(db.Boolean, default=False)
 
 # Initialize DB
 with app.app_context():
     db.create_all()
 
+'''
+@app.route('/import', methods=['GET'])
+def import_pets_from_csv():
+    try:
+        df = pd.read_csv("animals.csv")
+
+        pets = []
+        for _, row in df.iterrows():
+            pet = Pet(
+                pet=row['pet'],
+                color=row['color'],
+                age=row['age'],
+                sex=row['sex'],
+                size=row['size'],
+                adopted=False  # default as required
+            )
+            pets.append(pet)
+
+        db.session.add_all(pets)
+        db.session.commit()
+
+        return jsonify({"message": f"{len(pets)} pets imported successfully"}), 200
+
+    except Exception as e:
+        db.session.rollback()
+        return jsonify({"error": str(e)}), 500
+'''
+
+@app.route("/pet/new", methods=["POST"])
+def add_new_pet():
+    # Validate form fields
+    fields = ["pet", "color", "sex", "age", "size"]
+    for field in fields:
+        if field not in request.form:
+            return jsonify({"error": f"Missing field: {field}"}), 400
+
+    # Validate file
+    if "image" not in request.files:
+        return jsonify({"error": "Image file is required"}), 400
+    file = request.files["image"]
+    if file.filename == "" or not allowed_file(file.filename):
+        return jsonify({"error": "Invalid image file"}), 400
+
+    # Create and insert the pet
+    new_pet = Pet(
+        pet=request.form["pet"],
+        color=request.form["color"],
+        sex=request.form["sex"],
+        age=request.form["age"],
+        size=request.form["size"]
+    )
+    db.session.add(new_pet)
+    db.session.commit()  # to generate new_pet.id
+
+    # Save the image
+    filename = f"{int(new_pet.id) - 1}.png"
+    file_path = os.path.join(UPLOAD_FOLDER, filename)
+    file.save(file_path)
+
+    return jsonify({"message": "Pet added successfully", "id": new_pet.id}), 201
+
+@app.route("/comment/<int:id>", methods=["DELETE"])
+def delete_comment(id):
+    if not session.get("isAdmin"):
+        return jsonify({"error": "Unauthorized"}), 403
+
+    comment = Comment.query.get(id)
+    if not comment:
+        return jsonify({"error": "Comment not found"}), 404
+
+    db.session.delete(comment)
+    db.session.commit()
+    return jsonify({"message": "Comment deleted"}), 200
+
+@app.route("/pet/edit/<int:id>", methods=["PUT"])
+def update_pet(id):
+    data = request.json
+    required_fields = ["pet", "color", "sex", "age", "size"]
+
+    if not all(field in data for field in required_fields):
+        return jsonify({"error": "Missing fields"}), 400
+
+    pet = Pet.query.get(id)
+    if not pet:
+        return jsonify({"error": "Pet not found"}), 404
+
+    # Update fields
+    pet.pet = data["pet"]
+    pet.color = data["color"]
+    pet.sex = data["sex"]
+    pet.age = data["age"]
+    pet.size = data["size"]
+
+    db.session.commit()
+    return jsonify({"message": "Pet updated successfully"}), 200
+
+UPLOAD_FOLDER = os.path.join(app.root_path, "static", "pics")
+ALLOWED_EXTENSIONS = {"png"}
+
+def allowed_file(filename):
+    return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+
+@app.route("/pet/pic/upload/<int:id>", methods=["POST"])
+def upload_pet_image(id):
+    if "image" not in request.files:
+        return jsonify({"error": "No file part"}), 400
+
+    file = request.files["image"]
+    if file.filename == "":
+        return jsonify({"error": "No selected file"}), 400
+
+    if file and allowed_file(file.filename):
+        filename = f"{id}.png"  # always overwrite as id.png
+        filepath = os.path.join(UPLOAD_FOLDER, filename)
+        file.save(filepath)
+        return jsonify({"message": "Image uploaded successfully"}), 200
+
+    return jsonify({"error": "Invalid file type"}), 400
+
 @app.route('/')
 def home():
     user = session.get("user")
-    return render_template("/_new/landing.html", user=user)
+    isAdmin = session.get("isAdmin")
+    return render_template("/_new/landing.html", user=user, isAdmin=isAdmin)
 
 @app.route('/projects/spay')
 def spay():
     user = session.get("user")
-    return render_template("/_new/spay.html", user=user)
+    isAdmin = session.get("isAdmin")
+    return render_template("/_new/spay.html", user=user, isAdmin=isAdmin)
 
 @app.route('/projects/adopt')
 def adopt():
     user = session.get("user")
-    return render_template("/_new/adopt.html", user=user)
+    isAdmin = session.get("isAdmin")
+    return render_template("/_new/adopt.html", user=user, isAdmin=isAdmin)
 
 @app.route('/projects/education')
 def education():
     user = session.get("user")
-    return render_template("/_new/education.html", user=user)
+    isAdmin = session.get("isAdmin")
+    return render_template("/_new/education.html", user=user, isAdmin=isAdmin)
 
 @app.route('/resources')
 def resources():
     user = session.get("user")
-    return render_template("/_new/resources.html", user=user)
+    isAdmin = session.get("isAdmin")
+    return render_template("/_new/resources.html", user=user, isAdmin=isAdmin)
 
 @app.route('/faq')
 def faq():
     user = session.get("user")
-    return render_template("/_new/faq.html", user=user)
+    isAdmin = session.get("isAdmin")
+    return render_template("/_new/faq.html", user=user, isAdmin=isAdmin)
+
+@app.route('/addpet')
+def addpet():
+    user = session.get("user")
+    isAdmin = session.get("isAdmin")
+    return render_template("/_new/addpet.html", user=user, isAdmin=isAdmin)
 
 @app.route('/find-pet')
 def eligibility():
-    
-    return render_template("/_new/find-pet.html")
+    user = session.get("user")
+    isAdmin = session.get("isAdmin")
+    return render_template("/_new/find-pet.html", user=user, isAdmin=isAdmin)
 
 @app.route('/find-ai')
 def findAi():
     user = session.get("user")
-    return render_template("/_new/find-ai.html", user=user)
+    isAdmin = session.get("isAdmin")
+    return render_template("/_new/find-ai.html", user=user, isAdmin=isAdmin)
 
 @app.route('/search')
 def search():
@@ -143,32 +288,75 @@ def search():
 
 @app.route("/db")
 def animals():
-    animals = pd.read_csv("animals.csv")
-    json = animals.to_json(orient="records", indent=2)
-    return json
+    adopted_filter = request.args.get("adopted")
+
+    query = Pet.query
+    if adopted_filter is not None:
+        if adopted_filter.lower() == "true":
+            query = query.filter_by(adopted=True)
+        elif adopted_filter.lower() == "false":
+            query = query.filter_by(adopted=False)
+
+    pets = query.all()
+
+    data = [
+        {
+            "id": pet.id,
+            "pet": pet.pet,
+            "color": pet.color,
+            "age": pet.age,
+            "sex": pet.sex,
+            "size": pet.size,
+            "adopted": pet.adopted
+        }
+        for pet in pets
+    ]
+
+    df = pd.DataFrame(data)
+    json_data = df.to_json(orient="records", indent=2)
+
+    return json_data
 
 @app.route("/row", methods=["GET"])
 def row():
-    animals = pd.read_csv("animals.csv")
-    id = request.args.get('id', default=0, type=int)
-    row = animals.iloc[id]
-    json = row.to_json(orient="records", indent=2)
-    return json
+    pet_id = request.args.get('id', default=0, type=int)
+    pet = Pet.query.get(pet_id + 1)
+
+    if not pet:
+        return jsonify({"error": "Pet not found"}), 404
+
+    data = {
+        "id": pet.id,
+        "pet": pet.pet,
+        "color": pet.color,
+        "age": pet.age,
+        "sex": pet.sex,
+        "size": pet.size,
+        "adopted": pet.adopted
+    }
+
+    df = pd.DataFrame([data])
+    json_data = df.to_json(orient="records", indent=2)
+
+    return json_data
 
 @app.route("/login")
 def login():
     user = session.get("user")
-    return render_template("/_new/login.html", user=user)
+    isAdmin = session.get("isAdmin")
+    return render_template("/_new/login.html", user=user, isAdmin=isAdmin)
 
 @app.route("/logout")
 def logout():
     session.pop("user", None)
+    session.pop("isAdmin", None)
     return redirect(url_for('home'))
 
 @app.route("/register")
 def register():
     user = session.get("user")
-    return render_template("/_new/register.html", user=user)
+    isAdmin = session.get("isAdmin")
+    return render_template("/_new/register.html", user=user, isAdmin=isAdmin)
 
 @app.route("/user/register", methods=["POST"])
 def registerUser():
@@ -189,7 +377,8 @@ def registerUser():
 @app.route("/contact")
 def contact():
     user = session.get("user")
-    return render_template("_new/contact.html", user=user)
+    isAdmin = session.get("isAdmin")
+    return render_template("_new/contact.html", user=user, isAdmin=isAdmin)
 
 @app.route("/user/login", methods=["POST"])
 def loginUser():
@@ -203,6 +392,8 @@ def loginUser():
 
     access_token = create_access_token(identity=username)
     session['user'] = username
+    session['isAdmin'] = user.isAdmin
+    
     return jsonify({"message": "Login successful", "token": access_token}), 200
 
 @app.route('/protected', methods=['GET'])
@@ -246,7 +437,8 @@ def predict():
 def pet_info():
     user = session.get("user")
     id=request.args.get('id')
-    return render_template('_new/info.html', user=user, id=id)
+    isAdmin = session.get("isAdmin")
+    return render_template('_new/info.html', user=user, id=id, isAdmin=isAdmin)
 
 @app.route("/adoption-form")
 def adoptionform():
@@ -282,18 +474,21 @@ def get_comments(post_id):
 @app.route('/browse')
 def browse():
     user= session.get("user")
-    return render_template("_new/browse.html", user=user)
+    isAdmin = session.get("isAdmin")
+    return render_template("_new/browse.html", user=user, isAdmin=isAdmin)
 
 @app.route('/events')
 def events():
     user = session.get("user")
-    return render_template("_new/events.html", user=user)
+    isAdmin = session.get("isAdmin")
+    return render_template("_new/events.html", user=user, isAdmin=isAdmin)
 
 
 @app.route('/password')
 def password():
     user= session.get("user")
-    return render_template("_new/password.html", user=user)
+    isAdmin = session.get("isAdmin")
+    return render_template("_new/password.html", user=user, isAdmin=isAdmin)
 
 @app.route('/change-password', methods=['POST'])
 def change_password():
@@ -477,37 +672,36 @@ def pred():
     
     if not all(key in data for key in required_keys):
         return jsonify({"error": "Missing required fields"}), 400
+
+    # Query all unadopted pets from DB
+    pets = Pet.query.filter_by(adopted=False).all()
     
-    # Load CSV dataset
-    df = pd.read_csv("animals.csv")
     predictions = []
     prediction_info = []
-    
-    for idx, row in df.iterrows():
-        if row["pet"] != data["want_pet"]:
+
+    for idx, pet in enumerate(pets):
+        if pet.pet != data["want_pet"]:
             continue
-        
+
         base_data = {
-            "pet": row["pet"],
-            "sex": row["sex"],
-            "color": row["color"],
-            "size": row["size"],
-            "age": row["age"]
+            "pet": pet.pet,
+            "sex": pet.sex,
+            "color": pet.color,
+            "size": pet.size,
+            "age": pet.age
         }
-        
+
         prediction_label, maybe_prob = predict_pet_recommendation(base_data, data)
-        maybe_prob_percentage = maybe_prob * 100
-        
         class_labels = ["no", "maybe", "yes"]
         prob_dict = {class_labels[i]: float(maybe_prob[i]) for i in range(len(class_labels))}
-        
+
         if prob_dict["yes"] > max(prob_dict["maybe"], prob_dict["no"]) or prob_dict["maybe"] > prob_dict["no"]:
-            predictions.append(idx)
+            predictions.append(pet.id)
             prediction_info.append({
-                "row": idx,
+                "row": pet.id,
                 "pct": prob_dict
             })
-    
+
     return jsonify({"predictions": predictions, "info": prediction_info})
 
 

@@ -309,7 +309,7 @@ function submitAnswersPets() {
   
                   if (info[i].pct.yes > info[i].pct.maybe > info[i].pct.no)  {
                     levelDiv.style.border = "5px solid gold"
-                    cardbody.innerHTML += "<b>PERFECT MATCH!</b>"
+                    cardbody.innerHTML += `<b>${Math.round(info[i].pct.yes * 100,2)}% MATCH</b>`
                   }
   
                   cardrow.style.maxHeight = "50vh"

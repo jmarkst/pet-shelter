@@ -294,7 +294,7 @@ function submitAnswersPets() {
                   img.style.height = "50vh"
 
                   const badge = document.createElement('span');
-                  badge.className = 'position-absolute top-0 start-50 translate-end badge pill bg-success';
+                  badge.className = 'position-absolute top-0 start-50 translate-end badge rounded-pill bg-warning text-dark';
                   badge.style.fontSize = "18pt";
                   badge.style.transform = "translateX(15pt) translateY(5pt)";
                   badge.style.zIndex = "999";

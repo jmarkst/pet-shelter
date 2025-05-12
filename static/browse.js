@@ -12,6 +12,9 @@ fetch("/db")
 
     // Loop through the entire database and create a card for each pet
     db.forEach((petData, i) => {
+      if (petData.adopted == true) {
+        return
+      }
       if (petData.pet == "dog") {
         // Create a column for each pet card (using col-sm-4 for a 3-column layout on small screens)
         const colDiv = document.createElement("div");
@@ -82,6 +85,10 @@ fetch("/db")
     // Loop through the entire database and create a card for each pet
     db.forEach((petData, i) => {
       if (petData.pet == "cat") {
+        if (petData.adopted == true) {
+          return
+        }
+        
         // Create a column for each pet card (using col-sm-4 for a 3-column layout on small screens)
         const colDiv = document.createElement("div");
         colDiv.classList.add("col-sm-4", "col-md-3", "col-lg-2"); // Adjust column size on different screens

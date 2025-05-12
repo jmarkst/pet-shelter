@@ -292,7 +292,19 @@ function submitAnswersPets() {
                   img.classList.add("card-img-top");
   
                   img.style.height = "50vh"
-  
+
+                  const badge = document.createElement('span');
+                  badge.className = 'position-absolute top-0 start-50 translate-end badge pill bg-success';
+                  badge.style.fontSize = "18pt";
+                  badge.style.transform = "translateX(15pt) translateY(5pt)";
+                  badge.style.zIndex = "999";
+
+                  if (info[i].pct.yes > info[i].pct.maybe > info[i].pct.no)  {
+                    badge.innerHTML = `${Math.round(info[i].pct.yes * 100,2)}%`;
+                  } else if (info[i].pct.maybe > info[i].pct.no) {
+                    badge.innerHTML = `${Math.round(info[i].pct.maybe * 100,2)}%`;
+                  }
+
                   const cardbody = document.createElement("div")
                   cardbody.classList.add("card-body");
   
@@ -308,9 +320,8 @@ function submitAnswersPets() {
                   cardbody.appendChild(cardtext)
   
                   if (info[i].pct.yes > info[i].pct.maybe > info[i].pct.no)  {
-                    levelDiv.style.border = "5px solid gold"
-                    cardbody.innerHTML += `<b>${Math.round(info[i].pct.yes * 100,2)}% MATCH</b>`
-                  }
+                    levelDiv.style.border = "5px solid gold";
+                  } 
   
                   cardrow.style.maxHeight = "50vh"
                   levelDiv.style.maxHeight = "100%"
@@ -321,6 +332,7 @@ function submitAnswersPets() {
                   button.textContent = `Check ${pet.sex == "male" ? "him": "her"}`;
   
                   levelDiv.appendChild(img)
+                  levelDiv.appendChild(badge)
                   levelDiv.appendChild(cardbody)
                   levelDiv.appendChild(button)
                   cardrow.appendChild(levelDiv);

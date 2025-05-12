@@ -137,6 +137,17 @@ def import_pets_from_csv():
         return jsonify({"error": str(e)}), 500
 '''
 
+@app.route('/adopt_pet/<int:pet_id>', methods=['POST'])
+def adopt_pet(pet_id):
+    pet = Pet.query.get(pet_id)
+    if not pet:
+        return jsonify({'message': 'Pet not found'}), 404
+
+    pet.adopted = True
+    db.session.commit()
+
+    return jsonify({'message': f'Pet {pet.pet} has been adopted successfully.', 'adopted': pet.adopted})
+
 @app.route("/pet/new", methods=["POST"])
 def add_new_pet():
     # Validate form fields
@@ -230,15 +241,23 @@ def upload_pet_image(id):
 
 @app.route('/')
 def home():
+    dogscount = Pet.query.filter_by(pet='dog', adopted=False).count()
+    catscount = Pet.query.filter_by(pet='cat', adopted=False).count()
     user = session.get("user")
     isAdmin = session.get("isAdmin")
-    return render_template("/_new/landing.html", user=user, isAdmin=isAdmin)
+    return render_template("/_new/landing.html", user=user, isAdmin=isAdmin, dogscount=dogscount, catscount=catscount)
 
 @app.route('/projects/spay')
 def spay():
     user = session.get("user")
     isAdmin = session.get("isAdmin")
     return render_template("/_new/spay.html", user=user, isAdmin=isAdmin)
+
+@app.route('/adopt')
+def adoptnow():
+    user = session.get("user")
+    isAdmin = session.get("isAdmin")
+    return render_template("/_new/adopt-now.html", user=user, isAdmin=isAdmin)
 
 @app.route('/projects/adopt')
 def adopt():
@@ -285,6 +304,17 @@ def findAi():
 @app.route('/search')
 def search():
     return render_template("takefilters.html")
+
+@app.route('/count_dogs', methods=['GET'])
+def count_dogs():
+    count = Pet.query.filter_by(pet='dog', adopted=False).count()
+    return jsonify({'pet': 'dog', 'unadopted_count': count})
+
+
+@app.route('/count_cats', methods=['GET'])
+def count_cats():
+    count = Pet.query.filter_by(pet='cat', adopted=False).count()
+    return jsonify({'pet': 'cat', 'unadopted_count': count})
 
 @app.route("/db")
 def animals():

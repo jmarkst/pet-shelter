@@ -6,7 +6,7 @@ const petColors = {
 
 const ages = ["1 months", "2 months", "3 months", "6 months", "1 years", "2 years", "3 years", "4 years", "5 years"]
 
-if (isAdmin != "None") {
+if (isAdmin != "False" && isAdmin != "None") {
     const petTypeSelect = document.getElementById("petchoice");
     const petColorSelect = document.getElementById("colorchoice");
 
@@ -146,6 +146,26 @@ if (isAdmin != "None") {
         
     }
     
+}
+
+function adoptPet(petId) {
+    const confirmed = confirm("Are you sure you want to adopt this pet?");
+
+    if (!confirmed) {
+        return; // Exit if user clicks "Cancel"
+    }
+
+    fetch(`/adopt_pet/${petId + 1}`, {
+        method: 'POST'
+    })
+    .then(response => response.json())
+    .then(data => {
+        alert(data.message);
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert("An error occurred while processing the adoption.");
+    });
 }
 
 
